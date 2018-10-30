@@ -48,7 +48,7 @@ class BayesLinear(nn.Module):
         self.in_features = in_features
         self.out_features = out_features
         self.mu = nn.Parameter(torch.randn(out_features, in_features))
-        self.sigma = nn.Parameter(torch.full((out_features, in_features), 0.1))
+        self.log_sigma_sqr = nn.Parameter(torch.full((out_features, in_features), -12))
         if bias:
             self.bias = nn.Parameter(torch.zeros(out_features))
         else:
@@ -56,7 +56,7 @@ class BayesLinear(nn.Module):
 
     def forward(self, x):
         h_mean = F.linear(x, self.mu, self.bias)
-        h_std = (1e-16 + F.linear(x * x, self.sigma * self.sigma)).sqrt()
+        h_std = (1e-16 + F.linear(x ** 2, self.log_sigma_sqr.exp())).sqrt()
         if self.train:
             eps = torch.randn_like(h_std)
         else:
@@ -64,7 +64,7 @@ class BayesLinear(nn.Module):
         return h_mean + eps * h_std
 
     def KL(self):
-        got = ((self.mu**2 + self.sigma**2 - (self.sigma**2).log()).sum()\
+        got = ((self.mu**2 + self.log_sigma_sqr.exp() - self.log_sigma_sqr).sum()\
                - self.in_features*self.out_features) / 2
         return got
 

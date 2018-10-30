@@ -8,7 +8,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 
 from layers import BayesLinear, NetWrapper
-from utils import mnist_data, train, evaluate, save
+from utils import mnist_data, train, test, evaluate, save
 
 
 def main():
@@ -21,17 +21,23 @@ def main():
     optimizer = optim.Adam(model.parameters())
     criterion = my_loss(model, len(train_loader.dataset))
 
-    train(model, device, train_loader, criterion, optimizer, n_epochs=200)
+    train(model, device, train_loader, criterion, optimizer, n_epochs=400)
+
+    model.set_flag('train', False)
+    test(model, device, train_loader, criterion)
+
+    model.set_flag('train', True)
+    evaluate(model, device, train_loader, criterion, 10)
 
     criterion = my_loss(model, len(test_loader.dataset))
 
     model.set_flag('train', False)
     print('Mean')
-    evaluate(model, device, test_loader, criterion, 1)
+    test(model, device, test_loader, criterion)
 
     model.set_flag('train', True)
     print('Stochastic')
-    evaluate(model, device, test_loader, criterion, 100)
+    evaluate(model, device, test_loader, criterion, 10)
     save(model)
 
 

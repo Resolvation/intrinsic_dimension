@@ -1,5 +1,7 @@
 import time
 
+import numpy as np
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -59,20 +61,25 @@ def test(model, device, test_loader, criterion):
     print('Test:\nAverage loss: %.4f\tAccuracy: %.2f' % (test_loss, accuracy))
 
 
-def evaluate(model, device, test_loader, criterion, num_ens=1):
+def evaluate(model, device, test_loader, criterion, num_nets=10):
     """Calculate ensemble accuracy and loss."""
-    correct, test_loss = 0, 0
+    total_correct = 0
+    correct, test_loss = torch.zeros(10).to(device), torch.zeros(10).to(device)
+    pred = torch.empty(num_nets, test_loader.batch_size, dtype=torch.long).to(device)
     with torch.no_grad():
         for images, labels in test_loader:
             images, labels = images.to(device), labels.to(device)
-            for _ in range(num_ens):
+            for i in range(num_nets):
                 outputs = model(images)
-                test_loss += criterion(outputs, labels)
-                pred = outputs.max(1, keepdim=True)[1]
-                correct += pred.eq(labels.view_as(pred)).sum().item()
-    test_loss /= num_ens*len(test_loader.dataset)
-    accuracy = 100*correct/num_ens/len(test_loader.dataset)
-    print('Test:\nAverage loss: %.4f\tAccuracy: %.2f' % (test_loss, accuracy))
+                test_loss[i] += criterion(outputs, labels)
+                pred[i] = outputs.max(1, keepdim=True)[1].view_as(pred[i])
+                correct[i] += pred[i].eq(labels.view(pred[i].shape)).sum().item()
+            total_pred = torch.Tensor([np.argmax(np.bincount(image)) for image in pred.transpose(0, 1)]).to(torch.long).to(device)
+            total_correct += total_pred.eq(labels.view(pred[0].shape)).sum().item()
+    print('Test:')
+    for i in range(num_nets):
+        print('Net: %d\tAverage loss: %.4f\tAccuracy: %.2f' % (i+1, test_loss[i]/len(test_loader.dataset), 100*correct[i]/len(test_loader.dataset)))
+    print('Ensamble:\tAccuracy: %.2f' % (100*total_correct/len(test_loader.dataset)))
 
 
 def save(model, path='last_checkpoint.tar'):
