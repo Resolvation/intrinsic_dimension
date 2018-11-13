@@ -1,0 +1,78 @@
+Training:
+Epoch: 005    Loss: 00000.4378    Time: 0:00:09 
+Epoch: 010    Loss: 00000.3992    Time: 0:00:09 
+Epoch: 015    Loss: 00000.3825    Time: 0:00:09 
+Epoch: 020    Loss: 00000.3743    Time: 0:00:09 
+Epoch: 025    Loss: 00000.3684    Time: 0:00:10 
+Epoch: 030    Loss: 00000.3625    Time: 0:00:09 
+Epoch: 035    Loss: 00000.3589    Time: 0:00:09 
+Epoch: 040    Loss: 00000.3555    Time: 0:00:09 
+Epoch: 045    Loss: 00000.3525    Time: 0:00:09 
+Epoch: 050    Loss: 00000.3519    Time: 0:00:09 
+Epoch: 055    Loss: 00000.3524    Time: 0:00:09 
+Epoch: 060    Loss: 00000.3505    Time: 0:00:09 
+Epoch: 065    Loss: 00000.3504    Time: 0:00:09 
+Epoch: 070    Loss: 00000.3494    Time: 0:00:09 
+Epoch: 075    Loss: 00000.3508    Time: 0:00:09 
+Epoch: 080    Loss: 00000.3493    Time: 0:00:09 
+Epoch: 085    Loss: 00000.3495    Time: 0:00:09 
+Epoch: 090    Loss: 00000.3483    Time: 0:00:09 
+Epoch: 095    Loss: 00000.3488    Time: 0:00:09 
+Epoch: 100    Loss: 00000.3496    Time: 0:00:09 
+Epoch: 105    Loss: 00000.3480    Time: 0:00:09 
+Epoch: 110    Loss: 00000.3459    Time: 0:00:09 
+Epoch: 115    Loss: 00000.3466    Time: 0:00:09 
+Epoch: 120    Loss: 00000.3445    Time: 0:00:09 
+Epoch: 125    Loss: 00000.3444    Time: 0:00:09 
+Epoch: 130    Loss: 00000.3440    Time: 0:00:09 
+Epoch: 135    Loss: 00000.3431    Time: 0:00:09 
+Epoch: 140    Loss: 00000.3410    Time: 0:00:09 
+Epoch: 145    Loss: 00000.3401    Time: 0:00:09 
+Epoch: 150    Loss: 00000.3393    Time: 0:00:09 
+Epoch: 155    Loss: 00000.3376    Time: 0:00:09 
+Epoch: 160    Loss: 00000.3369    Time: 0:00:09 
+Epoch: 165    Loss: 00000.3370    Time: 0:00:09 
+Epoch: 170    Loss: 00000.3345    Time: 0:00:09 
+Epoch: 175    Loss: 00000.3335    Time: 0:00:09 
+Epoch: 180    Loss: 00000.3337    Time: 0:00:09 
+Epoch: 185    Loss: 00000.3326    Time: 0:00:09 
+Epoch: 190    Loss: 00000.3312    Time: 0:00:09 
+Epoch: 195    Loss: 00000.3312    Time: 0:00:09 
+Epoch: 200    Loss: 00000.3298    Time: 0:00:09 
+Time: 0:32:46 
+tensor([0.0051, 0.0053, 0.0053, 0.0060, 0.0063],
+       device='cuda:0', grad_fn=<ExpBackward>)
+tensor(0.0058, device='cuda:0', grad_fn=<MeanBackward1>)
+tensor(0.0057, device='cuda:0', grad_fn=<MedianBackward0>)
+Trainset
+Mean
+Average loss: 00000.0032    Accuracy:  92.07
+Ensemble
+Net id: 01    Average loss: 00000.0033    Accuracy:  91.82
+Net id: 02    Average loss: 00000.0033    Accuracy:  91.75
+Net id: 03    Average loss: 00000.0033    Accuracy:  91.88
+Net id: 04    Average loss: 00000.0033    Accuracy:  91.81
+Net id: 05    Average loss: 00000.0033    Accuracy:  91.85
+Net id: 06    Average loss: 00000.0033    Accuracy:  91.89
+Net id: 07    Average loss: 00000.0033    Accuracy:  91.85
+Net id: 08    Average loss: 00000.0033    Accuracy:  91.79
+Net id: 09    Average loss: 00000.0033    Accuracy:  91.91
+Net id: 10    Average loss: 00000.0033    Accuracy:  91.76
+Average accuracy:  91.83
+Ensamble:	Accuracy:  92.06
+Testset
+Mean
+Average loss: 00000.0062    Accuracy:  91.85
+Ensemble
+Net id: 01    Average loss: 00000.0063    Accuracy:  91.56
+Net id: 02    Average loss: 00000.0063    Accuracy:  91.50
+Net id: 03    Average loss: 00000.0063    Accuracy:  91.55
+Net id: 04    Average loss: 00000.0063    Accuracy:  91.72
+Net id: 05    Average loss: 00000.0063    Accuracy:  91.41
+Net id: 06    Average loss: 00000.0063    Accuracy:  91.51
+Net id: 07    Average loss: 00000.0063    Accuracy:  91.59
+Net id: 08    Average loss: 00000.0063    Accuracy:  91.50
+Net id: 09    Average loss: 00000.0063    Accuracy:  91.59
+Net id: 10    Average loss: 00000.0063    Accuracy:  91.62
+Average accuracy:  91.56
+Ensamble:	Accuracy:  91.83

@@ -1,0 +1,46 @@
+Training:
+Epoch: 005    Loss: 00000.0434    Time: 0:00:01 
+Epoch: 010    Loss: 00000.0143    Time: 0:00:01 
+Epoch: 015    Loss: 00000.0098    Time: 0:00:01 
+Epoch: 020    Loss: 00000.0065    Time: 0:00:01 
+Epoch: 025    Loss: 00000.0044    Time: 0:00:01 
+Epoch: 030    Loss: 00000.0086    Time: 0:00:01 
+Epoch: 035    Loss: 00000.0054    Time: 0:00:01 
+Epoch: 040    Loss: 00000.0046    Time: 0:00:01 
+Epoch: 045    Loss: 00000.0047    Time: 0:00:01 
+Epoch: 050    Loss: 00000.0013    Time: 0:00:01 
+Epoch: 055    Loss: 00000.0046    Time: 0:00:01 
+Epoch: 060    Loss: 00000.0080    Time: 0:00:01 
+Epoch: 065    Loss: 00000.0052    Time: 0:00:01 
+Epoch: 070    Loss: 00000.0030    Time: 0:00:01 
+Epoch: 075    Loss: 00000.0025    Time: 0:00:01 
+Epoch: 080    Loss: 00000.0038    Time: 0:00:01 
+Epoch: 085    Loss: 00000.0023    Time: 0:00:01 
+Epoch: 090    Loss: 00000.0022    Time: 0:00:01 
+Epoch: 095    Loss: 00000.0020    Time: 0:00:01 
+Epoch: 100    Loss: 00000.0014    Time: 0:00:01 
+Epoch: 105    Loss: 00000.0010    Time: 0:00:01 
+Epoch: 110    Loss: 00000.0011    Time: 0:00:01 
+Epoch: 115    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 120    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 125    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 130    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 135    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 140    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 145    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 150    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 155    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 160    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 165    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 170    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 175    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 180    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 185    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 190    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 195    Loss: 00000.0000    Time: 0:00:01 
+Epoch: 200    Loss: 00000.0000    Time: 0:00:01 
+Time: 0:05:21 
+Trainset:
+Average loss: 00000.0000    Accuracy: 100.00
+Testset:
+Average loss: 00000.0021    Accuracy:  98.36

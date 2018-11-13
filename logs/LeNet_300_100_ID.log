@@ -1,0 +1,46 @@
+Training:
+Epoch: 005    Loss: 00000.3681    Time: 0:00:19 
+Epoch: 010    Loss: 00000.3311    Time: 0:00:19 
+Epoch: 015    Loss: 00000.3163    Time: 0:00:19 
+Epoch: 020    Loss: 00000.3074    Time: 0:00:19 
+Epoch: 025    Loss: 00000.3007    Time: 0:00:19 
+Epoch: 030    Loss: 00000.2955    Time: 0:00:19 
+Epoch: 035    Loss: 00000.2921    Time: 0:00:19 
+Epoch: 040    Loss: 00000.2902    Time: 0:00:19 
+Epoch: 045    Loss: 00000.2875    Time: 0:00:19 
+Epoch: 050    Loss: 00000.2856    Time: 0:00:19 
+Epoch: 055    Loss: 00000.2851    Time: 0:00:19 
+Epoch: 060    Loss: 00000.2836    Time: 0:00:19 
+Epoch: 065    Loss: 00000.2827    Time: 0:00:19 
+Epoch: 070    Loss: 00000.2808    Time: 0:00:19 
+Epoch: 075    Loss: 00000.2809    Time: 0:00:19 
+Epoch: 080    Loss: 00000.2799    Time: 0:00:19 
+Epoch: 085    Loss: 00000.2787    Time: 0:00:18 
+Epoch: 090    Loss: 00000.2789    Time: 0:00:19 
+Epoch: 095    Loss: 00000.2773    Time: 0:00:19 
+Epoch: 100    Loss: 00000.2786    Time: 0:00:19 
+Epoch: 105    Loss: 00000.2762    Time: 0:00:09 
+Epoch: 110    Loss: 00000.2747    Time: 0:00:09 
+Epoch: 115    Loss: 00000.2748    Time: 0:00:09 
+Epoch: 120    Loss: 00000.2738    Time: 0:00:09 
+Epoch: 125    Loss: 00000.2722    Time: 0:00:09 
+Epoch: 130    Loss: 00000.2713    Time: 0:00:09 
+Epoch: 135    Loss: 00000.2708    Time: 0:00:09 
+Epoch: 140    Loss: 00000.2696    Time: 0:00:09 
+Epoch: 145    Loss: 00000.2688    Time: 0:00:09 
+Epoch: 150    Loss: 00000.2682    Time: 0:00:09 
+Epoch: 155    Loss: 00000.2677    Time: 0:00:09 
+Epoch: 160    Loss: 00000.2664    Time: 0:00:09 
+Epoch: 165    Loss: 00000.2656    Time: 0:00:09 
+Epoch: 170    Loss: 00000.2646    Time: 0:00:09 
+Epoch: 175    Loss: 00000.2639    Time: 0:00:09 
+Epoch: 180    Loss: 00000.2633    Time: 0:00:09 
+Epoch: 185    Loss: 00000.2624    Time: 0:00:09 
+Epoch: 190    Loss: 00000.2615    Time: 0:00:09 
+Epoch: 195    Loss: 00000.2605    Time: 0:00:09 
+Epoch: 200    Loss: 00000.2596    Time: 0:00:09 
+Time: 0:47:39 
+Trainset:
+Average loss: 00000.0026    Accuracy:  92.23
+Testset:
+Average loss: 00000.0026    Accuracy:  92.01

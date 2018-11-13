@@ -1,0 +1,86 @@
+Training:
+Epoch: 005    Loss: 00000.4582    Time: 0:00:06 
+Epoch: 010    Loss: 00000.4238    Time: 0:00:06 
+Epoch: 015    Loss: 00000.4111    Time: 0:00:06 
+Epoch: 020    Loss: 00000.4017    Time: 0:00:06 
+Epoch: 025    Loss: 00000.3969    Time: 0:00:06 
+Epoch: 030    Loss: 00000.3924    Time: 0:00:06 
+Epoch: 035    Loss: 00000.3898    Time: 0:00:06 
+Epoch: 040    Loss: 00000.3891    Time: 0:00:05 
+Epoch: 045    Loss: 00000.3846    Time: 0:00:06 
+Epoch: 050    Loss: 00000.3828    Time: 0:00:06 
+Epoch: 055    Loss: 00000.3794    Time: 0:00:06 
+Epoch: 060    Loss: 00000.3781    Time: 0:00:06 
+Epoch: 065    Loss: 00000.3759    Time: 0:00:06 
+Epoch: 070    Loss: 00000.3736    Time: 0:00:06 
+Epoch: 075    Loss: 00000.3723    Time: 0:00:06 
+Epoch: 080    Loss: 00000.3698    Time: 0:00:06 
+Epoch: 085    Loss: 00000.3695    Time: 0:00:06 
+Epoch: 090    Loss: 00000.3674    Time: 0:00:06 
+Epoch: 095    Loss: 00000.3662    Time: 0:00:06 
+Epoch: 100    Loss: 00000.3662    Time: 0:00:06 
+Epoch: 105    Loss: 00000.3642    Time: 0:00:06 
+Epoch: 110    Loss: 00000.3635    Time: 0:00:05 
+Epoch: 115    Loss: 00000.3623    Time: 0:00:06 
+Epoch: 120    Loss: 00000.3629    Time: 0:00:06 
+Epoch: 125    Loss: 00000.3615    Time: 0:00:06 
+Epoch: 130    Loss: 00000.3611    Time: 0:00:05 
+Epoch: 135    Loss: 00000.3608    Time: 0:00:06 
+Epoch: 140    Loss: 00000.3597    Time: 0:00:05 
+Epoch: 145    Loss: 00000.3590    Time: 0:00:06 
+Epoch: 150    Loss: 00000.3580    Time: 0:00:06 
+Epoch: 155    Loss: 00000.3575    Time: 0:00:06 
+Epoch: 160    Loss: 00000.3569    Time: 0:00:06 
+Epoch: 165    Loss: 00000.3568    Time: 0:00:06 
+Epoch: 170    Loss: 00000.3547    Time: 0:00:06 
+Epoch: 175    Loss: 00000.3523    Time: 0:00:06 
+Epoch: 180    Loss: 00000.3541    Time: 0:00:06 
+Epoch: 185    Loss: 00000.3520    Time: 0:00:06 
+Epoch: 190    Loss: 00000.3521    Time: 0:00:06 
+Epoch: 195    Loss: 00000.3508    Time: 0:00:06 
+Epoch: 200    Loss: 00000.3503    Time: 0:00:06 
+Time: 0:20:38 
+tensor([0.0092, 0.0079, 0.0089, 0.0079, 0.0091],
+       device='cuda:0', grad_fn=<ExpBackward>)
+tensor(0.0084, device='cuda:0', grad_fn=<MeanBackward1>)
+tensor(0.0084, device='cuda:0', grad_fn=<MedianBackward0>)
+tensor([0.0041, 0.0053, 0.0055, 0.0046, 0.0060],
+       device='cuda:0', grad_fn=<ExpBackward>)
+tensor(0.0048, device='cuda:0', grad_fn=<MeanBackward1>)
+tensor(0.0048, device='cuda:0', grad_fn=<MedianBackward0>)
+tensor([0.0022, 0.0030, 0.0025, 0.0029, 0.0022],
+       device='cuda:0', grad_fn=<ExpBackward>)
+tensor(0.0026, device='cuda:0', grad_fn=<MeanBackward1>)
+tensor(0.0025, device='cuda:0', grad_fn=<MedianBackward0>)
+Trainset
+Mean
+Average loss: 00000.0034    Accuracy:  91.05
+Ensemble
+Net id: 01    Average loss: 00000.0035    Accuracy:  90.83
+Net id: 02    Average loss: 00000.0035    Accuracy:  90.92
+Net id: 03    Average loss: 00000.0035    Accuracy:  90.88
+Net id: 04    Average loss: 00000.0035    Accuracy:  90.86
+Net id: 05    Average loss: 00000.0035    Accuracy:  90.88
+Net id: 06    Average loss: 00000.0035    Accuracy:  90.94
+Net id: 07    Average loss: 00000.0035    Accuracy:  90.95
+Net id: 08    Average loss: 00000.0035    Accuracy:  90.96
+Net id: 09    Average loss: 00000.0035    Accuracy:  90.94
+Net id: 10    Average loss: 00000.0035    Accuracy:  90.91
+Average accuracy:  90.90
+Ensamble:	Accuracy:  91.07
+Testset
+Mean
+Average loss: 00000.0061    Accuracy:  90.75
+Ensemble
+Net id: 01    Average loss: 00000.0061    Accuracy:  90.54
+Net id: 02    Average loss: 00000.0061    Accuracy:  90.65
+Net id: 03    Average loss: 00000.0061    Accuracy:  90.74
+Net id: 04    Average loss: 00000.0061    Accuracy:  90.48
+Net id: 05    Average loss: 00000.0061    Accuracy:  90.54
+Net id: 06    Average loss: 00000.0061    Accuracy:  90.60
+Net id: 07    Average loss: 00000.0061    Accuracy:  90.67
+Net id: 08    Average loss: 00000.0061    Accuracy:  90.66
+Net id: 09    Average loss: 00000.0061    Accuracy:  90.60
+Net id: 10    Average loss: 00000.0061    Accuracy:  90.49
+Average accuracy:  90.60
+Ensamble:	Accuracy:  90.77

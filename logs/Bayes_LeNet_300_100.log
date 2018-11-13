@@ -1,0 +1,97 @@
+Training:
+Epoch: 005    Loss: 00029.4059    Time: 0:00:03 
+Epoch: 010    Loss: 00018.7588    Time: 0:00:03 
+Epoch: 015    Loss: 00012.9949    Time: 0:00:02 
+Epoch: 020    Loss: 00009.4443    Time: 0:00:03 
+Epoch: 025    Loss: 00007.8682    Time: 0:00:02 
+Epoch: 030    Loss: 00006.9275    Time: 0:00:03 
+Epoch: 035    Loss: 00006.2206    Time: 0:00:02 
+Epoch: 040    Loss: 00005.6829    Time: 0:00:03 
+Epoch: 045    Loss: 00005.3004    Time: 0:00:03 
+Epoch: 050    Loss: 00004.9445    Time: 0:00:02 
+Epoch: 055    Loss: 00004.6467    Time: 0:00:03 
+Epoch: 060    Loss: 00004.3752    Time: 0:00:03 
+Epoch: 065    Loss: 00004.1686    Time: 0:00:03 
+Epoch: 070    Loss: 00004.0104    Time: 0:00:02 
+Epoch: 075    Loss: 00003.8523    Time: 0:00:03 
+Epoch: 080    Loss: 00003.7139    Time: 0:00:03 
+Epoch: 085    Loss: 00003.6100    Time: 0:00:03 
+Epoch: 090    Loss: 00003.4299    Time: 0:00:02 
+Epoch: 095    Loss: 00003.3307    Time: 0:00:02 
+Epoch: 100    Loss: 00003.2463    Time: 0:00:03 
+Epoch: 105    Loss: 00003.0910    Time: 0:00:03 
+Epoch: 110    Loss: 00002.9965    Time: 0:00:03 
+Epoch: 115    Loss: 00002.9053    Time: 0:00:02 
+Epoch: 120    Loss: 00002.8424    Time: 0:00:03 
+Epoch: 125    Loss: 00002.7431    Time: 0:00:03 
+Epoch: 130    Loss: 00002.6687    Time: 0:00:03 
+Epoch: 135    Loss: 00002.6136    Time: 0:00:03 
+Epoch: 140    Loss: 00002.5584    Time: 0:00:03 
+Epoch: 145    Loss: 00002.4938    Time: 0:00:03 
+Epoch: 150    Loss: 00002.4791    Time: 0:00:03 
+Epoch: 155    Loss: 00002.3681    Time: 0:00:03 
+Epoch: 160    Loss: 00002.3926    Time: 0:00:03 
+Epoch: 165    Loss: 00002.3324    Time: 0:00:03 
+Epoch: 170    Loss: 00002.3032    Time: 0:00:03 
+Epoch: 175    Loss: 00002.2829    Time: 0:00:03 
+Epoch: 180    Loss: 00002.2612    Time: 0:00:03 
+Epoch: 185    Loss: 00002.2376    Time: 0:00:03 
+Epoch: 190    Loss: 00002.2248    Time: 0:00:03 
+Epoch: 195    Loss: 00002.2113    Time: 0:00:03 
+Epoch: 200    Loss: 00002.2131    Time: 0:00:03 
+Time: 0:10:22 
+tensor([[1., 1., 1., 1., 1.],
+        [1., 1., 1., 1., 1.],
+        [1., 1., 1., 1., 1.],
+        [1., 1., 1., 1., 1.],
+        [1., 1., 1., 1., 1.]], device='cuda:0', grad_fn=<ExpBackward>)
+tensor(0.7734, device='cuda:0', grad_fn=<MeanBackward1>)
+tensor(0.9497, device='cuda:0', grad_fn=<MedianBackward0>)
+tensor([[0.1828, 0.3849, 0.0950, 0.1621, 0.0951],
+        [0.5145, 0.7277, 0.3328, 0.4445, 0.1719],
+        [0.3886, 0.9157, 0.2721, 0.2094, 0.1822],
+        [0.1976, 0.6109, 0.1448, 0.1927, 0.1559],
+        [0.2260, 0.6115, 0.3197, 0.1237, 0.1210]],
+       device='cuda:0', grad_fn=<ExpBackward>)
+tensor(0.4761, device='cuda:0', grad_fn=<MeanBackward1>)
+tensor(0.3732, device='cuda:0', grad_fn=<MedianBackward0>)
+tensor([[0.0093, 0.0282, 0.0416, 0.0281, 0.1641],
+        [0.0119, 0.0960, 0.7033, 0.0249, 0.1214],
+        [0.0123, 0.0478, 0.0667, 0.0118, 0.0786],
+        [0.0100, 0.0577, 0.0816, 0.0120, 0.0579],
+        [0.0155, 0.0411, 0.0626, 0.0522, 0.0202]],
+       device='cuda:0', grad_fn=<ExpBackward>)
+tensor(0.1580, device='cuda:0', grad_fn=<MeanBackward1>)
+tensor(0.0331, device='cuda:0', grad_fn=<MedianBackward0>)
+Trainset
+Mean
+Average loss: 00000.0202    Accuracy: 100.00
+Ensemble
+Net id: 01    Average loss: 00000.0221    Accuracy:  99.37
+Net id: 02    Average loss: 00000.0220    Accuracy:  99.33
+Net id: 03    Average loss: 00000.0221    Accuracy:  99.40
+Net id: 04    Average loss: 00000.0219    Accuracy:  99.36
+Net id: 05    Average loss: 00000.0221    Accuracy:  99.40
+Net id: 06    Average loss: 00000.0222    Accuracy:  99.35
+Net id: 07    Average loss: 00000.0219    Accuracy:  99.35
+Net id: 08    Average loss: 00000.0221    Accuracy:  99.35
+Net id: 09    Average loss: 00000.0221    Accuracy:  99.37
+Net id: 10    Average loss: 00000.0222    Accuracy:  99.36
+Average accuracy:  99.36
+Ensamble:	Accuracy:  99.98
+Testset
+Mean
+Average loss: 00000.1370    Accuracy:  97.92
+Ensemble
+Net id: 01    Average loss: 00000.1445    Accuracy:  96.93
+Net id: 02    Average loss: 00000.1457    Accuracy:  97.11
+Net id: 03    Average loss: 00000.1448    Accuracy:  97.23
+Net id: 04    Average loss: 00000.1452    Accuracy:  97.21
+Net id: 05    Average loss: 00000.1459    Accuracy:  96.98
+Net id: 06    Average loss: 00000.1429    Accuracy:  97.12
+Net id: 07    Average loss: 00000.1438    Accuracy:  97.08
+Net id: 08    Average loss: 00000.1438    Accuracy:  97.17
+Net id: 09    Average loss: 00000.1450    Accuracy:  97.05
+Net id: 10    Average loss: 00000.1459    Accuracy:  96.90
+Average accuracy:  97.08
+Ensamble:	Accuracy:  97.93
