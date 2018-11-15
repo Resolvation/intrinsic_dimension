@@ -14,8 +14,8 @@ def main():
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     net = LeNet_300_100().to(device)
-    criterion = nn.CrossEntropyLoss()
     train_loader, test_loader = mnist_data()
+    criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(net.parameters())
 
     train(device, net, train_loader, criterion, optimizer)
