@@ -14,24 +14,19 @@ def main():
     torch.manual_seed(42)
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    net = LeNet_300_100_ID(750).to(device)
-    criterion = nn.CrossEntropyLoss()
+    model = LeNet_300_100_ID(750).to(device)
     train_loader, test_loader = mnist_data()
-    optimizer = optim.Adam(net.parameters())
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.Adam(model.parameters())
 
-    train(device, net, train_loader, criterion, optimizer)
+    train(device, model, train_loader, test_loader, criterion, optimizer)
 
-    print("Trainset:")
-    evaluate(device, net, train_loader, criterion)
-    print("Testset:")
-    evaluate(device, net, test_loader, criterion)
-
-    save(net, "LeNet_300_100_ID")
+    save(model, "LeNet_300_100_ID")
 
 
 class LeNet_300_100_ID(nn.Module):
     """
-    Neural network with two linear layers of size 300 and 100 in joint intristic
+    Neural modelwork with two linear layers of size 300 and 100 in joint intristic
     dimention of size d.
     """
     def __init__(self, d):
