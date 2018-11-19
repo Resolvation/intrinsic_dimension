@@ -1,46 +1,502 @@
 Training:
-Epoch: 005    Loss: 00000.0434    Time: 0:00:01 
-Epoch: 010    Loss: 00000.0143    Time: 0:00:01 
-Epoch: 015    Loss: 00000.0098    Time: 0:00:01 
-Epoch: 020    Loss: 00000.0065    Time: 0:00:01 
-Epoch: 025    Loss: 00000.0044    Time: 0:00:01 
-Epoch: 030    Loss: 00000.0086    Time: 0:00:01 
-Epoch: 035    Loss: 00000.0054    Time: 0:00:01 
-Epoch: 040    Loss: 00000.0046    Time: 0:00:01 
-Epoch: 045    Loss: 00000.0047    Time: 0:00:01 
-Epoch: 050    Loss: 00000.0013    Time: 0:00:01 
-Epoch: 055    Loss: 00000.0046    Time: 0:00:01 
-Epoch: 060    Loss: 00000.0080    Time: 0:00:01 
-Epoch: 065    Loss: 00000.0052    Time: 0:00:01 
-Epoch: 070    Loss: 00000.0030    Time: 0:00:01 
-Epoch: 075    Loss: 00000.0025    Time: 0:00:01 
-Epoch: 080    Loss: 00000.0038    Time: 0:00:01 
-Epoch: 085    Loss: 00000.0023    Time: 0:00:01 
-Epoch: 090    Loss: 00000.0022    Time: 0:00:01 
-Epoch: 095    Loss: 00000.0020    Time: 0:00:01 
-Epoch: 100    Loss: 00000.0014    Time: 0:00:01 
-Epoch: 105    Loss: 00000.0010    Time: 0:00:01 
-Epoch: 110    Loss: 00000.0011    Time: 0:00:01 
-Epoch: 115    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 120    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 125    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 130    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 135    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 140    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 145    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 150    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 155    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 160    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 165    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 170    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 175    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 180    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 185    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 190    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 195    Loss: 00000.0000    Time: 0:00:01 
-Epoch: 200    Loss: 00000.0000    Time: 0:00:01 
-Time: 0:05:21 
+Epoch: 001    Loss: 00000.3309    Accuracy: 90.49    Time: 0:00:01 
+Epoch: 002    Loss: 00000.1280    Accuracy: 96.25    Time: 0:00:01 
+Epoch: 003    Loss: 00000.0815    Accuracy: 97.54    Time: 0:00:01 
+Epoch: 004    Loss: 00000.0594    Accuracy: 98.17    Time: 0:00:01 
+Epoch: 005    Loss: 00000.0434    Accuracy: 98.66    Time: 0:00:01 
+Epoch: 006    Loss: 00000.0340    Accuracy: 98.89    Time: 0:00:01 
+Epoch: 007    Loss: 00000.0255    Accuracy: 99.21    Time: 0:00:01 
+Epoch: 008    Loss: 00000.0233    Accuracy: 99.22    Time: 0:00:01 
+Epoch: 009    Loss: 00000.0184    Accuracy: 99.41    Time: 0:00:01 
+Epoch: 010    Loss: 00000.0143    Accuracy: 99.51    Time: 0:00:01 
+Epoch: 011    Loss: 00000.0130    Accuracy: 99.56    Time: 0:00:01 
+Epoch: 012    Loss: 00000.0127    Accuracy: 99.58    Time: 0:00:01 
+Epoch: 013    Loss: 00000.0095    Accuracy: 99.70    Time: 0:00:01 
+Epoch: 014    Loss: 00000.0098    Accuracy: 99.67    Time: 0:00:01 
+Epoch: 015    Loss: 00000.0098    Accuracy: 99.67    Time: 0:00:01 
+Epoch: 016    Loss: 00000.0070    Accuracy: 99.75    Time: 0:00:01 
+Epoch: 017    Loss: 00000.0069    Accuracy: 99.78    Time: 0:00:01 
+Epoch: 018    Loss: 00000.0062    Accuracy: 99.79    Time: 0:00:01 
+Epoch: 019    Loss: 00000.0103    Accuracy: 99.64    Time: 0:00:01 
+Epoch: 020    Loss: 00000.0065    Accuracy: 99.78    Time: 0:00:01 
+After 20 epochs
+Trainset:
+Average loss: 00000.0001    Accuracy:  99.61
+Testset:
+Average loss: 00000.0011    Accuracy:  97.97
+Epoch: 021    Loss: 00000.0049    Accuracy: 99.84    Time: 0:00:01 
+Epoch: 022    Loss: 00000.0088    Accuracy: 99.69    Time: 0:00:01 
+Epoch: 023    Loss: 00000.0050    Accuracy: 99.83    Time: 0:00:01 
+Epoch: 024    Loss: 00000.0075    Accuracy: 99.77    Time: 0:00:01 
+Epoch: 025    Loss: 00000.0056    Accuracy: 99.82    Time: 0:00:01 
+Epoch: 026    Loss: 00000.0038    Accuracy: 99.86    Time: 0:00:01 
+Epoch: 027    Loss: 00000.0058    Accuracy: 99.81    Time: 0:00:01 
+Epoch: 028    Loss: 00000.0073    Accuracy: 99.76    Time: 0:00:01 
+Epoch: 029    Loss: 00000.0039    Accuracy: 99.88    Time: 0:00:01 
+Epoch: 030    Loss: 00000.0066    Accuracy: 99.78    Time: 0:00:01 
+Epoch: 031    Loss: 00000.0031    Accuracy: 99.89    Time: 0:00:01 
+Epoch: 032    Loss: 00000.0042    Accuracy: 99.87    Time: 0:00:01 
+Epoch: 033    Loss: 00000.0067    Accuracy: 99.76    Time: 0:00:01 
+Epoch: 034    Loss: 00000.0049    Accuracy: 99.83    Time: 0:00:01 
+Epoch: 035    Loss: 00000.0032    Accuracy: 99.91    Time: 0:00:01 
+Epoch: 036    Loss: 00000.0016    Accuracy: 99.94    Time: 0:00:01 
+Epoch: 037    Loss: 00000.0070    Accuracy: 99.77    Time: 0:00:01 
+Epoch: 038    Loss: 00000.0043    Accuracy: 99.86    Time: 0:00:01 
+Epoch: 039    Loss: 00000.0023    Accuracy: 99.92    Time: 0:00:01 
+Epoch: 040    Loss: 00000.0043    Accuracy: 99.88    Time: 0:00:01 
+After 40 epochs
+Trainset:
+Average loss: 00000.0001    Accuracy:  99.85
+Testset:
+Average loss: 00000.0012    Accuracy:  97.99
+Epoch: 041    Loss: 00000.0046    Accuracy: 99.86    Time: 0:00:01 
+Epoch: 042    Loss: 00000.0056    Accuracy: 99.83    Time: 0:00:01 
+Epoch: 043    Loss: 00000.0007    Accuracy: 99.98    Time: 0:00:01 
+Epoch: 044    Loss: 00000.0001    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 045    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 046    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 047    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 048    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 049    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 050    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 051    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 052    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 053    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 054    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 055    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 056    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 057    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 058    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 059    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 060    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+After 60 epochs
 Trainset:
 Average loss: 00000.0000    Accuracy: 100.00
 Testset:
-Average loss: 00000.0021    Accuracy:  98.36
+Average loss: 00000.0013    Accuracy:  98.37
+Epoch: 061    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 062    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 063    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 064    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 065    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 066    Loss: 00000.0012    Accuracy: 99.98    Time: 0:00:01 
+Epoch: 067    Loss: 00000.0266    Accuracy: 99.39    Time: 0:00:01 
+Epoch: 068    Loss: 00000.0027    Accuracy: 99.90    Time: 0:00:01 
+Epoch: 069    Loss: 00000.0016    Accuracy: 99.94    Time: 0:00:01 
+Epoch: 070    Loss: 00000.0034    Accuracy: 99.90    Time: 0:00:01 
+Epoch: 071    Loss: 00000.0053    Accuracy: 99.84    Time: 0:00:01 
+Epoch: 072    Loss: 00000.0034    Accuracy: 99.88    Time: 0:00:01 
+Epoch: 073    Loss: 00000.0046    Accuracy: 99.87    Time: 0:00:01 
+Epoch: 074    Loss: 00000.0056    Accuracy: 99.83    Time: 0:00:01 
+Epoch: 075    Loss: 00000.0027    Accuracy: 99.90    Time: 0:00:01 
+Epoch: 076    Loss: 00000.0031    Accuracy: 99.91    Time: 0:00:01 
+Epoch: 077    Loss: 00000.0014    Accuracy: 99.94    Time: 0:00:01 
+Epoch: 078    Loss: 00000.0039    Accuracy: 99.91    Time: 0:00:01 
+Epoch: 079    Loss: 00000.0031    Accuracy: 99.90    Time: 0:00:01 
+Epoch: 080    Loss: 00000.0035    Accuracy: 99.89    Time: 0:00:01 
+After 80 epochs
+Trainset:
+Average loss: 00000.0000    Accuracy:  99.91
+Testset:
+Average loss: 00000.0017    Accuracy:  97.96
+Epoch: 081    Loss: 00000.0044    Accuracy: 99.88    Time: 0:00:01 
+Epoch: 082    Loss: 00000.0033    Accuracy: 99.91    Time: 0:00:01 
+Epoch: 083    Loss: 00000.0030    Accuracy: 99.92    Time: 0:00:01 
+Epoch: 084    Loss: 00000.0028    Accuracy: 99.91    Time: 0:00:01 
+Epoch: 085    Loss: 00000.0048    Accuracy: 99.86    Time: 0:00:01 
+Epoch: 086    Loss: 00000.0009    Accuracy: 99.98    Time: 0:00:01 
+Epoch: 087    Loss: 00000.0008    Accuracy: 99.99    Time: 0:00:01 
+Epoch: 088    Loss: 00000.0054    Accuracy: 99.86    Time: 0:00:01 
+Epoch: 089    Loss: 00000.0077    Accuracy: 99.78    Time: 0:00:01 
+Epoch: 090    Loss: 00000.0015    Accuracy: 99.95    Time: 0:00:01 
+Epoch: 091    Loss: 00000.0024    Accuracy: 99.93    Time: 0:00:01 
+Epoch: 092    Loss: 00000.0010    Accuracy: 99.97    Time: 0:00:01 
+Epoch: 093    Loss: 00000.0014    Accuracy: 99.96    Time: 0:00:01 
+Epoch: 094    Loss: 00000.0055    Accuracy: 99.89    Time: 0:00:01 
+Epoch: 095    Loss: 00000.0047    Accuracy: 99.88    Time: 0:00:01 
+Epoch: 096    Loss: 00000.0030    Accuracy: 99.92    Time: 0:00:01 
+Epoch: 097    Loss: 00000.0046    Accuracy: 99.87    Time: 0:00:01 
+Epoch: 098    Loss: 00000.0015    Accuracy: 99.95    Time: 0:00:01 
+Epoch: 099    Loss: 00000.0013    Accuracy: 99.97    Time: 0:00:01 
+Epoch: 100    Loss: 00000.0045    Accuracy: 99.89    Time: 0:00:01 
+After 100 epochs
+Trainset:
+Average loss: 00000.0001    Accuracy:  99.77
+Testset:
+Average loss: 00000.0019    Accuracy:  97.82
+Epoch: 101    Loss: 00000.0038    Accuracy: 99.89    Time: 0:00:01 
+Epoch: 102    Loss: 00000.0029    Accuracy: 99.92    Time: 0:00:01 
+Epoch: 103    Loss: 00000.0032    Accuracy: 99.92    Time: 0:00:01 
+Epoch: 104    Loss: 00000.0008    Accuracy: 99.98    Time: 0:00:01 
+Epoch: 105    Loss: 00000.0009    Accuracy: 99.98    Time: 0:00:01 
+Epoch: 106    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 107    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 108    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 109    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 110    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 111    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 112    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 113    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 114    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 115    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 116    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 117    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 118    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 119    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 120    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+After 120 epochs
+Trainset:
+Average loss: 00000.0000    Accuracy: 100.00
+Testset:
+Average loss: 00000.0015    Accuracy:  98.37
+Epoch: 121    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 122    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 123    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 124    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 125    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 126    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 127    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 128    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 129    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 130    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 131    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 132    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 133    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 134    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 135    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 136    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 137    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 138    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 139    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 140    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+After 140 epochs
+Trainset:
+Average loss: 00000.0000    Accuracy: 100.00
+Testset:
+Average loss: 00000.0016    Accuracy:  98.48
+Epoch: 141    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 142    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 143    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 144    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 145    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 146    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 147    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 148    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 149    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 150    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 151    Loss: 00000.0218    Accuracy: 99.64    Time: 0:00:01 
+Epoch: 152    Loss: 00000.0042    Accuracy: 99.89    Time: 0:00:01 
+Epoch: 153    Loss: 00000.0020    Accuracy: 99.95    Time: 0:00:01 
+Epoch: 154    Loss: 00000.0014    Accuracy: 99.97    Time: 0:00:01 
+Epoch: 155    Loss: 00000.0020    Accuracy: 99.95    Time: 0:00:01 
+Epoch: 156    Loss: 00000.0021    Accuracy: 99.94    Time: 0:00:01 
+Epoch: 157    Loss: 00000.0041    Accuracy: 99.90    Time: 0:00:01 
+Epoch: 158    Loss: 00000.0039    Accuracy: 99.90    Time: 0:00:01 
+Epoch: 159    Loss: 00000.0034    Accuracy: 99.92    Time: 0:00:01 
+Epoch: 160    Loss: 00000.0021    Accuracy: 99.95    Time: 0:00:01 
+After 160 epochs
+Trainset:
+Average loss: 00000.0000    Accuracy:  99.97
+Testset:
+Average loss: 00000.0017    Accuracy:  98.24
+Epoch: 161    Loss: 00000.0018    Accuracy: 99.96    Time: 0:00:01 
+Epoch: 162    Loss: 00000.0044    Accuracy: 99.89    Time: 0:00:01 
+Epoch: 163    Loss: 00000.0026    Accuracy: 99.95    Time: 0:00:01 
+Epoch: 164    Loss: 00000.0045    Accuracy: 99.89    Time: 0:00:01 
+Epoch: 165    Loss: 00000.0011    Accuracy: 99.97    Time: 0:00:01 
+Epoch: 166    Loss: 00000.0005    Accuracy: 99.99    Time: 0:00:01 
+Epoch: 167    Loss: 00000.0066    Accuracy: 99.89    Time: 0:00:01 
+Epoch: 168    Loss: 00000.0016    Accuracy: 99.95    Time: 0:00:01 
+Epoch: 169    Loss: 00000.0009    Accuracy: 99.98    Time: 0:00:01 
+Epoch: 170    Loss: 00000.0045    Accuracy: 99.89    Time: 0:00:01 
+Epoch: 171    Loss: 00000.0036    Accuracy: 99.90    Time: 0:00:01 
+Epoch: 172    Loss: 00000.0039    Accuracy: 99.90    Time: 0:00:01 
+Epoch: 173    Loss: 00000.0016    Accuracy: 99.95    Time: 0:00:01 
+Epoch: 174    Loss: 00000.0014    Accuracy: 99.96    Time: 0:00:01 
+Epoch: 175    Loss: 00000.0045    Accuracy: 99.89    Time: 0:00:01 
+Epoch: 176    Loss: 00000.0012    Accuracy: 99.96    Time: 0:00:01 
+Epoch: 177    Loss: 00000.0009    Accuracy: 99.98    Time: 0:00:01 
+Epoch: 178    Loss: 00000.0025    Accuracy: 99.94    Time: 0:00:01 
+Epoch: 179    Loss: 00000.0062    Accuracy: 99.86    Time: 0:00:01 
+Epoch: 180    Loss: 00000.0014    Accuracy: 99.95    Time: 0:00:01 
+After 180 epochs
+Trainset:
+Average loss: 00000.0000    Accuracy:  99.99
+Testset:
+Average loss: 00000.0017    Accuracy:  98.40
+Epoch: 181    Loss: 00000.0007    Accuracy: 99.98    Time: 0:00:01 
+Epoch: 182    Loss: 00000.0006    Accuracy: 99.99    Time: 0:00:01 
+Epoch: 183    Loss: 00000.0025    Accuracy: 99.96    Time: 0:00:01 
+Epoch: 184    Loss: 00000.0054    Accuracy: 99.88    Time: 0:00:01 
+Epoch: 185    Loss: 00000.0032    Accuracy: 99.92    Time: 0:00:01 
+Epoch: 186    Loss: 00000.0018    Accuracy: 99.96    Time: 0:00:01 
+Epoch: 187    Loss: 00000.0006    Accuracy: 99.97    Time: 0:00:01 
+Epoch: 188    Loss: 00000.0030    Accuracy: 99.94    Time: 0:00:01 
+Epoch: 189    Loss: 00000.0028    Accuracy: 99.93    Time: 0:00:01 
+Epoch: 190    Loss: 00000.0029    Accuracy: 99.94    Time: 0:00:01 
+Epoch: 191    Loss: 00000.0029    Accuracy: 99.94    Time: 0:00:01 
+Epoch: 192    Loss: 00000.0024    Accuracy: 99.94    Time: 0:00:01 
+Epoch: 193    Loss: 00000.0014    Accuracy: 99.95    Time: 0:00:01 
+Epoch: 194    Loss: 00000.0014    Accuracy: 99.96    Time: 0:00:01 
+Epoch: 195    Loss: 00000.0032    Accuracy: 99.92    Time: 0:00:01 
+Epoch: 196    Loss: 00000.0029    Accuracy: 99.93    Time: 0:00:01 
+Epoch: 197    Loss: 00000.0017    Accuracy: 99.96    Time: 0:00:01 
+Epoch: 198    Loss: 00000.0022    Accuracy: 99.94    Time: 0:00:01 
+Epoch: 199    Loss: 00000.0023    Accuracy: 99.95    Time: 0:00:01 
+Epoch: 200    Loss: 00000.0020    Accuracy: 99.95    Time: 0:00:01 
+After 200 epochs
+Trainset:
+Average loss: 00000.0000    Accuracy:  99.98
+Testset:
+Average loss: 00000.0020    Accuracy:  98.28
+Epoch: 201    Loss: 00000.0019    Accuracy: 99.95    Time: 0:00:01 
+Epoch: 202    Loss: 00000.0026    Accuracy: 99.95    Time: 0:00:01 
+Epoch: 203    Loss: 00000.0038    Accuracy: 99.94    Time: 0:00:01 
+Epoch: 204    Loss: 00000.0013    Accuracy: 99.97    Time: 0:00:01 
+Epoch: 205    Loss: 00000.0008    Accuracy: 99.99    Time: 0:00:01 
+Epoch: 206    Loss: 00000.0009    Accuracy: 99.98    Time: 0:00:01 
+Epoch: 207    Loss: 00000.0001    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 208    Loss: 00000.0044    Accuracy: 99.94    Time: 0:00:01 
+Epoch: 209    Loss: 00000.0054    Accuracy: 99.89    Time: 0:00:01 
+Epoch: 210    Loss: 00000.0019    Accuracy: 99.96    Time: 0:00:01 
+Epoch: 211    Loss: 00000.0011    Accuracy: 99.97    Time: 0:00:01 
+Epoch: 212    Loss: 00000.0012    Accuracy: 99.97    Time: 0:00:01 
+Epoch: 213    Loss: 00000.0008    Accuracy: 99.99    Time: 0:00:01 
+Epoch: 214    Loss: 00000.0001    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 215    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 216    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 217    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 218    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 219    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 220    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+After 220 epochs
+Trainset:
+Average loss: 00000.0000    Accuracy: 100.00
+Testset:
+Average loss: 00000.0018    Accuracy:  98.45
+Epoch: 221    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 222    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 223    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 224    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 225    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 226    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 227    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 228    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 229    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 230    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 231    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 232    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 233    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 234    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 235    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 236    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 237    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 238    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 239    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 240    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+After 240 epochs
+Trainset:
+Average loss: 00000.0000    Accuracy: 100.00
+Testset:
+Average loss: 00000.0018    Accuracy:  98.56
+Epoch: 241    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 242    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 243    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 244    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 245    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 246    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 247    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 248    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 249    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 250    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 251    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 252    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 253    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 254    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 255    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 256    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 257    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 258    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 259    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 260    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+After 260 epochs
+Trainset:
+Average loss: 00000.0000    Accuracy: 100.00
+Testset:
+Average loss: 00000.0021    Accuracy:  98.57
+Epoch: 261    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 262    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 263    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 264    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 265    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 266    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 267    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 268    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 269    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 270    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 271    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 272    Loss: 00000.0076    Accuracy: 99.87    Time: 0:00:01 
+Epoch: 273    Loss: 00000.0019    Accuracy: 99.97    Time: 0:00:01 
+Epoch: 274    Loss: 00000.0001    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 275    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 276    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 277    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 278    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 279    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 280    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+After 280 epochs
+Trainset:
+Average loss: 00000.0000    Accuracy: 100.00
+Testset:
+Average loss: 00000.0024    Accuracy:  98.46
+Epoch: 281    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 282    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 283    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 284    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 285    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 286    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 287    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 288    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 289    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 290    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 291    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 292    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 293    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 294    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 295    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 296    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 297    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 298    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 299    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 300    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+After 300 epochs
+Trainset:
+Average loss: 00000.0000    Accuracy: 100.00
+Testset:
+Average loss: 00000.0024    Accuracy:  98.49
+Epoch: 301    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 302    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 303    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 304    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 305    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 306    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 307    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 308    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 309    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 310    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 311    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 312    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 313    Loss: 00000.0021    Accuracy: 99.95    Time: 0:00:01 
+Epoch: 314    Loss: 00000.0001    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 315    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 316    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 317    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 318    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 319    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 320    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+After 320 epochs
+Trainset:
+Average loss: 00000.0000    Accuracy: 100.00
+Testset:
+Average loss: 00000.0027    Accuracy:  98.49
+Epoch: 321    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 322    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 323    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 324    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 325    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 326    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 327    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 328    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 329    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 330    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 331    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 332    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 333    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 334    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 335    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 336    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 337    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 338    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 339    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 340    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+After 340 epochs
+Trainset:
+Average loss: 00000.0000    Accuracy: 100.00
+Testset:
+Average loss: 00000.0028    Accuracy:  98.51
+Epoch: 341    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 342    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 343    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 344    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 345    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 346    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 347    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 348    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 349    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 350    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 351    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 352    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 353    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 354    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 355    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 356    Loss: 00000.0003    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 357    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 358    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 359    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 360    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+After 360 epochs
+Trainset:
+Average loss: 00000.0000    Accuracy: 100.00
+Testset:
+Average loss: 00000.0031    Accuracy:  98.44
+Epoch: 361    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 362    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 363    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 364    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 365    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 366    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 367    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 368    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 369    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 370    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 371    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 372    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 373    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 374    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 375    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 376    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 377    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 378    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 379    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 380    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+After 380 epochs
+Trainset:
+Average loss: 00000.0000    Accuracy: 100.00
+Testset:
+Average loss: 00000.0032    Accuracy:  98.39
+Epoch: 381    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 382    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 383    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 384    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 385    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 386    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 387    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 388    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 389    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 390    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 391    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 392    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 393    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 394    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 395    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 396    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 397    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 398    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 399    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+Epoch: 400    Loss: 00000.0000    Accuracy: 100.00    Time: 0:00:01 
+After 400 epochs
+Trainset:
+Average loss: 00000.0000    Accuracy: 100.00
+Testset:
+Average loss: 00000.0033    Accuracy:  98.43
+Time: 0:11:09 

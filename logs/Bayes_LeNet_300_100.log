@@ -1,97 +1,1062 @@
 Training:
-Epoch: 005    Loss: 00029.4059    Time: 0:00:03 
-Epoch: 010    Loss: 00018.7588    Time: 0:00:03 
-Epoch: 015    Loss: 00012.9949    Time: 0:00:02 
-Epoch: 020    Loss: 00009.4443    Time: 0:00:03 
-Epoch: 025    Loss: 00007.8682    Time: 0:00:02 
-Epoch: 030    Loss: 00006.9275    Time: 0:00:03 
-Epoch: 035    Loss: 00006.2206    Time: 0:00:02 
-Epoch: 040    Loss: 00005.6829    Time: 0:00:03 
-Epoch: 045    Loss: 00005.3004    Time: 0:00:03 
-Epoch: 050    Loss: 00004.9445    Time: 0:00:02 
-Epoch: 055    Loss: 00004.6467    Time: 0:00:03 
-Epoch: 060    Loss: 00004.3752    Time: 0:00:03 
-Epoch: 065    Loss: 00004.1686    Time: 0:00:03 
-Epoch: 070    Loss: 00004.0104    Time: 0:00:02 
-Epoch: 075    Loss: 00003.8523    Time: 0:00:03 
-Epoch: 080    Loss: 00003.7139    Time: 0:00:03 
-Epoch: 085    Loss: 00003.6100    Time: 0:00:03 
-Epoch: 090    Loss: 00003.4299    Time: 0:00:02 
-Epoch: 095    Loss: 00003.3307    Time: 0:00:02 
-Epoch: 100    Loss: 00003.2463    Time: 0:00:03 
-Epoch: 105    Loss: 00003.0910    Time: 0:00:03 
-Epoch: 110    Loss: 00002.9965    Time: 0:00:03 
-Epoch: 115    Loss: 00002.9053    Time: 0:00:02 
-Epoch: 120    Loss: 00002.8424    Time: 0:00:03 
-Epoch: 125    Loss: 00002.7431    Time: 0:00:03 
-Epoch: 130    Loss: 00002.6687    Time: 0:00:03 
-Epoch: 135    Loss: 00002.6136    Time: 0:00:03 
-Epoch: 140    Loss: 00002.5584    Time: 0:00:03 
-Epoch: 145    Loss: 00002.4938    Time: 0:00:03 
-Epoch: 150    Loss: 00002.4791    Time: 0:00:03 
-Epoch: 155    Loss: 00002.3681    Time: 0:00:03 
-Epoch: 160    Loss: 00002.3926    Time: 0:00:03 
-Epoch: 165    Loss: 00002.3324    Time: 0:00:03 
-Epoch: 170    Loss: 00002.3032    Time: 0:00:03 
-Epoch: 175    Loss: 00002.2829    Time: 0:00:03 
-Epoch: 180    Loss: 00002.2612    Time: 0:00:03 
-Epoch: 185    Loss: 00002.2376    Time: 0:00:03 
-Epoch: 190    Loss: 00002.2248    Time: 0:00:03 
-Epoch: 195    Loss: 00002.2113    Time: 0:00:03 
-Epoch: 200    Loss: 00002.2131    Time: 0:00:03 
-Time: 0:10:22 
-tensor([[1., 1., 1., 1., 1.],
-        [1., 1., 1., 1., 1.],
-        [1., 1., 1., 1., 1.],
-        [1., 1., 1., 1., 1.],
-        [1., 1., 1., 1., 1.]], device='cuda:0', grad_fn=<ExpBackward>)
-tensor(0.7734, device='cuda:0', grad_fn=<MeanBackward1>)
-tensor(0.9497, device='cuda:0', grad_fn=<MedianBackward0>)
-tensor([[0.1828, 0.3849, 0.0950, 0.1621, 0.0951],
-        [0.5145, 0.7277, 0.3328, 0.4445, 0.1719],
-        [0.3886, 0.9157, 0.2721, 0.2094, 0.1822],
-        [0.1976, 0.6109, 0.1448, 0.1927, 0.1559],
-        [0.2260, 0.6115, 0.3197, 0.1237, 0.1210]],
-       device='cuda:0', grad_fn=<ExpBackward>)
-tensor(0.4761, device='cuda:0', grad_fn=<MeanBackward1>)
-tensor(0.3732, device='cuda:0', grad_fn=<MedianBackward0>)
-tensor([[0.0093, 0.0282, 0.0416, 0.0281, 0.1641],
-        [0.0119, 0.0960, 0.7033, 0.0249, 0.1214],
-        [0.0123, 0.0478, 0.0667, 0.0118, 0.0786],
-        [0.0100, 0.0577, 0.0816, 0.0120, 0.0579],
-        [0.0155, 0.0411, 0.0626, 0.0522, 0.0202]],
-       device='cuda:0', grad_fn=<ExpBackward>)
-tensor(0.1580, device='cuda:0', grad_fn=<MeanBackward1>)
-tensor(0.0331, device='cuda:0', grad_fn=<MedianBackward0>)
-Trainset
+Epoch: 001    Loss: 00149.1846    Accuracy: 68.72    Time: 0:00:02 
+Epoch: 002    Loss: 00049.1394    Accuracy: 86.84    Time: 0:00:02 
+Epoch: 003    Loss: 00038.7213    Accuracy: 90.11    Time: 0:00:02 
+Epoch: 004    Loss: 00033.1565    Accuracy: 91.98    Time: 0:00:02 
+Epoch: 005    Loss: 00029.3641    Accuracy: 93.26    Time: 0:00:02 
+Epoch: 006    Loss: 00026.4004    Accuracy: 94.37    Time: 0:00:02 
+Epoch: 007    Loss: 00024.0177    Accuracy: 95.10    Time: 0:00:02 
+Epoch: 008    Loss: 00022.0391    Accuracy: 95.81    Time: 0:00:02 
+Epoch: 009    Loss: 00020.2625    Accuracy: 96.36    Time: 0:00:02 
+Epoch: 010    Loss: 00018.7436    Accuracy: 96.84    Time: 0:00:02 
+Epoch: 011    Loss: 00017.3427    Accuracy: 97.26    Time: 0:00:02 
+Epoch: 012    Loss: 00016.1140    Accuracy: 97.65    Time: 0:00:02 
+Epoch: 013    Loss: 00014.9322    Accuracy: 98.04    Time: 0:00:02 
+Epoch: 014    Loss: 00013.9380    Accuracy: 98.22    Time: 0:00:02 
+Epoch: 015    Loss: 00012.9551    Accuracy: 98.44    Time: 0:00:02 
+Epoch: 016    Loss: 00012.1095    Accuracy: 98.52    Time: 0:00:02 
+Epoch: 017    Loss: 00011.3203    Accuracy: 98.66    Time: 0:00:02 
+Epoch: 018    Loss: 00010.5726    Accuracy: 98.83    Time: 0:00:02 
+Epoch: 019    Loss: 00009.9688    Accuracy: 98.91    Time: 0:00:02 
+Epoch: 020    Loss: 00009.4244    Accuracy: 98.98    Time: 0:00:02 
+After 20 epochs
+Trainset:
 Mean
-Average loss: 00000.0202    Accuracy: 100.00
+Average loss: 00000.0909    Accuracy:  99.32
 Ensemble
-Net id: 01    Average loss: 00000.0221    Accuracy:  99.37
-Net id: 02    Average loss: 00000.0220    Accuracy:  99.33
-Net id: 03    Average loss: 00000.0221    Accuracy:  99.40
-Net id: 04    Average loss: 00000.0219    Accuracy:  99.36
-Net id: 05    Average loss: 00000.0221    Accuracy:  99.40
-Net id: 06    Average loss: 00000.0222    Accuracy:  99.35
-Net id: 07    Average loss: 00000.0219    Accuracy:  99.35
-Net id: 08    Average loss: 00000.0221    Accuracy:  99.35
-Net id: 09    Average loss: 00000.0221    Accuracy:  99.37
-Net id: 10    Average loss: 00000.0222    Accuracy:  99.36
-Average accuracy:  99.36
-Ensamble:	Accuracy:  99.98
-Testset
+model id: 01    Average loss: 00009.1557    Accuracy:  99.15
+model id: 02    Average loss: 00009.1606    Accuracy:  99.10
+model id: 03    Average loss: 00009.1488    Accuracy:  99.15
+model id: 04    Average loss: 00009.1625    Accuracy:  99.11
+model id: 05    Average loss: 00009.1571    Accuracy:  99.13
+model id: 06    Average loss: 00009.1611    Accuracy:  99.14
+model id: 07    Average loss: 00009.1524    Accuracy:  99.14
+model id: 08    Average loss: 00009.1577    Accuracy:  99.12
+model id: 09    Average loss: 00009.1519    Accuracy:  99.12
+model id: 10    Average loss: 00009.1679    Accuracy:  99.12
+Average accuracy:  99.13
+Ensemble accuracy:  99.30
+Testset:
 Mean
-Average loss: 00000.1370    Accuracy:  97.92
+Average loss: 00000.5904    Accuracy:  95.07
 Ensemble
-Net id: 01    Average loss: 00000.1445    Accuracy:  96.93
-Net id: 02    Average loss: 00000.1457    Accuracy:  97.11
-Net id: 03    Average loss: 00000.1448    Accuracy:  97.23
-Net id: 04    Average loss: 00000.1452    Accuracy:  97.21
-Net id: 05    Average loss: 00000.1459    Accuracy:  96.98
-Net id: 06    Average loss: 00000.1429    Accuracy:  97.12
-Net id: 07    Average loss: 00000.1438    Accuracy:  97.08
-Net id: 08    Average loss: 00000.1438    Accuracy:  97.17
-Net id: 09    Average loss: 00000.1450    Accuracy:  97.05
-Net id: 10    Average loss: 00000.1459    Accuracy:  96.90
-Average accuracy:  97.08
-Ensamble:	Accuracy:  97.93
+model id: 01    Average loss: 00059.2653    Accuracy:  94.93
+model id: 02    Average loss: 00059.2055    Accuracy:  94.89
+model id: 03    Average loss: 00059.1633    Accuracy:  94.94
+model id: 04    Average loss: 00059.1522    Accuracy:  94.96
+model id: 05    Average loss: 00059.1579    Accuracy:  94.94
+model id: 06    Average loss: 00059.1035    Accuracy:  95.02
+model id: 07    Average loss: 00059.1559    Accuracy:  94.94
+model id: 08    Average loss: 00059.1360    Accuracy:  94.97
+model id: 09    Average loss: 00059.1560    Accuracy:  95.07
+model id: 10    Average loss: 00059.0740    Accuracy:  94.92
+Average accuracy:  94.96
+Ensemble accuracy:  95.06
+Epoch: 021    Loss: 00009.0148    Accuracy: 98.99    Time: 0:00:02 
+Epoch: 022    Loss: 00008.7352    Accuracy: 98.92    Time: 0:00:02 
+Epoch: 023    Loss: 00008.3706    Accuracy: 99.15    Time: 0:00:02 
+Epoch: 024    Loss: 00008.1157    Accuracy: 99.16    Time: 0:00:02 
+Epoch: 025    Loss: 00007.8904    Accuracy: 99.15    Time: 0:00:02 
+Epoch: 026    Loss: 00007.6771    Accuracy: 99.14    Time: 0:00:02 
+Epoch: 027    Loss: 00007.4651    Accuracy: 99.17    Time: 0:00:02 
+Epoch: 028    Loss: 00007.2473    Accuracy: 99.24    Time: 0:00:02 
+Epoch: 029    Loss: 00007.0719    Accuracy: 99.23    Time: 0:00:02 
+Epoch: 030    Loss: 00006.9280    Accuracy: 99.19    Time: 0:00:02 
+Epoch: 031    Loss: 00006.7334    Accuracy: 99.22    Time: 0:00:02 
+Epoch: 032    Loss: 00006.6198    Accuracy: 99.22    Time: 0:00:02 
+Epoch: 033    Loss: 00006.4496    Accuracy: 99.22    Time: 0:00:02 
+Epoch: 034    Loss: 00006.3267    Accuracy: 99.23    Time: 0:00:02 
+Epoch: 035    Loss: 00006.1869    Accuracy: 99.29    Time: 0:00:02 
+Epoch: 036    Loss: 00006.1023    Accuracy: 99.21    Time: 0:00:02 
+Epoch: 037    Loss: 00005.9587    Accuracy: 99.23    Time: 0:00:02 
+Epoch: 038    Loss: 00005.8512    Accuracy: 99.28    Time: 0:00:02 
+Epoch: 039    Loss: 00005.7436    Accuracy: 99.33    Time: 0:00:02 
+Epoch: 040    Loss: 00005.6692    Accuracy: 99.27    Time: 0:00:02 
+After 40 epochs
+Trainset:
+Mean
+Average loss: 00000.0538    Accuracy:  99.87
+Ensemble
+model id: 01    Average loss: 00005.5155    Accuracy:  99.45
+model id: 02    Average loss: 00005.5604    Accuracy:  99.38
+model id: 03    Average loss: 00005.5427    Accuracy:  99.46
+model id: 04    Average loss: 00005.5411    Accuracy:  99.45
+model id: 05    Average loss: 00005.5358    Accuracy:  99.45
+model id: 06    Average loss: 00005.5350    Accuracy:  99.44
+model id: 07    Average loss: 00005.5425    Accuracy:  99.41
+model id: 08    Average loss: 00005.5380    Accuracy:  99.42
+model id: 09    Average loss: 00005.5387    Accuracy:  99.42
+model id: 10    Average loss: 00005.5363    Accuracy:  99.48
+Average accuracy:  99.44
+Ensemble accuracy:  99.78
+Testset:
+Mean
+Average loss: 00000.3633    Accuracy:  96.42
+Ensemble
+model id: 01    Average loss: 00036.8062    Accuracy:  95.93
+model id: 02    Average loss: 00036.7075    Accuracy:  95.88
+model id: 03    Average loss: 00036.8440    Accuracy:  95.86
+model id: 04    Average loss: 00036.7673    Accuracy:  95.98
+model id: 05    Average loss: 00036.6904    Accuracy:  95.92
+model id: 06    Average loss: 00036.7928    Accuracy:  95.89
+model id: 07    Average loss: 00036.7429    Accuracy:  96.16
+model id: 08    Average loss: 00036.9112    Accuracy:  96.00
+model id: 09    Average loss: 00036.8042    Accuracy:  95.95
+model id: 10    Average loss: 00036.8747    Accuracy:  96.10
+Average accuracy:  95.97
+Ensemble accuracy:  96.37
+Epoch: 041    Loss: 00005.5655    Accuracy: 99.28    Time: 0:00:02 
+Epoch: 042    Loss: 00005.4788    Accuracy: 99.25    Time: 0:00:02 
+Epoch: 043    Loss: 00005.3925    Accuracy: 99.27    Time: 0:00:02 
+Epoch: 044    Loss: 00005.3452    Accuracy: 99.22    Time: 0:00:02 
+Epoch: 045    Loss: 00005.2747    Accuracy: 99.22    Time: 0:00:02 
+Epoch: 046    Loss: 00005.1693    Accuracy: 99.27    Time: 0:00:02 
+Epoch: 047    Loss: 00005.0842    Accuracy: 99.28    Time: 0:00:02 
+Epoch: 048    Loss: 00005.0525    Accuracy: 99.28    Time: 0:00:02 
+Epoch: 049    Loss: 00005.0138    Accuracy: 99.19    Time: 0:00:02 
+Epoch: 050    Loss: 00004.9134    Accuracy: 99.28    Time: 0:00:02 
+Epoch: 051    Loss: 00004.8835    Accuracy: 99.19    Time: 0:00:02 
+Epoch: 052    Loss: 00004.7920    Accuracy: 99.25    Time: 0:00:02 
+Epoch: 053    Loss: 00004.7364    Accuracy: 99.25    Time: 0:00:03 
+Epoch: 054    Loss: 00004.7336    Accuracy: 99.19    Time: 0:00:02 
+Epoch: 055    Loss: 00004.6996    Accuracy: 99.23    Time: 0:00:02 
+Epoch: 056    Loss: 00004.6135    Accuracy: 99.24    Time: 0:00:02 
+Epoch: 057    Loss: 00004.5444    Accuracy: 99.28    Time: 0:00:02 
+Epoch: 058    Loss: 00004.4730    Accuracy: 99.25    Time: 0:00:02 
+Epoch: 059    Loss: 00004.4495    Accuracy: 99.27    Time: 0:00:02 
+Epoch: 060    Loss: 00004.3678    Accuracy: 99.34    Time: 0:00:02 
+After 60 epochs
+Trainset:
+Mean
+Average loss: 00000.0411    Accuracy:  99.91
+Ensemble
+model id: 01    Average loss: 00004.3536    Accuracy:  99.33
+model id: 02    Average loss: 00004.3784    Accuracy:  99.34
+model id: 03    Average loss: 00004.3294    Accuracy:  99.36
+model id: 04    Average loss: 00004.3758    Accuracy:  99.32
+model id: 05    Average loss: 00004.3658    Accuracy:  99.32
+model id: 06    Average loss: 00004.3829    Accuracy:  99.26
+model id: 07    Average loss: 00004.3747    Accuracy:  99.33
+model id: 08    Average loss: 00004.3710    Accuracy:  99.32
+model id: 09    Average loss: 00004.3813    Accuracy:  99.26
+model id: 10    Average loss: 00004.3450    Accuracy:  99.33
+Average accuracy:  99.32
+Ensemble accuracy:  99.84
+Testset:
+Mean
+Average loss: 00000.2791    Accuracy:  97.09
+Ensemble
+model id: 01    Average loss: 00028.8071    Accuracy:  96.52
+model id: 02    Average loss: 00028.7763    Accuracy:  96.55
+model id: 03    Average loss: 00028.5815    Accuracy:  96.38
+model id: 04    Average loss: 00028.6610    Accuracy:  96.54
+model id: 05    Average loss: 00028.9107    Accuracy:  96.37
+model id: 06    Average loss: 00028.7486    Accuracy:  96.56
+model id: 07    Average loss: 00028.5910    Accuracy:  96.59
+model id: 08    Average loss: 00028.6407    Accuracy:  96.58
+model id: 09    Average loss: 00028.6607    Accuracy:  96.38
+model id: 10    Average loss: 00028.7651    Accuracy:  96.52
+Average accuracy:  96.50
+Ensemble accuracy:  97.10
+Epoch: 061    Loss: 00004.3834    Accuracy: 99.27    Time: 0:00:02 
+Epoch: 062    Loss: 00004.3290    Accuracy: 99.19    Time: 0:00:02 
+Epoch: 063    Loss: 00004.2812    Accuracy: 99.28    Time: 0:00:02 
+Epoch: 064    Loss: 00004.2418    Accuracy: 99.26    Time: 0:00:02 
+Epoch: 065    Loss: 00004.2386    Accuracy: 99.21    Time: 0:00:03 
+Epoch: 066    Loss: 00004.1934    Accuracy: 99.22    Time: 0:00:02 
+Epoch: 067    Loss: 00004.1374    Accuracy: 99.22    Time: 0:00:02 
+Epoch: 068    Loss: 00004.0715    Accuracy: 99.27    Time: 0:00:02 
+Epoch: 069    Loss: 00004.0764    Accuracy: 99.21    Time: 0:00:02 
+Epoch: 070    Loss: 00004.0123    Accuracy: 99.27    Time: 0:00:02 
+Epoch: 071    Loss: 00004.0301    Accuracy: 99.19    Time: 0:00:03 
+Epoch: 072    Loss: 00003.9149    Accuracy: 99.26    Time: 0:00:03 
+Epoch: 073    Loss: 00003.8910    Accuracy: 99.27    Time: 0:00:02 
+Epoch: 074    Loss: 00003.8892    Accuracy: 99.26    Time: 0:00:02 
+Epoch: 075    Loss: 00003.8411    Accuracy: 99.24    Time: 0:00:02 
+Epoch: 076    Loss: 00003.7896    Accuracy: 99.28    Time: 0:00:02 
+Epoch: 077    Loss: 00003.8074    Accuracy: 99.21    Time: 0:00:02 
+Epoch: 078    Loss: 00003.7589    Accuracy: 99.25    Time: 0:00:02 
+Epoch: 079    Loss: 00003.7404    Accuracy: 99.25    Time: 0:00:02 
+Epoch: 080    Loss: 00003.7053    Accuracy: 99.19    Time: 0:00:02 
+After 80 epochs
+Trainset:
+Mean
+Average loss: 00000.0339    Accuracy:  99.96
+Ensemble
+model id: 01    Average loss: 00003.6434    Accuracy:  99.34
+model id: 02    Average loss: 00003.6342    Accuracy:  99.40
+model id: 03    Average loss: 00003.6696    Accuracy:  99.32
+model id: 04    Average loss: 00003.6616    Accuracy:  99.30
+model id: 05    Average loss: 00003.6940    Accuracy:  99.31
+model id: 06    Average loss: 00003.6287    Accuracy:  99.38
+model id: 07    Average loss: 00003.6629    Accuracy:  99.30
+model id: 08    Average loss: 00003.6206    Accuracy:  99.37
+model id: 09    Average loss: 00003.6627    Accuracy:  99.29
+model id: 10    Average loss: 00003.6710    Accuracy:  99.33
+Average accuracy:  99.33
+Ensemble accuracy:  99.89
+Testset:
+Mean
+Average loss: 00000.2328    Accuracy:  97.29
+Ensemble
+model id: 01    Average loss: 00024.2034    Accuracy:  96.63
+model id: 02    Average loss: 00023.9886    Accuracy:  96.66
+model id: 03    Average loss: 00024.2719    Accuracy:  96.54
+model id: 04    Average loss: 00024.0650    Accuracy:  96.68
+model id: 05    Average loss: 00024.3771    Accuracy:  96.43
+model id: 06    Average loss: 00024.1573    Accuracy:  96.91
+model id: 07    Average loss: 00024.3451    Accuracy:  96.82
+model id: 08    Average loss: 00024.1862    Accuracy:  96.57
+model id: 09    Average loss: 00024.1898    Accuracy:  96.68
+model id: 10    Average loss: 00024.0221    Accuracy:  96.80
+Average accuracy:  96.67
+Ensemble accuracy:  97.36
+Epoch: 081    Loss: 00003.6901    Accuracy: 99.27    Time: 0:00:02 
+Epoch: 082    Loss: 00003.6775    Accuracy: 99.18    Time: 0:00:02 
+Epoch: 083    Loss: 00003.6516    Accuracy: 99.20    Time: 0:00:02 
+Epoch: 084    Loss: 00003.5886    Accuracy: 99.21    Time: 0:00:02 
+Epoch: 085    Loss: 00003.5408    Accuracy: 99.25    Time: 0:00:02 
+Epoch: 086    Loss: 00003.6122    Accuracy: 99.17    Time: 0:00:02 
+Epoch: 087    Loss: 00003.5390    Accuracy: 99.20    Time: 0:00:02 
+Epoch: 088    Loss: 00003.4636    Accuracy: 99.31    Time: 0:00:02 
+Epoch: 089    Loss: 00003.4444    Accuracy: 99.25    Time: 0:00:02 
+Epoch: 090    Loss: 00003.4107    Accuracy: 99.29    Time: 0:00:02 
+Epoch: 091    Loss: 00003.4083    Accuracy: 99.22    Time: 0:00:02 
+Epoch: 092    Loss: 00003.4222    Accuracy: 99.20    Time: 0:00:02 
+Epoch: 093    Loss: 00003.3675    Accuracy: 99.25    Time: 0:00:02 
+Epoch: 094    Loss: 00003.3715    Accuracy: 99.17    Time: 0:00:02 
+Epoch: 095    Loss: 00003.3122    Accuracy: 99.22    Time: 0:00:03 
+Epoch: 096    Loss: 00003.2949    Accuracy: 99.24    Time: 0:00:02 
+Epoch: 097    Loss: 00003.2763    Accuracy: 99.22    Time: 0:00:03 
+Epoch: 098    Loss: 00003.2558    Accuracy: 99.23    Time: 0:00:03 
+Epoch: 099    Loss: 00003.2055    Accuracy: 99.26    Time: 0:00:02 
+Epoch: 100    Loss: 00003.1929    Accuracy: 99.24    Time: 0:00:03 
+After 100 epochs
+Trainset:
+Mean
+Average loss: 00000.0290    Accuracy:  99.90
+Ensemble
+model id: 01    Average loss: 00003.1904    Accuracy:  99.21
+model id: 02    Average loss: 00003.2074    Accuracy:  99.18
+model id: 03    Average loss: 00003.1923    Accuracy:  99.22
+model id: 04    Average loss: 00003.1983    Accuracy:  99.19
+model id: 05    Average loss: 00003.2347    Accuracy:  99.18
+model id: 06    Average loss: 00003.1973    Accuracy:  99.20
+model id: 07    Average loss: 00003.1925    Accuracy:  99.20
+model id: 08    Average loss: 00003.2265    Accuracy:  99.16
+model id: 09    Average loss: 00003.1999    Accuracy:  99.16
+model id: 10    Average loss: 00003.2403    Accuracy:  99.13
+Average accuracy:  99.18
+Ensemble accuracy:  99.88
+Testset:
+Mean
+Average loss: 00000.1989    Accuracy:  97.62
+Ensemble
+model id: 01    Average loss: 00020.4154    Accuracy:  97.06
+model id: 02    Average loss: 00020.4977    Accuracy:  96.62
+model id: 03    Average loss: 00020.8353    Accuracy:  96.76
+model id: 04    Average loss: 00021.0320    Accuracy:  96.60
+model id: 05    Average loss: 00020.4261    Accuracy:  96.82
+model id: 06    Average loss: 00020.5265    Accuracy:  96.88
+model id: 07    Average loss: 00020.4119    Accuracy:  96.99
+model id: 08    Average loss: 00020.7071    Accuracy:  96.87
+model id: 09    Average loss: 00020.7005    Accuracy:  96.74
+model id: 10    Average loss: 00020.6287    Accuracy:  96.90
+Average accuracy:  96.82
+Ensemble accuracy:  97.53
+Epoch: 101    Loss: 00003.1967    Accuracy: 99.18    Time: 0:00:02 
+Epoch: 102    Loss: 00003.0969    Accuracy: 99.30    Time: 0:00:02 
+Epoch: 103    Loss: 00003.1284    Accuracy: 99.17    Time: 0:00:02 
+Epoch: 104    Loss: 00003.1546    Accuracy: 99.22    Time: 0:00:02 
+Epoch: 105    Loss: 00003.0989    Accuracy: 99.23    Time: 0:00:02 
+Epoch: 106    Loss: 00003.0997    Accuracy: 99.15    Time: 0:00:02 
+Epoch: 107    Loss: 00003.0837    Accuracy: 99.23    Time: 0:00:02 
+Epoch: 108    Loss: 00003.0084    Accuracy: 99.28    Time: 0:00:02 
+Epoch: 109    Loss: 00003.0446    Accuracy: 99.25    Time: 0:00:02 
+Epoch: 110    Loss: 00003.0050    Accuracy: 99.20    Time: 0:00:02 
+Epoch: 111    Loss: 00002.9562    Accuracy: 99.25    Time: 0:00:02 
+Epoch: 112    Loss: 00002.9743    Accuracy: 99.19    Time: 0:00:03 
+Epoch: 113    Loss: 00002.9466    Accuracy: 99.19    Time: 0:00:02 
+Epoch: 114    Loss: 00002.9253    Accuracy: 99.24    Time: 0:00:02 
+Epoch: 115    Loss: 00002.9344    Accuracy: 99.18    Time: 0:00:02 
+Epoch: 116    Loss: 00002.8724    Accuracy: 99.25    Time: 0:00:02 
+Epoch: 117    Loss: 00002.8433    Accuracy: 99.27    Time: 0:00:02 
+Epoch: 118    Loss: 00002.8772    Accuracy: 99.14    Time: 0:00:02 
+Epoch: 119    Loss: 00002.8566    Accuracy: 99.19    Time: 0:00:02 
+Epoch: 120    Loss: 00002.8454    Accuracy: 99.19    Time: 0:00:02 
+After 120 epochs
+Trainset:
+Mean
+Average loss: 00000.0252    Accuracy:  99.98
+Ensemble
+model id: 01    Average loss: 00002.7970    Accuracy:  99.26
+model id: 02    Average loss: 00002.7723    Accuracy:  99.28
+model id: 03    Average loss: 00002.7764    Accuracy:  99.27
+model id: 04    Average loss: 00002.7554    Accuracy:  99.34
+model id: 05    Average loss: 00002.7865    Accuracy:  99.29
+model id: 06    Average loss: 00002.7658    Accuracy:  99.29
+model id: 07    Average loss: 00002.7731    Accuracy:  99.28
+model id: 08    Average loss: 00002.7918    Accuracy:  99.28
+model id: 09    Average loss: 00002.7599    Accuracy:  99.27
+model id: 10    Average loss: 00002.7636    Accuracy:  99.32
+Average accuracy:  99.29
+Ensemble accuracy:  99.95
+Testset:
+Mean
+Average loss: 00000.1721    Accuracy:  97.84
+Ensemble
+model id: 01    Average loss: 00018.2523    Accuracy:  97.04
+model id: 02    Average loss: 00018.2074    Accuracy:  96.97
+model id: 03    Average loss: 00017.9994    Accuracy:  97.10
+model id: 04    Average loss: 00018.0630    Accuracy:  97.01
+model id: 05    Average loss: 00017.8386    Accuracy:  97.20
+model id: 06    Average loss: 00018.0537    Accuracy:  97.02
+model id: 07    Average loss: 00017.9618    Accuracy:  97.10
+model id: 08    Average loss: 00017.9983    Accuracy:  96.93
+model id: 09    Average loss: 00017.9230    Accuracy:  97.15
+model id: 10    Average loss: 00018.0080    Accuracy:  97.04
+Average accuracy:  97.06
+Ensemble accuracy:  97.87
+Epoch: 121    Loss: 00002.7913    Accuracy: 99.22    Time: 0:00:02 
+Epoch: 122    Loss: 00002.7981    Accuracy: 99.15    Time: 0:00:02 
+Epoch: 123    Loss: 00002.7670    Accuracy: 99.20    Time: 0:00:02 
+Epoch: 124    Loss: 00002.7904    Accuracy: 99.16    Time: 0:00:02 
+Epoch: 125    Loss: 00002.7576    Accuracy: 99.18    Time: 0:00:02 
+Epoch: 126    Loss: 00002.7190    Accuracy: 99.21    Time: 0:00:02 
+Epoch: 127    Loss: 00002.7177    Accuracy: 99.14    Time: 0:00:02 
+Epoch: 128    Loss: 00002.6956    Accuracy: 99.16    Time: 0:00:02 
+Epoch: 129    Loss: 00002.6787    Accuracy: 99.19    Time: 0:00:02 
+Epoch: 130    Loss: 00002.7021    Accuracy: 99.15    Time: 0:00:02 
+Epoch: 131    Loss: 00002.6667    Accuracy: 99.19    Time: 0:00:02 
+Epoch: 132    Loss: 00002.6251    Accuracy: 99.19    Time: 0:00:02 
+Epoch: 133    Loss: 00002.6259    Accuracy: 99.20    Time: 0:00:02 
+Epoch: 134    Loss: 00002.6188    Accuracy: 99.16    Time: 0:00:02 
+Epoch: 135    Loss: 00002.6254    Accuracy: 99.12    Time: 0:00:02 
+Epoch: 136    Loss: 00002.5832    Accuracy: 99.15    Time: 0:00:02 
+Epoch: 137    Loss: 00002.5603    Accuracy: 99.21    Time: 0:00:02 
+Epoch: 138    Loss: 00002.5446    Accuracy: 99.20    Time: 0:00:02 
+Epoch: 139    Loss: 00002.5348    Accuracy: 99.17    Time: 0:00:02 
+Epoch: 140    Loss: 00002.5211    Accuracy: 99.12    Time: 0:00:02 
+After 140 epochs
+Trainset:
+Mean
+Average loss: 00000.0223    Accuracy:  99.96
+Ensemble
+model id: 01    Average loss: 00002.5117    Accuracy:  99.22
+model id: 02    Average loss: 00002.5038    Accuracy:  99.22
+model id: 03    Average loss: 00002.5332    Accuracy:  99.15
+model id: 04    Average loss: 00002.5157    Accuracy:  99.22
+model id: 05    Average loss: 00002.4934    Accuracy:  99.19
+model id: 06    Average loss: 00002.4998    Accuracy:  99.20
+model id: 07    Average loss: 00002.5046    Accuracy:  99.26
+model id: 08    Average loss: 00002.5283    Accuracy:  99.15
+model id: 09    Average loss: 00002.5098    Accuracy:  99.19
+model id: 10    Average loss: 00002.4964    Accuracy:  99.24
+Average accuracy:  99.20
+Ensemble accuracy:  99.92
+Testset:
+Mean
+Average loss: 00000.1505    Accuracy:  97.79
+Ensemble
+model id: 01    Average loss: 00015.8390    Accuracy:  97.02
+model id: 02    Average loss: 00015.9745    Accuracy:  96.89
+model id: 03    Average loss: 00015.9562    Accuracy:  97.11
+model id: 04    Average loss: 00015.8486    Accuracy:  96.91
+model id: 05    Average loss: 00015.8696    Accuracy:  96.89
+model id: 06    Average loss: 00015.8560    Accuracy:  97.03
+model id: 07    Average loss: 00015.8720    Accuracy:  97.12
+model id: 08    Average loss: 00015.7400    Accuracy:  97.02
+model id: 09    Average loss: 00015.8543    Accuracy:  97.18
+model id: 10    Average loss: 00015.7300    Accuracy:  97.04
+Average accuracy:  97.02
+Ensemble accuracy:  97.83
+Epoch: 141    Loss: 00002.5202    Accuracy: 99.10    Time: 0:00:02 
+Epoch: 142    Loss: 00002.4703    Accuracy: 99.19    Time: 0:00:02 
+Epoch: 143    Loss: 00002.4781    Accuracy: 99.14    Time: 0:00:02 
+Epoch: 144    Loss: 00002.4588    Accuracy: 99.20    Time: 0:00:02 
+Epoch: 145    Loss: 00002.4383    Accuracy: 99.18    Time: 0:00:02 
+Epoch: 146    Loss: 00002.4367    Accuracy: 99.12    Time: 0:00:02 
+Epoch: 147    Loss: 00002.4338    Accuracy: 99.11    Time: 0:00:02 
+Epoch: 148    Loss: 00002.4259    Accuracy: 99.08    Time: 0:00:02 
+Epoch: 149    Loss: 00002.3728    Accuracy: 99.20    Time: 0:00:02 
+Epoch: 150    Loss: 00002.4078    Accuracy: 99.09    Time: 0:00:02 
+Epoch: 151    Loss: 00002.4095    Accuracy: 99.12    Time: 0:00:02 
+Epoch: 152    Loss: 00002.3565    Accuracy: 99.17    Time: 0:00:02 
+Epoch: 153    Loss: 00002.3482    Accuracy: 99.16    Time: 0:00:02 
+Epoch: 154    Loss: 00002.3018    Accuracy: 99.16    Time: 0:00:02 
+Epoch: 155    Loss: 00002.3350    Accuracy: 99.09    Time: 0:00:02 
+Epoch: 156    Loss: 00002.3113    Accuracy: 99.14    Time: 0:00:02 
+Epoch: 157    Loss: 00002.3067    Accuracy: 99.15    Time: 0:00:02 
+Epoch: 158    Loss: 00002.2862    Accuracy: 99.10    Time: 0:00:02 
+Epoch: 159    Loss: 00002.2838    Accuracy: 99.08    Time: 0:00:02 
+Epoch: 160    Loss: 00002.2719    Accuracy: 99.05    Time: 0:00:02 
+After 160 epochs
+Trainset:
+Mean
+Average loss: 00000.0198    Accuracy:  99.95
+Ensemble
+model id: 01    Average loss: 00002.2366    Accuracy:  99.14
+model id: 02    Average loss: 00002.2499    Accuracy:  99.14
+model id: 03    Average loss: 00002.2156    Accuracy:  99.19
+model id: 04    Average loss: 00002.2482    Accuracy:  99.14
+model id: 05    Average loss: 00002.2406    Accuracy:  99.11
+model id: 06    Average loss: 00002.2485    Accuracy:  99.15
+model id: 07    Average loss: 00002.2245    Accuracy:  99.15
+model id: 08    Average loss: 00002.2504    Accuracy:  99.12
+model id: 09    Average loss: 00002.2290    Accuracy:  99.17
+model id: 10    Average loss: 00002.2710    Accuracy:  99.07
+Average accuracy:  99.14
+Ensemble accuracy:  99.91
+Testset:
+Mean
+Average loss: 00000.1332    Accuracy:  97.72
+Ensemble
+model id: 01    Average loss: 00013.9529    Accuracy:  97.11
+model id: 02    Average loss: 00014.0737    Accuracy:  97.20
+model id: 03    Average loss: 00013.9123    Accuracy:  96.99
+model id: 04    Average loss: 00014.2244    Accuracy:  96.78
+model id: 05    Average loss: 00014.1756    Accuracy:  96.84
+model id: 06    Average loss: 00014.0483    Accuracy:  96.77
+model id: 07    Average loss: 00013.9263    Accuracy:  97.10
+model id: 08    Average loss: 00014.1618    Accuracy:  96.80
+model id: 09    Average loss: 00014.1179    Accuracy:  97.08
+model id: 10    Average loss: 00014.0437    Accuracy:  97.13
+Average accuracy:  96.98
+Ensemble accuracy:  97.80
+Epoch: 161    Loss: 00002.2464    Accuracy: 99.11    Time: 0:00:02 
+Epoch: 162    Loss: 00002.2270    Accuracy: 99.10    Time: 0:00:02 
+Epoch: 163    Loss: 00002.2346    Accuracy: 99.06    Time: 0:00:02 
+Epoch: 164    Loss: 00002.2093    Accuracy: 99.09    Time: 0:00:02 
+Epoch: 165    Loss: 00002.2186    Accuracy: 99.03    Time: 0:00:02 
+Epoch: 166    Loss: 00002.2224    Accuracy: 99.05    Time: 0:00:02 
+Epoch: 167    Loss: 00002.1647    Accuracy: 99.08    Time: 0:00:02 
+Epoch: 168    Loss: 00002.1611    Accuracy: 99.10    Time: 0:00:02 
+Epoch: 169    Loss: 00002.1438    Accuracy: 99.07    Time: 0:00:02 
+Epoch: 170    Loss: 00002.1801    Accuracy: 99.01    Time: 0:00:02 
+Epoch: 171    Loss: 00002.1162    Accuracy: 99.09    Time: 0:00:02 
+Epoch: 172    Loss: 00002.1394    Accuracy: 99.07    Time: 0:00:02 
+Epoch: 173    Loss: 00002.0883    Accuracy: 99.13    Time: 0:00:02 
+Epoch: 174    Loss: 00002.0973    Accuracy: 99.10    Time: 0:00:02 
+Epoch: 175    Loss: 00002.0893    Accuracy: 99.07    Time: 0:00:02 
+Epoch: 176    Loss: 00002.0938    Accuracy: 99.01    Time: 0:00:02 
+Epoch: 177    Loss: 00002.0518    Accuracy: 99.09    Time: 0:00:02 
+Epoch: 178    Loss: 00002.0411    Accuracy: 99.06    Time: 0:00:02 
+Epoch: 179    Loss: 00002.0575    Accuracy: 99.01    Time: 0:00:02 
+Epoch: 180    Loss: 00002.0277    Accuracy: 99.04    Time: 0:00:02 
+After 180 epochs
+Trainset:
+Mean
+Average loss: 00000.0177    Accuracy:  99.93
+Ensemble
+model id: 01    Average loss: 00002.0565    Accuracy:  98.95
+model id: 02    Average loss: 00002.0448    Accuracy:  99.02
+model id: 03    Average loss: 00002.0386    Accuracy:  99.08
+model id: 04    Average loss: 00002.0316    Accuracy:  98.99
+model id: 05    Average loss: 00002.0532    Accuracy:  99.00
+model id: 06    Average loss: 00002.0393    Accuracy:  99.04
+model id: 07    Average loss: 00002.0170    Accuracy:  99.04
+model id: 08    Average loss: 00002.0291    Accuracy:  99.05
+model id: 09    Average loss: 00002.0169    Accuracy:  99.04
+model id: 10    Average loss: 00002.0350    Accuracy:  98.99
+Average accuracy:  99.02
+Ensemble accuracy:  99.84
+Testset:
+Mean
+Average loss: 00000.1194    Accuracy:  97.69
+Ensemble
+model id: 01    Average loss: 00012.6316    Accuracy:  96.68
+model id: 02    Average loss: 00012.5049    Accuracy:  96.96
+model id: 03    Average loss: 00012.5861    Accuracy:  96.76
+model id: 04    Average loss: 00012.7483    Accuracy:  96.65
+model id: 05    Average loss: 00012.6923    Accuracy:  96.71
+model id: 06    Average loss: 00012.4075    Accuracy:  97.18
+model id: 07    Average loss: 00012.5971    Accuracy:  96.84
+model id: 08    Average loss: 00012.5965    Accuracy:  96.87
+model id: 09    Average loss: 00012.6357    Accuracy:  96.89
+model id: 10    Average loss: 00012.6068    Accuracy:  96.83
+Average accuracy:  96.84
+Ensemble accuracy:  97.54
+Epoch: 181    Loss: 00002.0095    Accuracy: 99.05    Time: 0:00:02 
+Epoch: 182    Loss: 00002.0203    Accuracy: 99.00    Time: 0:00:02 
+Epoch: 183    Loss: 00001.9742    Accuracy: 99.06    Time: 0:00:02 
+Epoch: 184    Loss: 00002.0013    Accuracy: 99.03    Time: 0:00:02 
+Epoch: 185    Loss: 00001.9668    Accuracy: 99.07    Time: 0:00:02 
+Epoch: 186    Loss: 00001.9673    Accuracy: 99.05    Time: 0:00:02 
+Epoch: 187    Loss: 00001.9597    Accuracy: 98.99    Time: 0:00:02 
+Epoch: 188    Loss: 00001.9577    Accuracy: 98.97    Time: 0:00:02 
+Epoch: 189    Loss: 00001.9351    Accuracy: 98.97    Time: 0:00:02 
+Epoch: 190    Loss: 00001.9274    Accuracy: 99.02    Time: 0:00:02 
+Epoch: 191    Loss: 00001.9293    Accuracy: 98.97    Time: 0:00:02 
+Epoch: 192    Loss: 00001.9043    Accuracy: 98.97    Time: 0:00:02 
+Epoch: 193    Loss: 00001.8782    Accuracy: 98.97    Time: 0:00:02 
+Epoch: 194    Loss: 00001.8947    Accuracy: 98.97    Time: 0:00:02 
+Epoch: 195    Loss: 00001.8841    Accuracy: 98.93    Time: 0:00:02 
+Epoch: 196    Loss: 00001.8653    Accuracy: 98.95    Time: 0:00:02 
+Epoch: 197    Loss: 00001.8408    Accuracy: 98.97    Time: 0:00:02 
+Epoch: 198    Loss: 00001.8258    Accuracy: 98.98    Time: 0:00:02 
+Epoch: 199    Loss: 00001.8513    Accuracy: 98.91    Time: 0:00:02 
+Epoch: 200    Loss: 00001.8116    Accuracy: 98.93    Time: 0:00:02 
+After 200 epochs
+Trainset:
+Mean
+Average loss: 00000.0158    Accuracy:  99.88
+Ensemble
+model id: 01    Average loss: 00001.8293    Accuracy:  98.89
+model id: 02    Average loss: 00001.8225    Accuracy:  98.93
+model id: 03    Average loss: 00001.8151    Accuracy:  98.92
+model id: 04    Average loss: 00001.8068    Accuracy:  98.97
+model id: 05    Average loss: 00001.8198    Accuracy:  98.91
+model id: 06    Average loss: 00001.8288    Accuracy:  98.93
+model id: 07    Average loss: 00001.8205    Accuracy:  98.96
+model id: 08    Average loss: 00001.8100    Accuracy:  98.92
+model id: 09    Average loss: 00001.8268    Accuracy:  98.87
+model id: 10    Average loss: 00001.8297    Accuracy:  98.88
+Average accuracy:  98.92
+Ensemble accuracy:  99.83
+Testset:
+Mean
+Average loss: 00000.1033    Accuracy:  97.85
+Ensemble
+model id: 01    Average loss: 00010.9271    Accuracy:  96.97
+model id: 02    Average loss: 00011.1062    Accuracy:  96.73
+model id: 03    Average loss: 00010.8566    Accuracy:  96.95
+model id: 04    Average loss: 00010.8385    Accuracy:  97.00
+model id: 05    Average loss: 00011.0509    Accuracy:  96.91
+model id: 06    Average loss: 00010.9184    Accuracy:  96.89
+model id: 07    Average loss: 00010.8778    Accuracy:  96.85
+model id: 08    Average loss: 00010.7269    Accuracy:  97.06
+model id: 09    Average loss: 00011.0140    Accuracy:  96.85
+model id: 10    Average loss: 00011.0043    Accuracy:  96.66
+Average accuracy:  96.89
+Ensemble accuracy:  97.93
+Epoch: 201    Loss: 00001.8363    Accuracy: 98.86    Time: 0:00:02 
+Epoch: 202    Loss: 00001.7860    Accuracy: 98.93    Time: 0:00:02 
+Epoch: 203    Loss: 00001.7909    Accuracy: 98.91    Time: 0:00:02 
+Epoch: 204    Loss: 00001.7825    Accuracy: 98.92    Time: 0:00:02 
+Epoch: 205    Loss: 00001.7606    Accuracy: 98.94    Time: 0:00:02 
+Epoch: 206    Loss: 00001.7646    Accuracy: 98.90    Time: 0:00:02 
+Epoch: 207    Loss: 00001.7605    Accuracy: 98.91    Time: 0:00:02 
+Epoch: 208    Loss: 00001.7261    Accuracy: 98.88    Time: 0:00:02 
+Epoch: 209    Loss: 00001.7291    Accuracy: 98.87    Time: 0:00:02 
+Epoch: 210    Loss: 00001.7323    Accuracy: 98.86    Time: 0:00:02 
+Epoch: 211    Loss: 00001.7329    Accuracy: 98.82    Time: 0:00:02 
+Epoch: 212    Loss: 00001.7138    Accuracy: 98.86    Time: 0:00:02 
+Epoch: 213    Loss: 00001.6608    Accuracy: 98.90    Time: 0:00:02 
+Epoch: 214    Loss: 00001.6860    Accuracy: 98.78    Time: 0:00:02 
+Epoch: 215    Loss: 00001.6973    Accuracy: 98.79    Time: 0:00:02 
+Epoch: 216    Loss: 00001.6427    Accuracy: 98.92    Time: 0:00:02 
+Epoch: 217    Loss: 00001.6321    Accuracy: 98.86    Time: 0:00:02 
+Epoch: 218    Loss: 00001.6376    Accuracy: 98.81    Time: 0:00:02 
+Epoch: 219    Loss: 00001.6227    Accuracy: 98.78    Time: 0:00:02 
+Epoch: 220    Loss: 00001.6034    Accuracy: 98.81    Time: 0:00:02 
+After 220 epochs
+Trainset:
+Mean
+Average loss: 00000.0139    Accuracy:  99.92
+Ensemble
+model id: 01    Average loss: 00001.6015    Accuracy:  98.83
+model id: 02    Average loss: 00001.5817    Accuracy:  98.86
+model id: 03    Average loss: 00001.5915    Accuracy:  98.91
+model id: 04    Average loss: 00001.5936    Accuracy:  98.81
+model id: 05    Average loss: 00001.5955    Accuracy:  98.81
+model id: 06    Average loss: 00001.5978    Accuracy:  98.86
+model id: 07    Average loss: 00001.6058    Accuracy:  98.84
+model id: 08    Average loss: 00001.5756    Accuracy:  98.93
+model id: 09    Average loss: 00001.5902    Accuracy:  98.87
+model id: 10    Average loss: 00001.6026    Accuracy:  98.86
+Average accuracy:  98.86
+Ensemble accuracy:  99.84
+Testset:
+Mean
+Average loss: 00000.0904    Accuracy:  97.95
+Ensemble
+model id: 01    Average loss: 00009.4518    Accuracy:  96.99
+model id: 02    Average loss: 00009.4809    Accuracy:  96.96
+model id: 03    Average loss: 00009.4208    Accuracy:  97.09
+model id: 04    Average loss: 00009.4663    Accuracy:  97.11
+model id: 05    Average loss: 00009.5567    Accuracy:  96.74
+model id: 06    Average loss: 00009.5640    Accuracy:  97.08
+model id: 07    Average loss: 00009.5598    Accuracy:  96.74
+model id: 08    Average loss: 00009.4757    Accuracy:  96.79
+model id: 09    Average loss: 00009.5738    Accuracy:  97.05
+model id: 10    Average loss: 00009.5063    Accuracy:  96.99
+Average accuracy:  96.95
+Ensemble accuracy:  97.88
+Epoch: 221    Loss: 00001.6047    Accuracy: 98.78    Time: 0:00:02 
+Epoch: 222    Loss: 00001.6086    Accuracy: 98.72    Time: 0:00:02 
+Epoch: 223    Loss: 00001.5733    Accuracy: 98.83    Time: 0:00:02 
+Epoch: 224    Loss: 00001.5732    Accuracy: 98.79    Time: 0:00:02 
+Epoch: 225    Loss: 00001.5604    Accuracy: 98.72    Time: 0:00:02 
+Epoch: 226    Loss: 00001.5423    Accuracy: 98.72    Time: 0:00:02 
+Epoch: 227    Loss: 00001.5470    Accuracy: 98.76    Time: 0:00:02 
+Epoch: 228    Loss: 00001.5326    Accuracy: 98.69    Time: 0:00:02 
+Epoch: 229    Loss: 00001.5244    Accuracy: 98.73    Time: 0:00:02 
+Epoch: 230    Loss: 00001.5182    Accuracy: 98.70    Time: 0:00:02 
+Epoch: 231    Loss: 00001.4996    Accuracy: 98.62    Time: 0:00:02 
+Epoch: 232    Loss: 00001.4969    Accuracy: 98.67    Time: 0:00:02 
+Epoch: 233    Loss: 00001.4736    Accuracy: 98.65    Time: 0:00:02 
+Epoch: 234    Loss: 00001.4614    Accuracy: 98.69    Time: 0:00:02 
+Epoch: 235    Loss: 00001.4575    Accuracy: 98.64    Time: 0:00:02 
+Epoch: 236    Loss: 00001.4539    Accuracy: 98.66    Time: 0:00:02 
+Epoch: 237    Loss: 00001.4334    Accuracy: 98.68    Time: 0:00:02 
+Epoch: 238    Loss: 00001.4131    Accuracy: 98.65    Time: 0:00:02 
+Epoch: 239    Loss: 00001.4175    Accuracy: 98.57    Time: 0:00:02 
+Epoch: 240    Loss: 00001.4162    Accuracy: 98.58    Time: 0:00:02 
+After 240 epochs
+Trainset:
+Mean
+Average loss: 00000.0120    Accuracy:  99.89
+Ensemble
+model id: 01    Average loss: 00001.3800    Accuracy:  98.61
+model id: 02    Average loss: 00001.3899    Accuracy:  98.62
+model id: 03    Average loss: 00001.3838    Accuracy:  98.62
+model id: 04    Average loss: 00001.3781    Accuracy:  98.65
+model id: 05    Average loss: 00001.3777    Accuracy:  98.62
+model id: 06    Average loss: 00001.3825    Accuracy:  98.59
+model id: 07    Average loss: 00001.3712    Accuracy:  98.62
+model id: 08    Average loss: 00001.3970    Accuracy:  98.56
+model id: 09    Average loss: 00001.3698    Accuracy:  98.71
+model id: 10    Average loss: 00001.3816    Accuracy:  98.64
+Average accuracy:  98.62
+Ensemble accuracy:  99.79
+Testset:
+Mean
+Average loss: 00000.0767    Accuracy:  97.94
+Ensemble
+model id: 01    Average loss: 00007.9796    Accuracy:  97.20
+model id: 02    Average loss: 00008.0413    Accuracy:  96.92
+model id: 03    Average loss: 00008.0601    Accuracy:  96.77
+model id: 04    Average loss: 00008.0324    Accuracy:  96.76
+model id: 05    Average loss: 00007.9721    Accuracy:  96.86
+model id: 06    Average loss: 00008.0556    Accuracy:  96.85
+model id: 07    Average loss: 00008.1110    Accuracy:  96.61
+model id: 08    Average loss: 00008.0633    Accuracy:  96.75
+model id: 09    Average loss: 00008.0006    Accuracy:  97.00
+model id: 10    Average loss: 00008.0083    Accuracy:  96.96
+Average accuracy:  96.87
+Ensemble accuracy:  98.01
+Epoch: 241    Loss: 00001.3894    Accuracy: 98.56    Time: 0:00:02 
+Epoch: 242    Loss: 00001.3991    Accuracy: 98.48    Time: 0:00:02 
+Epoch: 243    Loss: 00001.3646    Accuracy: 98.51    Time: 0:00:02 
+Epoch: 244    Loss: 00001.3630    Accuracy: 98.53    Time: 0:00:02 
+Epoch: 245    Loss: 00001.3622    Accuracy: 98.47    Time: 0:00:02 
+Epoch: 246    Loss: 00001.3438    Accuracy: 98.47    Time: 0:00:02 
+Epoch: 247    Loss: 00001.3439    Accuracy: 98.50    Time: 0:00:02 
+Epoch: 248    Loss: 00001.3250    Accuracy: 98.35    Time: 0:00:02 
+Epoch: 249    Loss: 00001.3038    Accuracy: 98.45    Time: 0:00:02 
+Epoch: 250    Loss: 00001.3065    Accuracy: 98.36    Time: 0:00:02 
+Epoch: 251    Loss: 00001.2866    Accuracy: 98.43    Time: 0:00:02 
+Epoch: 252    Loss: 00001.3002    Accuracy: 98.26    Time: 0:00:02 
+Epoch: 253    Loss: 00001.2787    Accuracy: 98.27    Time: 0:00:02 
+Epoch: 254    Loss: 00001.2624    Accuracy: 98.24    Time: 0:00:02 
+Epoch: 255    Loss: 00001.2634    Accuracy: 98.17    Time: 0:00:02 
+Epoch: 256    Loss: 00001.2405    Accuracy: 98.23    Time: 0:00:02 
+Epoch: 257    Loss: 00001.2364    Accuracy: 98.21    Time: 0:00:02 
+Epoch: 258    Loss: 00001.2249    Accuracy: 98.13    Time: 0:00:02 
+Epoch: 259    Loss: 00001.2015    Accuracy: 98.16    Time: 0:00:03 
+Epoch: 260    Loss: 00001.1979    Accuracy: 98.09    Time: 0:00:02 
+After 260 epochs
+Trainset:
+Mean
+Average loss: 00000.0103    Accuracy:  99.79
+Ensemble
+model id: 01    Average loss: 00001.1859    Accuracy:  98.04
+model id: 02    Average loss: 00001.1771    Accuracy:  98.12
+model id: 03    Average loss: 00001.1929    Accuracy:  98.10
+model id: 04    Average loss: 00001.1795    Accuracy:  98.17
+model id: 05    Average loss: 00001.2028    Accuracy:  98.16
+model id: 06    Average loss: 00001.1741    Accuracy:  98.24
+model id: 07    Average loss: 00001.1839    Accuracy:  98.12
+model id: 08    Average loss: 00001.1790    Accuracy:  98.12
+model id: 09    Average loss: 00001.1943    Accuracy:  98.10
+model id: 10    Average loss: 00001.1707    Accuracy:  98.25
+Average accuracy:  98.14
+Ensemble accuracy:  99.69
+Testset:
+Mean
+Average loss: 00000.0640    Accuracy:  97.99
+Ensemble
+model id: 01    Average loss: 00006.6481    Accuracy:  96.51
+model id: 02    Average loss: 00006.6628    Accuracy:  96.34
+model id: 03    Average loss: 00006.6283    Accuracy:  96.56
+model id: 04    Average loss: 00006.6256    Accuracy:  96.49
+model id: 05    Average loss: 00006.6150    Accuracy:  96.70
+model id: 06    Average loss: 00006.6724    Accuracy:  96.56
+model id: 07    Average loss: 00006.6310    Accuracy:  96.46
+model id: 08    Average loss: 00006.6427    Accuracy:  96.43
+model id: 09    Average loss: 00006.6704    Accuracy:  96.50
+model id: 10    Average loss: 00006.6208    Accuracy:  96.62
+Average accuracy:  96.52
+Ensemble accuracy:  97.89
+Epoch: 261    Loss: 00001.1757    Accuracy: 98.17    Time: 0:00:02 
+Epoch: 262    Loss: 00001.1770    Accuracy: 97.98    Time: 0:00:02 
+Epoch: 263    Loss: 00001.1796    Accuracy: 97.89    Time: 0:00:03 
+Epoch: 264    Loss: 00001.1512    Accuracy: 97.99    Time: 0:00:02 
+Epoch: 265    Loss: 00001.1468    Accuracy: 97.93    Time: 0:00:02 
+Epoch: 266    Loss: 00001.1483    Accuracy: 97.80    Time: 0:00:02 
+Epoch: 267    Loss: 00001.1211    Accuracy: 97.88    Time: 0:00:02 
+Epoch: 268    Loss: 00001.1295    Accuracy: 97.69    Time: 0:00:02 
+Epoch: 269    Loss: 00001.1143    Accuracy: 97.75    Time: 0:00:02 
+Epoch: 270    Loss: 00001.0850    Accuracy: 97.73    Time: 0:00:02 
+Epoch: 271    Loss: 00001.0883    Accuracy: 97.56    Time: 0:00:02 
+Epoch: 272    Loss: 00001.0708    Accuracy: 97.61    Time: 0:00:02 
+Epoch: 273    Loss: 00001.0509    Accuracy: 97.65    Time: 0:00:02 
+Epoch: 274    Loss: 00001.0455    Accuracy: 97.53    Time: 0:00:02 
+Epoch: 275    Loss: 00001.0392    Accuracy: 97.39    Time: 0:00:02 
+Epoch: 276    Loss: 00001.0252    Accuracy: 97.44    Time: 0:00:02 
+Epoch: 277    Loss: 00001.0138    Accuracy: 97.28    Time: 0:00:02 
+Epoch: 278    Loss: 00000.9894    Accuracy: 97.42    Time: 0:00:02 
+Epoch: 279    Loss: 00000.9943    Accuracy: 97.08    Time: 0:00:02 
+Epoch: 280    Loss: 00000.9705    Accuracy: 97.11    Time: 0:00:02 
+After 280 epochs
+Trainset:
+Mean
+Average loss: 00000.0084    Accuracy:  99.19
+Ensemble
+model id: 01    Average loss: 00000.9684    Accuracy:  97.11
+model id: 02    Average loss: 00000.9734    Accuracy:  97.09
+model id: 03    Average loss: 00000.9660    Accuracy:  97.10
+model id: 04    Average loss: 00000.9675    Accuracy:  97.09
+model id: 05    Average loss: 00000.9656    Accuracy:  97.01
+model id: 06    Average loss: 00000.9654    Accuracy:  97.20
+model id: 07    Average loss: 00000.9693    Accuracy:  97.04
+model id: 08    Average loss: 00000.9626    Accuracy:  97.07
+model id: 09    Average loss: 00000.9654    Accuracy:  97.17
+model id: 10    Average loss: 00000.9683    Accuracy:  97.12
+Average accuracy:  97.10
+Ensemble accuracy:  99.17
+Testset:
+Mean
+Average loss: 00000.0509    Accuracy:  97.57
+Ensemble
+model id: 01    Average loss: 00005.2325    Accuracy:  95.96
+model id: 02    Average loss: 00005.2234    Accuracy:  95.71
+model id: 03    Average loss: 00005.2364    Accuracy:  95.80
+model id: 04    Average loss: 00005.2402    Accuracy:  95.79
+model id: 05    Average loss: 00005.2328    Accuracy:  95.62
+model id: 06    Average loss: 00005.2348    Accuracy:  95.72
+model id: 07    Average loss: 00005.2406    Accuracy:  95.69
+model id: 08    Average loss: 00005.2243    Accuracy:  96.11
+model id: 09    Average loss: 00005.2564    Accuracy:  95.53
+model id: 10    Average loss: 00005.2796    Accuracy:  95.72
+Average accuracy:  95.76
+Ensemble accuracy:  97.52
+Epoch: 281    Loss: 00000.9617    Accuracy: 97.04    Time: 0:00:02 
+Epoch: 282    Loss: 00000.9497    Accuracy: 96.95    Time: 0:00:02 
+Epoch: 283    Loss: 00000.9355    Accuracy: 96.88    Time: 0:00:02 
+Epoch: 284    Loss: 00000.9290    Accuracy: 96.93    Time: 0:00:02 
+Epoch: 285    Loss: 00000.9115    Accuracy: 96.83    Time: 0:00:02 
+Epoch: 286    Loss: 00000.8987    Accuracy: 96.69    Time: 0:00:02 
+Epoch: 287    Loss: 00000.8972    Accuracy: 96.52    Time: 0:00:02 
+Epoch: 288    Loss: 00000.8754    Accuracy: 96.65    Time: 0:00:02 
+Epoch: 289    Loss: 00000.8659    Accuracy: 96.59    Time: 0:00:02 
+Epoch: 290    Loss: 00000.8489    Accuracy: 96.52    Time: 0:00:02 
+Epoch: 291    Loss: 00000.8416    Accuracy: 96.35    Time: 0:00:02 
+Epoch: 292    Loss: 00000.8287    Accuracy: 96.40    Time: 0:00:02 
+Epoch: 293    Loss: 00000.8161    Accuracy: 96.21    Time: 0:00:02 
+Epoch: 294    Loss: 00000.8061    Accuracy: 96.29    Time: 0:00:02 
+Epoch: 295    Loss: 00000.7947    Accuracy: 96.20    Time: 0:00:02 
+Epoch: 296    Loss: 00000.7826    Accuracy: 96.04    Time: 0:00:02 
+Epoch: 297    Loss: 00000.7695    Accuracy: 96.19    Time: 0:00:02 
+Epoch: 298    Loss: 00000.7576    Accuracy: 96.09    Time: 0:00:02 
+Epoch: 299    Loss: 00000.7538    Accuracy: 96.00    Time: 0:00:02 
+Epoch: 300    Loss: 00000.7497    Accuracy: 95.88    Time: 0:00:02 
+After 300 epochs
+Trainset:
+Mean
+Average loss: 00000.0064    Accuracy:  98.64
+Ensemble
+model id: 01    Average loss: 00000.7423    Accuracy:  96.04
+model id: 02    Average loss: 00000.7395    Accuracy:  96.09
+model id: 03    Average loss: 00000.7383    Accuracy:  96.00
+model id: 04    Average loss: 00000.7345    Accuracy:  96.03
+model id: 05    Average loss: 00000.7364    Accuracy:  96.03
+model id: 06    Average loss: 00000.7370    Accuracy:  96.05
+model id: 07    Average loss: 00000.7347    Accuracy:  96.10
+model id: 08    Average loss: 00000.7373    Accuracy:  96.03
+model id: 09    Average loss: 00000.7395    Accuracy:  96.00
+model id: 10    Average loss: 00000.7351    Accuracy:  96.09
+Average accuracy:  96.05
+Ensemble accuracy:  98.61
+Testset:
+Mean
+Average loss: 00000.0369    Accuracy:  97.24
+Ensemble
+model id: 01    Average loss: 00003.7816    Accuracy:  95.23
+model id: 02    Average loss: 00003.7964    Accuracy:  94.81
+model id: 03    Average loss: 00003.7859    Accuracy:  95.20
+model id: 04    Average loss: 00003.7801    Accuracy:  95.18
+model id: 05    Average loss: 00003.7771    Accuracy:  95.31
+model id: 06    Average loss: 00003.7908    Accuracy:  95.10
+model id: 07    Average loss: 00003.8102    Accuracy:  95.25
+model id: 08    Average loss: 00003.7895    Accuracy:  95.12
+model id: 09    Average loss: 00003.7733    Accuracy:  95.35
+model id: 10    Average loss: 00003.7962    Accuracy:  95.12
+Average accuracy:  95.17
+Ensemble accuracy:  97.36
+Epoch: 301    Loss: 00000.7357    Accuracy: 95.94    Time: 0:00:02 
+Epoch: 302    Loss: 00000.7291    Accuracy: 95.92    Time: 0:00:02 
+Epoch: 303    Loss: 00000.7192    Accuracy: 95.86    Time: 0:00:02 
+Epoch: 304    Loss: 00000.7154    Accuracy: 95.77    Time: 0:00:02 
+Epoch: 305    Loss: 00000.7026    Accuracy: 95.87    Time: 0:00:02 
+Epoch: 306    Loss: 00000.7027    Accuracy: 95.65    Time: 0:00:02 
+Epoch: 307    Loss: 00000.6860    Accuracy: 95.77    Time: 0:00:02 
+Epoch: 308    Loss: 00000.6840    Accuracy: 95.69    Time: 0:00:02 
+Epoch: 309    Loss: 00000.6739    Accuracy: 95.70    Time: 0:00:02 
+Epoch: 310    Loss: 00000.6697    Accuracy: 95.61    Time: 0:00:02 
+Epoch: 311    Loss: 00000.6627    Accuracy: 95.67    Time: 0:00:02 
+Epoch: 312    Loss: 00000.6577    Accuracy: 95.64    Time: 0:00:02 
+Epoch: 313    Loss: 00000.6484    Accuracy: 95.61    Time: 0:00:02 
+Epoch: 314    Loss: 00000.6442    Accuracy: 95.64    Time: 0:00:02 
+Epoch: 315    Loss: 00000.6338    Accuracy: 95.66    Time: 0:00:02 
+Epoch: 316    Loss: 00000.6315    Accuracy: 95.56    Time: 0:00:02 
+Epoch: 317    Loss: 00000.6217    Accuracy: 95.59    Time: 0:00:02 
+Epoch: 318    Loss: 00000.6220    Accuracy: 95.59    Time: 0:00:02 
+Epoch: 319    Loss: 00000.6146    Accuracy: 95.56    Time: 0:00:02 
+Epoch: 320    Loss: 00000.6077    Accuracy: 95.63    Time: 0:00:02 
+After 320 epochs
+Trainset:
+Mean
+Average loss: 00000.0051    Accuracy:  98.24
+Ensemble
+model id: 01    Average loss: 00000.6017    Accuracy:  95.73
+model id: 02    Average loss: 00000.5973    Accuracy:  95.74
+model id: 03    Average loss: 00000.5979    Accuracy:  95.88
+model id: 04    Average loss: 00000.6065    Accuracy:  95.55
+model id: 05    Average loss: 00000.6060    Accuracy:  95.69
+model id: 06    Average loss: 00000.6007    Accuracy:  95.74
+model id: 07    Average loss: 00000.5959    Accuracy:  95.87
+model id: 08    Average loss: 00000.6063    Accuracy:  95.65
+model id: 09    Average loss: 00000.6065    Accuracy:  95.70
+model id: 10    Average loss: 00000.6015    Accuracy:  95.76
+Average accuracy:  95.73
+Ensemble accuracy:  98.19
+Testset:
+Mean
+Average loss: 00000.0284    Accuracy:  97.05
+Ensemble
+model id: 01    Average loss: 00002.9339    Accuracy:  94.91
+model id: 02    Average loss: 00002.9274    Accuracy:  95.45
+model id: 03    Average loss: 00002.9274    Accuracy:  95.06
+model id: 04    Average loss: 00002.9266    Accuracy:  94.83
+model id: 05    Average loss: 00002.9280    Accuracy:  95.13
+model id: 06    Average loss: 00002.9346    Accuracy:  94.77
+model id: 07    Average loss: 00002.9293    Accuracy:  95.30
+model id: 08    Average loss: 00002.9208    Accuracy:  94.92
+model id: 09    Average loss: 00002.9201    Accuracy:  95.07
+model id: 10    Average loss: 00002.9269    Accuracy:  94.96
+Average accuracy:  95.04
+Ensemble accuracy:  97.32
+Epoch: 321    Loss: 00000.6016    Accuracy: 95.68    Time: 0:00:02 
+Epoch: 322    Loss: 00000.6026    Accuracy: 95.67    Time: 0:00:02 
+Epoch: 323    Loss: 00000.5928    Accuracy: 95.53    Time: 0:00:02 
+Epoch: 324    Loss: 00000.5935    Accuracy: 95.50    Time: 0:00:02 
+Epoch: 325    Loss: 00000.5870    Accuracy: 95.55    Time: 0:00:02 
+Epoch: 326    Loss: 00000.5841    Accuracy: 95.53    Time: 0:00:02 
+Epoch: 327    Loss: 00000.5752    Accuracy: 95.52    Time: 0:00:02 
+Epoch: 328    Loss: 00000.5737    Accuracy: 95.45    Time: 0:00:02 
+Epoch: 329    Loss: 00000.5680    Accuracy: 95.54    Time: 0:00:02 
+Epoch: 330    Loss: 00000.5681    Accuracy: 95.50    Time: 0:00:02 
+Epoch: 331    Loss: 00000.5584    Accuracy: 95.61    Time: 0:00:02 
+Epoch: 332    Loss: 00000.5617    Accuracy: 95.61    Time: 0:00:02 
+Epoch: 333    Loss: 00000.5553    Accuracy: 95.50    Time: 0:00:02 
+Epoch: 334    Loss: 00000.5482    Accuracy: 95.60    Time: 0:00:02 
+Epoch: 335    Loss: 00000.5516    Accuracy: 95.50    Time: 0:00:02 
+Epoch: 336    Loss: 00000.5419    Accuracy: 95.53    Time: 0:00:02 
+Epoch: 337    Loss: 00000.5398    Accuracy: 95.54    Time: 0:00:02 
+Epoch: 338    Loss: 00000.5377    Accuracy: 95.50    Time: 0:00:02 
+Epoch: 339    Loss: 00000.5389    Accuracy: 95.40    Time: 0:00:02 
+Epoch: 340    Loss: 00000.5291    Accuracy: 95.67    Time: 0:00:02 
+After 340 epochs
+Trainset:
+Mean
+Average loss: 00000.0044    Accuracy:  98.09
+Ensemble
+model id: 01    Average loss: 00000.5321    Accuracy:  95.48
+model id: 02    Average loss: 00000.5279    Accuracy:  95.56
+model id: 03    Average loss: 00000.5306    Accuracy:  95.68
+model id: 04    Average loss: 00000.5247    Accuracy:  95.57
+model id: 05    Average loss: 00000.5295    Accuracy:  95.75
+model id: 06    Average loss: 00000.5266    Accuracy:  95.69
+model id: 07    Average loss: 00000.5318    Accuracy:  95.56
+model id: 08    Average loss: 00000.5307    Accuracy:  95.55
+model id: 09    Average loss: 00000.5294    Accuracy:  95.62
+model id: 10    Average loss: 00000.5257    Accuracy:  95.68
+Average accuracy:  95.61
+Ensemble accuracy:  98.02
+Testset:
+Mean
+Average loss: 00000.0238    Accuracy:  97.13
+Ensemble
+model id: 01    Average loss: 00002.4832    Accuracy:  94.87
+model id: 02    Average loss: 00002.4753    Accuracy:  95.31
+model id: 03    Average loss: 00002.4634    Accuracy:  95.16
+model id: 04    Average loss: 00002.4689    Accuracy:  95.14
+model id: 05    Average loss: 00002.4744    Accuracy:  94.87
+model id: 06    Average loss: 00002.4740    Accuracy:  95.29
+model id: 07    Average loss: 00002.4692    Accuracy:  94.78
+model id: 08    Average loss: 00002.4666    Accuracy:  95.14
+model id: 09    Average loss: 00002.4674    Accuracy:  94.92
+model id: 10    Average loss: 00002.4604    Accuracy:  95.23
+Average accuracy:  95.07
+Ensemble accuracy:  97.31
+Epoch: 341    Loss: 00000.5273    Accuracy: 95.64    Time: 0:00:02 
+Epoch: 342    Loss: 00000.5265    Accuracy: 95.42    Time: 0:00:02 
+Epoch: 343    Loss: 00000.5285    Accuracy: 95.57    Time: 0:00:02 
+Epoch: 344    Loss: 00000.5237    Accuracy: 95.50    Time: 0:00:02 
+Epoch: 345    Loss: 00000.5253    Accuracy: 95.55    Time: 0:00:02 
+Epoch: 346    Loss: 00000.5160    Accuracy: 95.46    Time: 0:00:02 
+Epoch: 347    Loss: 00000.5220    Accuracy: 95.56    Time: 0:00:02 
+Epoch: 348    Loss: 00000.5103    Accuracy: 95.53    Time: 0:00:02 
+Epoch: 349    Loss: 00000.5139    Accuracy: 95.66    Time: 0:00:02 
+Epoch: 350    Loss: 00000.5075    Accuracy: 95.55    Time: 0:00:02 
+Epoch: 351    Loss: 00000.5108    Accuracy: 95.64    Time: 0:00:02 
+Epoch: 352    Loss: 00000.5049    Accuracy: 95.52    Time: 0:00:02 
+Epoch: 353    Loss: 00000.4971    Accuracy: 95.70    Time: 0:00:02 
+Epoch: 354    Loss: 00000.4971    Accuracy: 95.63    Time: 0:00:02 
+Epoch: 355    Loss: 00000.4995    Accuracy: 95.59    Time: 0:00:02 
+Epoch: 356    Loss: 00000.5047    Accuracy: 95.50    Time: 0:00:02 
+Epoch: 357    Loss: 00000.4948    Accuracy: 95.58    Time: 0:00:02 
+Epoch: 358    Loss: 00000.4948    Accuracy: 95.67    Time: 0:00:02 
+Epoch: 359    Loss: 00000.4926    Accuracy: 95.53    Time: 0:00:02 
+Epoch: 360    Loss: 00000.4923    Accuracy: 95.58    Time: 0:00:02 
+After 360 epochs
+Trainset:
+Mean
+Average loss: 00000.0041    Accuracy:  97.99
+Ensemble
+model id: 01    Average loss: 00000.4844    Accuracy:  95.74
+model id: 02    Average loss: 00000.4874    Accuracy:  95.57
+model id: 03    Average loss: 00000.4889    Accuracy:  95.64
+model id: 04    Average loss: 00000.4890    Accuracy:  95.74
+model id: 05    Average loss: 00000.4854    Accuracy:  95.62
+model id: 06    Average loss: 00000.4888    Accuracy:  95.64
+model id: 07    Average loss: 00000.4909    Accuracy:  95.64
+model id: 08    Average loss: 00000.4856    Accuracy:  95.60
+model id: 09    Average loss: 00000.4883    Accuracy:  95.72
+model id: 10    Average loss: 00000.4825    Accuracy:  95.68
+Average accuracy:  95.66
+Ensemble accuracy:  97.91
+Testset:
+Mean
+Average loss: 00000.0215    Accuracy:  97.08
+Ensemble
+model id: 01    Average loss: 00002.2210    Accuracy:  95.22
+model id: 02    Average loss: 00002.2399    Accuracy:  94.95
+model id: 03    Average loss: 00002.2324    Accuracy:  95.11
+model id: 04    Average loss: 00002.2259    Accuracy:  95.22
+model id: 05    Average loss: 00002.2262    Accuracy:  95.33
+model id: 06    Average loss: 00002.2232    Accuracy:  95.06
+model id: 07    Average loss: 00002.2278    Accuracy:  95.16
+model id: 08    Average loss: 00002.2288    Accuracy:  95.00
+model id: 09    Average loss: 00002.2365    Accuracy:  94.90
+model id: 10    Average loss: 00002.2324    Accuracy:  95.06
+Average accuracy:  95.10
+Ensemble accuracy:  97.17
+Epoch: 361    Loss: 00000.4889    Accuracy: 95.64    Time: 0:00:02 
+Epoch: 362    Loss: 00000.4909    Accuracy: 95.64    Time: 0:00:02 
+Epoch: 363    Loss: 00000.4903    Accuracy: 95.58    Time: 0:00:02 
+Epoch: 364    Loss: 00000.4802    Accuracy: 95.61    Time: 0:00:02 
+Epoch: 365    Loss: 00000.4871    Accuracy: 95.53    Time: 0:00:02 
+Epoch: 366    Loss: 00000.4823    Accuracy: 95.62    Time: 0:00:02 
+Epoch: 367    Loss: 00000.4802    Accuracy: 95.60    Time: 0:00:02 
+Epoch: 368    Loss: 00000.4782    Accuracy: 95.50    Time: 0:00:02 
+Epoch: 369    Loss: 00000.4771    Accuracy: 95.58    Time: 0:00:02 
+Epoch: 370    Loss: 00000.4766    Accuracy: 95.58    Time: 0:00:02 
+Epoch: 371    Loss: 00000.4792    Accuracy: 95.65    Time: 0:00:02 
+Epoch: 372    Loss: 00000.4727    Accuracy: 95.70    Time: 0:00:02 
+Epoch: 373    Loss: 00000.4708    Accuracy: 95.61    Time: 0:00:02 
+Epoch: 374    Loss: 00000.4712    Accuracy: 95.66    Time: 0:00:02 
+Epoch: 375    Loss: 00000.4742    Accuracy: 95.62    Time: 0:00:02 
+Epoch: 376    Loss: 00000.4735    Accuracy: 95.63    Time: 0:00:02 
+Epoch: 377    Loss: 00000.4687    Accuracy: 95.63    Time: 0:00:02 
+Epoch: 378    Loss: 00000.4726    Accuracy: 95.62    Time: 0:00:02 
+Epoch: 379    Loss: 00000.4671    Accuracy: 95.69    Time: 0:00:02 
+Epoch: 380    Loss: 00000.4697    Accuracy: 95.55    Time: 0:00:02 
+After 380 epochs
+Trainset:
+Mean
+Average loss: 00000.0039    Accuracy:  98.02
+Ensemble
+model id: 01    Average loss: 00000.4652    Accuracy:  95.84
+model id: 02    Average loss: 00000.4660    Accuracy:  95.70
+model id: 03    Average loss: 00000.4670    Accuracy:  95.69
+model id: 04    Average loss: 00000.4685    Accuracy:  95.63
+model id: 05    Average loss: 00000.4716    Accuracy:  95.52
+model id: 06    Average loss: 00000.4702    Accuracy:  95.73
+model id: 07    Average loss: 00000.4713    Accuracy:  95.74
+model id: 08    Average loss: 00000.4655    Accuracy:  95.61
+model id: 09    Average loss: 00000.4735    Accuracy:  95.71
+model id: 10    Average loss: 00000.4700    Accuracy:  95.61
+Average accuracy:  95.68
+Ensemble accuracy:  97.95
+Testset:
+Mean
+Average loss: 00000.0203    Accuracy:  97.16
+Ensemble
+model id: 01    Average loss: 00002.1106    Accuracy:  95.05
+model id: 02    Average loss: 00002.1250    Accuracy:  95.08
+model id: 03    Average loss: 00002.0989    Accuracy:  95.31
+model id: 04    Average loss: 00002.1133    Accuracy:  94.79
+model id: 05    Average loss: 00002.1109    Accuracy:  95.32
+model id: 06    Average loss: 00002.1088    Accuracy:  95.15
+model id: 07    Average loss: 00002.1211    Accuracy:  94.92
+model id: 08    Average loss: 00002.1118    Accuracy:  95.00
+model id: 09    Average loss: 00002.0983    Accuracy:  95.42
+model id: 10    Average loss: 00002.1069    Accuracy:  95.02
+Average accuracy:  95.11
+Ensemble accuracy:  97.16
+Epoch: 381    Loss: 00000.4683    Accuracy: 95.66    Time: 0:00:02 
+Epoch: 382    Loss: 00000.4654    Accuracy: 95.84    Time: 0:00:02 
+Epoch: 383    Loss: 00000.4636    Accuracy: 95.79    Time: 0:00:02 
+Epoch: 384    Loss: 00000.4644    Accuracy: 95.70    Time: 0:00:02 
+Epoch: 385    Loss: 00000.4609    Accuracy: 95.81    Time: 0:00:02 
+Epoch: 386    Loss: 00000.4640    Accuracy: 95.71    Time: 0:00:02 
+Epoch: 387    Loss: 00000.4626    Accuracy: 95.72    Time: 0:00:02 
+Epoch: 388    Loss: 00000.4728    Accuracy: 95.66    Time: 0:00:02 
+Epoch: 389    Loss: 00000.4681    Accuracy: 95.73    Time: 0:00:02 
+Epoch: 390    Loss: 00000.4645    Accuracy: 95.67    Time: 0:00:02 
+Epoch: 391    Loss: 00000.4662    Accuracy: 95.56    Time: 0:00:02 
+Epoch: 392    Loss: 00000.4595    Accuracy: 95.71    Time: 0:00:02 
+Epoch: 393    Loss: 00000.4582    Accuracy: 95.71    Time: 0:00:02 
+Epoch: 394    Loss: 00000.4596    Accuracy: 95.72    Time: 0:00:02 
+Epoch: 395    Loss: 00000.4607    Accuracy: 95.75    Time: 0:00:02 
+Epoch: 396    Loss: 00000.4618    Accuracy: 95.77    Time: 0:00:02 
+Epoch: 397    Loss: 00000.4566    Accuracy: 95.72    Time: 0:00:02 
+Epoch: 398    Loss: 00000.4642    Accuracy: 95.73    Time: 0:00:02 
+Epoch: 399    Loss: 00000.4536    Accuracy: 95.77    Time: 0:00:02 
+Epoch: 400    Loss: 00000.4581    Accuracy: 95.79    Time: 0:00:02 
+After 400 epochs
+Trainset:
+Mean
+Average loss: 00000.0038    Accuracy:  98.07
+Ensemble
+model id: 01    Average loss: 00000.4607    Accuracy:  95.77
+model id: 02    Average loss: 00000.4600    Accuracy:  95.68
+model id: 03    Average loss: 00000.4643    Accuracy:  95.71
+model id: 04    Average loss: 00000.4604    Accuracy:  95.69
+model id: 05    Average loss: 00000.4601    Accuracy:  95.64
+model id: 06    Average loss: 00000.4631    Accuracy:  95.64
+model id: 07    Average loss: 00000.4670    Accuracy:  95.71
+model id: 08    Average loss: 00000.4674    Accuracy:  95.64
+model id: 09    Average loss: 00000.4634    Accuracy:  95.71
+model id: 10    Average loss: 00000.4590    Accuracy:  95.67
+Average accuracy:  95.69
+Ensemble accuracy:  97.94
+Testset:
+Mean
+Average loss: 00000.0199    Accuracy:  97.13
+Ensemble
+model id: 01    Average loss: 00002.0784    Accuracy:  95.04
+model id: 02    Average loss: 00002.1086    Accuracy:  95.19
+model id: 03    Average loss: 00002.0691    Accuracy:  95.03
+model id: 04    Average loss: 00002.0694    Accuracy:  95.40
+model id: 05    Average loss: 00002.0900    Accuracy:  94.96
+model id: 06    Average loss: 00002.0817    Accuracy:  95.19
+model id: 07    Average loss: 00002.0776    Accuracy:  95.32
+model id: 08    Average loss: 00002.0641    Accuracy:  95.35
+model id: 09    Average loss: 00002.0805    Accuracy:  95.37
+model id: 10    Average loss: 00002.0601    Accuracy:  95.22
+Average accuracy:  95.21
+Ensemble accuracy:  97.21
+Time: 0:23:30 
