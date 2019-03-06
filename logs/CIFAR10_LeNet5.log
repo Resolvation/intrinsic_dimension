@@ -1,0 +1,84 @@
+Files already downloaded and verified
+Files already downloaded and verified
+-->Epoch: 001    Loss: 0.48524155    Accuracy: 82.84    Time: 0:00:02
+-->Epoch: 002    Loss: 0.47867453    Accuracy: 83.12    Time: 0:00:02
+-->Epoch: 003    Loss: 0.47188450    Accuracy: 83.28    Time: 0:00:02
+-->Epoch: 004    Loss: 0.47013108    Accuracy: 83.22    Time: 0:00:02
+-->Epoch: 005    Loss: 0.46565465    Accuracy: 83.45    Time: 0:00:02
+-->Epoch: 006    Loss: 0.46371780    Accuracy: 83.59    Time: 0:00:02
+-->Epoch: 007    Loss: 0.45837806    Accuracy: 83.80    Time: 0:00:02
+-->Epoch: 008    Loss: 0.45923039    Accuracy: 83.54    Time: 0:00:02
+-->Epoch: 009    Loss: 0.45246255    Accuracy: 84.09    Time: 0:00:02
+-->Epoch: 010    Loss: 0.45038020    Accuracy: 84.03    Time: 0:00:02
+Train set:
+ Average loss: 0.445186
+ Accuracy: 84.22
+Test set:
+ Average loss: 0.684045
+ Accuracy: 77.51
+-->Epoch: 011    Loss: 0.45111412    Accuracy: 83.84    Time: 0:00:02
+-->Epoch: 012    Loss: 0.44408095    Accuracy: 84.37    Time: 0:00:02
+-->Epoch: 013    Loss: 0.44784676    Accuracy: 84.20    Time: 0:00:02
+-->Epoch: 014    Loss: 0.44114731    Accuracy: 84.33    Time: 0:00:02
+-->Epoch: 015    Loss: 0.43726074    Accuracy: 84.51    Time: 0:00:02
+-->Epoch: 016    Loss: 0.43711205    Accuracy: 84.70    Time: 0:00:02
+-->Epoch: 017    Loss: 0.43746218    Accuracy: 84.59    Time: 0:00:02
+-->Epoch: 018    Loss: 0.43623231    Accuracy: 84.60    Time: 0:00:02
+-->Epoch: 019    Loss: 0.43409390    Accuracy: 84.61    Time: 0:00:02
+-->Epoch: 020    Loss: 0.43074249    Accuracy: 84.68    Time: 0:00:02
+Train set:
+ Average loss: 0.425542
+ Accuracy: 84.89
+Test set:
+ Average loss: 0.696595
+ Accuracy: 77.48
+-->Epoch: 021    Loss: 0.42977027    Accuracy: 84.79    Time: 0:00:02
+-->Epoch: 022    Loss: 0.42775069    Accuracy: 84.88    Time: 0:00:02
+-->Epoch: 023    Loss: 0.42688523    Accuracy: 84.93    Time: 0:00:02
+-->Epoch: 024    Loss: 0.42614885    Accuracy: 84.83    Time: 0:00:02
+-->Epoch: 025    Loss: 0.42176817    Accuracy: 85.00    Time: 0:00:02
+-->Epoch: 026    Loss: 0.42228122    Accuracy: 85.12    Time: 0:00:02
+-->Epoch: 027    Loss: 0.41885247    Accuracy: 85.31    Time: 0:00:02
+-->Epoch: 028    Loss: 0.41209004    Accuracy: 85.50    Time: 0:00:02
+-->Epoch: 029    Loss: 0.41983112    Accuracy: 85.18    Time: 0:00:02
+-->Epoch: 030    Loss: 0.41519937    Accuracy: 85.36    Time: 0:00:02
+Train set:
+ Average loss: 0.408527
+ Accuracy: 85.62
+Test set:
+ Average loss: 0.711254
+ Accuracy: 77.30
+-->Epoch: 031    Loss: 0.41295851    Accuracy: 85.44    Time: 0:00:02
+-->Epoch: 032    Loss: 0.41141445    Accuracy: 85.53    Time: 0:00:02
+-->Epoch: 033    Loss: 0.41343740    Accuracy: 85.39    Time: 0:00:02
+-->Epoch: 034    Loss: 0.40874760    Accuracy: 85.49    Time: 0:00:02
+-->Epoch: 035    Loss: 0.40707624    Accuracy: 85.71    Time: 0:00:02
+-->Epoch: 036    Loss: 0.40416260    Accuracy: 85.68    Time: 0:00:02
+-->Epoch: 037    Loss: 0.40262387    Accuracy: 85.80    Time: 0:00:02
+-->Epoch: 038    Loss: 0.40245133    Accuracy: 85.78    Time: 0:00:02
+-->Epoch: 039    Loss: 0.40207919    Accuracy: 85.83    Time: 0:00:02
+-->Epoch: 040    Loss: 0.40110465    Accuracy: 85.78    Time: 0:00:02
+Train set:
+ Average loss: 0.400152
+ Accuracy: 85.86
+Test set:
+ Average loss: 0.733755
+ Accuracy: 76.86
+-->Epoch: 041    Loss: 0.39845020    Accuracy: 85.87    Time: 0:00:02
+-->Epoch: 042    Loss: 0.39521384    Accuracy: 85.92    Time: 0:00:03
+-->Epoch: 043    Loss: 0.39750014    Accuracy: 86.12    Time: 0:00:02
+-->Epoch: 044    Loss: 0.39524225    Accuracy: 86.06    Time: 0:00:02
+Traceback (most recent call last):
+  File "/home/anuar/Documents/intrinsic_dimension/intrinsic_dimension/experiments/cifar10_lenet5.py", line 36, in <module>
+    criterion, optimizer, epoch, True)
+  File "/home/anuar/Documents/intrinsic_dimension/intrinsic_dimension/core/train.py", line 17, in train
+    outputs = model(features)
+  File "/home/anuar/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 489, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/anuar/Documents/intrinsic_dimension/intrinsic_dimension/models/LeNet_5.py", line 17, in forward
+    x = F.max_pool2d(F.relu(self.conv2(x)), kernel_size=2)
+  File "/home/anuar/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 489, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/anuar/.local/lib/python3.6/site-packages/torch/nn/modules/conv.py", line 317, in forward
+    @weak_script_method
+KeyboardInterrupt
