@@ -1,4 +1,5 @@
 from datetime import datetime
+
 import torch
 
 
@@ -25,7 +26,7 @@ def train(model, device, train_loader, criterion, optimizer, epoch,
         pred = outputs.argmax(1, keepdim=True)
         correct += pred.eq(labels.view_as(pred)).sum().item()
 
-    avg_loss = total_loss / len(train_loader.dataset)
+    avg_loss = total_loss / len(train_loader)
     accuracy = 100 * correct / len(train_loader.dataset)
     time = str(datetime.now() - start_time).split('.')[0]
 
@@ -53,7 +54,7 @@ def test_classifier(model, device, test_loader, criterion, verbose=False):
             pred = outputs.argmax(1, keepdim=True)
             correct += pred.eq(labels.view_as(pred)).sum().item()
 
-    avg_loss = total_loss / len(test_loader.dataset)
+    avg_loss = total_loss / len(test_loader)
     accuracy = 100 * correct / len(test_loader.dataset)
 
     if verbose:

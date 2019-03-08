@@ -1,4 +1,5 @@
 import os
+
 from torch.utils import data
 from torchvision import datasets, transforms
 
@@ -28,7 +29,7 @@ def mnist_loaders(path='~/Datasets/MNIST', batch_size=128, num_workers=4):
     return train_loader, test_loader
 
 
-def cifar10_loaders(path='~/Datasets/CIFAR10', batch_size=128, num_workers=4):
+def cifar10_loaders(path='~/Datasets/CIFAR10', batch_size=512, num_workers=4):
     """https://github.com/kuangliu/pytorch-cifar/blob/master/main.py"""
     path = os.path.expanduser(path)
     if not os.path.isdir(path):
@@ -37,13 +38,17 @@ def cifar10_loaders(path='~/Datasets/CIFAR10', batch_size=128, num_workers=4):
     normalize = transforms.Normalize(mean=(0.4914, 0.4822, 0.4465),
                                      std=(0.2023, 0.1994, 0.2010))
 
+    resize = 32
+
     transform_train = transforms.Compose([
-        # transforms.RandomCrop(32, padding=4),
+        transforms.RandomCrop(32, padding=4),
         transforms.RandomHorizontalFlip(),
+        transforms.Resize((resize, resize)),
         transforms.ToTensor(),
         normalize
     ])
     transform_test = transforms.Compose([
+        transforms.Resize((resize, resize)),
         transforms.ToTensor(),
         normalize
     ])
