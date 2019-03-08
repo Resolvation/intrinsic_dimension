@@ -57,7 +57,7 @@ class StochasticLinear(nn.Module):
 
 class StochasticConv2d(nn.Module):
     def __init__(self, in_channels, out_channels, kernel_size, stride=1,
-                 padding=0, dilation=1, groups=1, bias=True):
+                 padding=0, dilation=1, bias=True):
         super().__init__()
         self.in_channels = in_channels
         self.out_channels = out_channels
@@ -65,7 +65,7 @@ class StochasticConv2d(nn.Module):
         self.stride = _pair(stride)
         self.padding = _pair(padding)
         self.dilation = _pair(dilation)
-        self.groups = groups
+        self.groups = 1
         self.mu = Parameter(torch.Tensor(
             out_channels, in_channels, *self.kernel_size
         ))
@@ -79,7 +79,35 @@ class StochasticConv2d(nn.Module):
         self._reset_parameters()
 
     def _reset_parameters(self):
-        pass
+        init.kaiming_normal_(self.mu)
+        init.constant_(self.log_sigma_sqr, -6)
+        if self.bias is not None:
+            init.zeros_(self.bias)
 
     def forward(self, input):
-        return
+        h_mean = F.conv2d(input, self.mu,
+                          self.bias, self.stride,
+                          self.padding, self.dilation)
+        h_std = (1e-16 + F.conv2d(input * input, self.log_sigma_sqr.exp(),
+                                  None, self.stride,
+                                  self.padding, self.dilation))
+        if self.training:
+            eps = torch.randn_like(h_std)
+        else:
+            eps = 0.
+        return h_mean + eps * h_std
+
+    def kl(self):
+        return ((self.log_sigma_sqr.exp() + self.mu * self.mu
+                 - self.log_sigma_sqr).sum()
+                - self.in_features * self.out_features) / 2
+
+    def __repr__(self):
+        s = ('{name}({in_channels}, {out_channels}, kernel_size={kernel_size}'
+             ', stride={stride}')
+        s += ', padding={padding}'
+        s += ', dilation={dilation}'
+        if self.bias is None:
+            s += ', bias=False'
+        s += ')'
+        return s.format(name=self.__class__.__name__, **self.__dict__)
