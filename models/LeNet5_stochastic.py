@@ -18,3 +18,9 @@ class LeNet5(nn.Module):
         x = F.relu(self.fc1(x.view(x.shape[0], -1)))
         x = F.relu(self.fc2(x))
         return self.fc3(x)
+
+    def kl(self):
+        res = 0.
+        for child in self.children():
+            res += child.kl()
+        return res

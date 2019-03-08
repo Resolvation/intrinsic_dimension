@@ -1,8 +1,8 @@
 from torch import nn
-from .layers import Flatten
+from models.layers import Flatten
 
 
-class LeNet_300_100(nn.Module):
+class LeNet300_100(nn.Module):
     def __init__(self, activation='Tanh'):
         super().__init__()
 
