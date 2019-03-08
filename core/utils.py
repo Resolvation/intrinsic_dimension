@@ -31,5 +31,5 @@ class SGVLB(nn.Module):
         for child in self.network.children():
             if hasattr(child, 'kl'):
                 kl += child.kl()
-        return (F.cross_entropy(input, target, size_average=True)
-                * self.dataset_size) + kl_weight * kl
+        return (F.cross_entropy(input, target, reduction='mean')
+                + kl_weight * kl / self.dataset_size)

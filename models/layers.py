@@ -1,6 +1,5 @@
 import torch
 from torch import nn
-from torch.autograd import Variable
 from torch.nn import init, Parameter
 import torch.nn.functional as F
 from torch.nn.modules.utils import _pair
@@ -30,21 +29,19 @@ class StochasticLinear(nn.Module):
 
     def _reset_parameters(self):
         init.kaiming_normal_(self.mu)
-        init.zeros_(self.log_sigma_sqr)
+        init.constant_(self.log_sigma_sqr, -6)
         if self.bias is not None:
             init.zeros_(self.bias)
 
     def forward(self, input):
         h_mean = F.linear(input, self.mu, self.bias)
-        h_std = Variable.sqrt_(
-            1e-16 + F.linear(input * input, self.sigma.exp()))
+        h_std = (1e-16 + F.linear(input * input,
+                                  self.log_sigma_sqr.exp())).sqrt()
         if self.training:
-            print('In stochastic mode.')
-            eps = torch.randn_like(lrt_std)
+            eps = torch.randn_like(h_std)
         else:
-            print('In determenistic mode.')
             eps = 0.
-        return h_mean + eps * h_std, kl
+        return h_mean + eps * h_std
 
     def kl(self):
         return ((self.log_sigma_sqr.exp() + self.mu * self.mu

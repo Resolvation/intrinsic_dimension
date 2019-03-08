@@ -1,0 +1,32 @@
+-->Epoch: 001    Loss: 11.12917563    Accuracy: 86.21    Time: 0:00:02
+-->Epoch: 002    Loss: 10.00334937    Accuracy: 93.88    Time: 0:00:02
+-->Epoch: 003    Loss: 9.06765805    Accuracy: 94.83    Time: 0:00:02
+-->Epoch: 004    Loss: 8.16804480    Accuracy: 95.07    Time: 0:00:02
+-->Epoch: 005    Loss: 7.29637417    Accuracy: 95.24    Time: 0:00:02
+-->Epoch: 006    Loss: 6.45098340    Accuracy: 95.22    Time: 0:00:02
+-->Epoch: 007    Loss: 5.65059476    Accuracy: 95.04    Time: 0:00:02
+-->Epoch: 008    Loss: 4.89041034    Accuracy: 94.92    Time: 0:00:02
+-->Epoch: 009    Loss: 4.19183619    Accuracy: 94.55    Time: 0:00:02
+-->Epoch: 010    Loss: 3.56073962    Accuracy: 94.29    Time: 0:00:02
+Train set:
+ Average loss: 3.137545
+ Accuracy: 97.92
+Test set:
+ Average loss: 18.493566
+ Accuracy: 97.54
+-->Epoch: 011    Loss: 3.01217808    Accuracy: 93.98    Time: 0:00:02
+-->Epoch: 012    Loss: 2.55370799    Accuracy: 93.71    Time: 0:00:02
+-->Epoch: 013    Loss: 2.19494817    Accuracy: 93.39    Time: 0:00:02
+-->Epoch: 014    Loss: 1.91995225    Accuracy: 93.43    Time: 0:00:02
+-->Epoch: 015    Loss: 1.71702678    Accuracy: 93.50    Time: 0:00:02
+-->Epoch: 016    Loss: 1.55937381    Accuracy: 93.44    Time: 0:00:02
+-->Epoch: 017    Loss: 1.43479445    Accuracy: 93.56    Time: 0:00:02
+-->Epoch: 018    Loss: 1.33049222    Accuracy: 93.49    Time: 0:00:02
+-->Epoch: 019    Loss: 1.24623299    Accuracy: 93.68    Time: 0:00:02
+-->Epoch: 020    Loss: 1.17012289    Accuracy: 93.81    Time: 0:00:02
+Train set:
+ Average loss: 0.999165
+ Accuracy: 97.61
+Test set:
+ Average loss: 5.609998
+ Accuracy: 97.13
