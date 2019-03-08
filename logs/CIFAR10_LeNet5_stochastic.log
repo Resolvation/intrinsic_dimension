@@ -1,0 +1,34 @@
+Files already downloaded and verified
+Files already downloaded and verified
+-->Epoch: 001    Loss: 5.49350705    Accuracy: 15.23    Time: 0:00:05
+-->Epoch: 002    Loss: 5.05994190    Accuracy: 23.62    Time: 0:00:05
+-->Epoch: 003    Loss: 4.87659150    Accuracy: 29.28    Time: 0:00:04
+-->Epoch: 004    Loss: 4.74301725    Accuracy: 32.91    Time: 0:00:02
+-->Epoch: 005    Loss: 4.62725439    Accuracy: 36.15    Time: 0:00:03
+-->Epoch: 006    Loss: 4.52724305    Accuracy: 38.34    Time: 0:00:02
+-->Epoch: 007    Loss: 4.43480605    Accuracy: 40.10    Time: 0:00:02
+-->Epoch: 008    Loss: 4.35438114    Accuracy: 41.76    Time: 0:00:02
+-->Epoch: 009    Loss: 4.27768578    Accuracy: 43.23    Time: 0:00:02
+-->Epoch: 010    Loss: 4.20933885    Accuracy: 43.92    Time: 0:00:03
+Train set:
+ Average loss: 4.096174
+ Accuracy: 47.79
+Test set:
+ Average loss: 14.652927
+ Accuracy: 50.25
+-->Epoch: 011    Loss: 4.13864608    Accuracy: 44.93    Time: 0:00:03
+-->Epoch: 012    Loss: 4.07406071    Accuracy: 45.75    Time: 0:00:02
+-->Epoch: 013    Loss: 4.01222108    Accuracy: 46.70    Time: 0:00:03
+-->Epoch: 014    Loss: 3.94504431    Accuracy: 47.49    Time: 0:00:03
+-->Epoch: 015    Loss: 3.88298060    Accuracy: 48.27    Time: 0:00:03
+-->Epoch: 016    Loss: 3.83185898    Accuracy: 48.39    Time: 0:00:03
+-->Epoch: 017    Loss: 3.76706592    Accuracy: 49.31    Time: 0:00:03
+-->Epoch: 018    Loss: 3.71605323    Accuracy: 49.46    Time: 0:00:03
+-->Epoch: 019    Loss: 3.65468380    Accuracy: 50.33    Time: 0:00:03
+-->Epoch: 020    Loss: 3.60026142    Accuracy: 50.68    Time: 0:00:03
+Train set:
+ Average loss: 3.503743
+ Accuracy: 53.66
+Test set:
+ Average loss: 12.263042
+ Accuracy: 56.38

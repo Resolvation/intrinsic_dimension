@@ -73,7 +73,7 @@ class StochasticConv2d(nn.Module):
             out_channels, in_channels, *self.kernel_size
         ))
         if bias:
-            self.bias = Parameter(torch.Tensor(1, out_channels, 1, 1))
+            self.bias = Parameter(torch.Tensor(out_channels))
         else:
             self.register_parameter('bias', None)
         self._reset_parameters()
@@ -100,7 +100,8 @@ class StochasticConv2d(nn.Module):
     def kl(self):
         return ((self.log_sigma_sqr.exp() + self.mu * self.mu
                  - self.log_sigma_sqr).sum()
-                - self.in_features * self.out_features) / 2
+                - self.in_channels * self.out_channels
+                * self.kernel_size[0] * self.kernel_size[1]) / 2
 
     def __repr__(self):
         s = ('{name}({in_channels}, {out_channels}, kernel_size={kernel_size}'
