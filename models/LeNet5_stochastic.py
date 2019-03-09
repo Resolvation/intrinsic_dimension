@@ -1,9 +1,12 @@
+import torch
 from torch import nn
 from torch.nn import functional as F
+
 from models.layers import StochasticLinear, StochasticConv2d
+from models.LeNet5 import LeNet5
 
 
-class LeNet5(nn.Module):
+class LeNet5_stochastic(nn.Module):
     def __init__(self, n_classes=10):
         super().__init__()
         self.n_classes = n_classes
@@ -25,3 +28,19 @@ class LeNet5(nn.Module):
         for child in self.children():
             res += child.kl()
         return res
+
+    def load_weights(self, path):
+        donor = LeNet5()
+        donor.load_state_dict(torch.load(path))
+        self.conv1.mu = donor.conv1.weight
+        self.conv1.bias = donor.conv1.bias
+        self.conv2.mu = donor.conv2.weight
+        self.conv2.bias = donor.conv2.bias
+        self.fc1.mu = donor.fc1.weight
+        self.fc1.bias = donor.fc1.bias
+        self.fc2.mu = donor.fc2.weight
+        self.fc2.bias = donor.fc2.bias
+        self.fc3.mu = donor.fc3.weight
+        self.fc3.bias = donor.fc3.bias
+        del donor
+        return self

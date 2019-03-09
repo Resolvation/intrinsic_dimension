@@ -4,7 +4,7 @@ from torch.nn import functional as F
 from models.layers import StochasticLinear
 
 
-class LeNet300_100(nn.Module):
+class LeNet300_100_stochastic(nn.Module):
     def __init__(self, n_classes=10):
         super().__init__()
         self.n_classes = 10

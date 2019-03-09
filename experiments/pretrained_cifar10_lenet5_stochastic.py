@@ -4,7 +4,7 @@ from tensorboardX import SummaryWriter
 
 from core.data import cifar10_loaders
 from core.train import train, eval_stochastic
-from core.utils import adjust_learning_rate, linear_lr, SGVLB
+from core.utils import SGVLB
 from models.LeNet5_stochastic import LeNet5_stochastic
 
 
@@ -13,24 +13,23 @@ torch.manual_seed(seed)
 torch.cuda.manual_seed(seed)
 
 device = torch.device('cuda')
-writer = SummaryWriter('../writers/CIFAR10_LeNet5_stochastic')
+writer = SummaryWriter('../writers/pretrained_CIFAR10_LeNet5_stochastic')
 
 train_loader, test_loader = cifar10_loaders()
-model = LeNet5_stochastic().cuda()
+model = LeNet5_stochastic()
+model.load_weights('../tars/CIFAR10_LeNet5_baseline_73.97.tar').cuda()
 
 trainset_criterion = SGVLB(model, len(train_loader.dataset))
 testset_criterion = SGVLB(model, len(test_loader.dataset))
 
-lr = lr_init = 0.001
+lr = 0.001
 optimizer = optim.Adam(model.parameters(), lr=lr)
 
 eval_stochastic(writer, model, device, train_loader, test_loader,
                 trainset_criterion, testset_criterion, 0)
 
-n_epochs = 400
+n_epochs = 100
 for epoch in range(1, n_epochs + 1):
-    lr = linear_lr(epoch, n_epochs) * lr_init
-    adjust_learning_rate(optimizer, lr)
     writer.add_scalar('training/learning_rate', lr, epoch)
 
     avg_loss, accuracy = train(
@@ -43,6 +42,6 @@ for epoch in range(1, n_epochs + 1):
         eval_stochastic(writer, model, device, train_loader, test_loader,
                         trainset_criterion, testset_criterion, epoch)
 
-torch.save(model.state_dict(), '../tars/CIFAR10_LeNet5_stochastic_'
+torch.save(model.state_dict(), '../tars/pretrained_CIFAR10_LeNet5_stochastic_'
                                f'{accuracy:.02f}.tar')
 writer.close()

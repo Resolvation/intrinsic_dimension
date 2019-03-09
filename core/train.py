@@ -81,3 +81,41 @@ def test_classifier(model, device, test_loader,
         print(f'  Accuracy: {accuracy:.2f}')
 
     return avg_loss, accuracy
+
+
+def eval_stochastic(writer, model, device, train_loader, test_loader,
+                    trainset_criterion, testset_criterion, epoch,
+                    verbose=True, n_ens=10):
+    print('Trainset:')
+    print(' Mean:')
+    avg_loss_trainset_mean, accuracy_trainset_mean = test_classifier(
+        model, device, train_loader, trainset_criterion, verbose)
+    print(' Ensemble:')
+    avg_loss_trainset_ens, accuracy_trainset_ens = test_classifier(
+        model, device, train_loader, trainset_criterion, verbose, n_ens)
+
+    print('Testset:')
+    print(' Mean:')
+    avg_loss_testset_mean, accuracy_testset_mean = test_classifier(
+        model, device, test_loader, testset_criterion, verbose)
+    print(' Ensemble:')
+    avg_loss_testset_ens, accuracy_testset_ens = test_classifier(
+        model, device, test_loader, testset_criterion, verbose, n_ens)
+
+    writer.add_scalars('testing/accuracy', {
+        'trainset_mean': accuracy_trainset_mean,
+        'trainset_ens': accuracy_trainset_ens,
+        'testset_mean': accuracy_testset_mean,
+        'testset_ens': accuracy_testset_ens
+    }, epoch)
+    writer.add_scalars('testing/loss', {
+        'trainset_mean': avg_loss_trainset_mean,
+        'trainset_ens': avg_loss_trainset_ens,
+        'test_mean': avg_loss_testset_mean,
+        'testset_ens': avg_loss_testset_ens
+    }, epoch)
+
+    for i, child in enumerate(model.children()):
+        writer.add_histogram(f'std/layer_{i + 1}',
+                             (child.log_sigma_sqr.view(-1) / 2).exp(),
+                             epoch)
