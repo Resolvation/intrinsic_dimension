@@ -67,11 +67,9 @@ class StochasticConv2d(nn.Module):
         self.dilation = _pair(dilation)
         self.groups = 1
         self.mu = Parameter(torch.Tensor(
-            out_channels, in_channels, *self.kernel_size
-        ))
+            out_channels, in_channels, *self.kernel_size))
         self.log_sigma_sqr = Parameter(torch.Tensor(
-            out_channels, in_channels, *self.kernel_size
-        ))
+            out_channels, in_channels, *self.kernel_size))
         if bias:
             self.bias = Parameter(torch.Tensor(out_channels))
         else:
@@ -112,3 +110,81 @@ class StochasticConv2d(nn.Module):
             s += ', bias=False'
         s += ')'
         return s.format(name=self.__class__.__name__, **self.__dict__)
+
+
+def dense_offset(d, shape):
+    """
+    Return dense offset matrix to use in Offset Layers.
+    """
+    return F.normalize(torch.randn(shape+[d]), dim=-1)
+
+
+class StochasticLinearOffset(nn.Module):
+    """
+    Applies a variational linear transformation to the incoming data in given
+    parameter subspace.
+    """
+    def __init__(self, d, in_features, out_features, bias=True):
+        super().__init__()
+        self.d = d
+        self.in_features = in_features
+        self.out_features = out_features
+        self.register_buffer("P_A",
+                             dense_offset(d, [out_features, in_features]))
+        self.register_buffer("A_0", torch.Tensor(out_features, in_features))
+        self.weight = lambda theta: torch.matmul(self.P_A, theta) + self.A_0
+        if bias:
+            self.register_buffer("P_b", dense_offset(d, [out_features]))
+            self.register_buffer("b_0", torch.Tensor(out_features))
+            self.bias = lambda theta: torch.matmul(self.P_b, theta) + self.b_0
+        else:
+            self.register_buffer("P_b", None)
+            self.register_buffer("b_0", None)
+            self.bias = lambda theta: None
+        self._reset_parameters()
+
+    def _reset_parameters(self):
+        init.kaiming_normal_(self.A_0)
+        if self.bias is not None:
+            init.zeros_(self.b_0)
+
+    def forward(self, input, theta):
+        return F.linear(input, self.weight(theta), self.bias(theta))
+
+
+class StochasticConv2dOffset(nn.Module):
+    def __init__(self, d, in_channels, out_channels, kernel_size, stride=1,
+                 padding=0, dilation=1, bias=True):
+        super().__init__()
+        self.d = d
+        self.in_channels = in_channels
+        self.out_channels = out_channels
+        self.kernel_size = _pair(kernel_size)
+        self.stride = _pair(stride)
+        self.padding = _pair(padding)
+        self.dilation = _pair(dilation)
+        self.groups = 1
+        self.bias = bias
+        self.register_buffer("P_A", dense_offset(d, [out_channels, in_channels,
+                                                     *self.kernel_size, d]))
+        self.register_buffer("A_0", torch.Tensor(
+            out_channels, in_channels, *self.kernel_size))
+        self.weight = lambda theta: torch.matmul(self.P_A, theta) + self.A_0
+        if bias:
+            self.register_buffer("P_b", dense_offset(d, [out_channels]))
+            self.register_buffer("b_0", torch.Tensor(out_channels))
+            self.bias = lambda theta: torch.matmul(self.P_b, theta) + self.b_0
+        else:
+            self.register_buffer("P_b", None)
+            self.register_buffer("b_0", None)
+            self.bias = lambda theta: None
+
+    def _reset_parameters(self):
+        init.kaiming_normal_(self.A_0)
+        if self.bias is not None:
+            init.zeros_(self.b_0)
+
+    def forward(self, input, theta):
+        return F.conv2d(input, self.weight(theta), self.bias(theta),
+                        stride=self.stride, padding=self.padding,
+                        dilation=self.dilation, groups=self.groups)
