@@ -3,9 +3,9 @@ from models.layers import Flatten
 
 
 class LeNet300_100(nn.Module):
-    def __init__(self, activation='Tanh'):
+    def __init__(self, activation='Tanh', n_classes=10):
         super().__init__()
-
+        self.n_classes = n_classes
         if activation == 'Tanh':
             activation = nn.Tanh
         elif activation == 'ReLU':

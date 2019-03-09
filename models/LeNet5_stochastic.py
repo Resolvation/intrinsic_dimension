@@ -4,8 +4,9 @@ from models.layers import StochasticLinear, StochasticConv2d
 
 
 class LeNet5(nn.Module):
-    def __init__(self):
+    def __init__(self, n_classes=10):
         super().__init__()
+        self.n_classes = n_classes
         self.conv1 = StochasticConv2d(3, 6, 5)
         self.conv2 = StochasticConv2d(6, 16, 5)
         self.fc1 = StochasticLinear(16*5*5, 120)

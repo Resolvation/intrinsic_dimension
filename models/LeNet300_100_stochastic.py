@@ -5,8 +5,9 @@ from models.layers import StochasticLinear
 
 
 class LeNet300_100(nn.Module):
-    def __init__(self):
+    def __init__(self, n_classes=10):
         super().__init__()
+        self.n_classes = 10
         self.fc1 = StochasticLinear(28*28, 300)
         self.fc2 = StochasticLinear(300, 100)
         self.fc3 = StochasticLinear(100, 10)

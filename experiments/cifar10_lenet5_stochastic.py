@@ -8,8 +8,9 @@ from core.utils import SGVLB
 from models.LeNet5_stochastic import LeNet5
 
 
-torch.manual_seed(42)
-torch.cuda.manual_seed(42)
+seed = 42
+torch.manual_seed(seed)
+torch.cuda.manual_seed(seed)
 
 device = torch.device('cuda')
 writer = SummaryWriter('../writers/CIFAR10_LeNet5_stochastic')
@@ -23,7 +24,7 @@ testset_criterion = SGVLB(model, len(test_loader.dataset))
 lr = 0.001
 optimizer = optim.Adam(model.parameters(), lr=lr)
 
-n_epochs = 20
+n_epochs = 100
 for epoch in range(1, n_epochs + 1):
     writer.add_scalar('training/learning_rate', lr, epoch)
 
@@ -34,18 +35,37 @@ for epoch in range(1, n_epochs + 1):
     writer.add_scalar('training/accuracy', accuracy, epoch)
 
     if epoch % 10 == 0:
-        print('Train set:')
+        print('Mean:')
+        print(' Train set:')
         avg_loss, accuracy = test_classifier(
             model, device, train_loader, trainset_criterion, True)
-        writer.add_scalar('testing/trainset/loss', avg_loss, epoch)
-        writer.add_scalar('testing/trainset/accuracy', accuracy, epoch)
+        writer.add_scalar('testing/det/trainset/loss', avg_loss, epoch)
+        writer.add_scalar('testing/det/trainset/accuracy', accuracy, epoch)
 
-        print('Test set:')
+        print(' Test set:')
         avg_loss, accuracy = test_classifier(
             model, device, test_loader, testset_criterion, True)
-        writer.add_scalar('testing/testset/loss', avg_loss, epoch)
-        writer.add_scalar('testing/testset/accuracy', accuracy, epoch)
+        writer.add_scalar('testing/det/testset/loss', avg_loss, epoch)
+        writer.add_scalar('testing/det/testset/accuracy', accuracy, epoch)
 
-torch.save(model.state_dict(), '../tars/CIFAR10_LeNet5_stochastic'
+        print('Ensemble:')
+        print(' Train set:')
+        avg_loss, accuracy = test_classifier(
+            model, device, train_loader, trainset_criterion, True, 10)
+        writer.add_scalar('testing/ens/trainset/loss', avg_loss, epoch)
+        writer.add_scalar('testing/ens/trainset/accuracy', accuracy, epoch)
+
+        print(' Test set:')
+        avg_loss, accuracy = test_classifier(
+            model, device, test_loader, testset_criterion, True, 10)
+        writer.add_scalar('testing/ens/testset/loss', avg_loss, epoch)
+        writer.add_scalar('testing/ens/testset/accuracy', accuracy, epoch)
+
+        for i, child in enumerate(model.children()):
+            writer.add_histogram(f'std/{i+1}',
+                                 (child.log_sigma_sqr.view(-1) / 2).exp(),
+                                 epoch)
+
+torch.save(model.state_dict(), '../tars/CIFAR10_LeNet5_stochastic_'
                                f'{accuracy:.02f}.tar')
 writer.close()

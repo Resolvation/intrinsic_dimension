@@ -1,6 +1,7 @@
 from datetime import datetime
 
 import torch
+from torch.nn import functional as F
 
 
 def train(model, device, train_loader, criterion, optimizer, epoch,
@@ -37,16 +38,34 @@ def train(model, device, train_loader, criterion, optimizer, epoch,
     return avg_loss, accuracy
 
 
-def test_classifier(model, device, test_loader, criterion, verbose=False):
+def logmeanexp(x, dim=None, keepdim=False):
+    """Stable computation of log(mean(exp(x))"""
+    if dim is None:
+        x, dim = x.view(-1), 0
+    xm, _ = torch.max(x, dim, keepdim=True)
+    x = xm + torch.log(torch.mean(torch.exp(x - xm), dim, keepdim=True))
+    return x if keepdim else x.squeeze(dim)
+
+
+def test_classifier(model, device, test_loader,
+                    criterion, verbose=False, n_ens=1):
     total_loss = 0.
     correct = 0
-    model.eval()
+    if n_ens == 1:
+        model.eval()
+    else:
+        model.train()
 
     with torch.no_grad():
         for features, labels in test_loader:
             features, labels = features.to(device), labels.to(device)
+            outputs = torch.empty(features.shape[0], model.n_classes,
+                                  n_ens, device=device)
 
-            outputs = model(features)
+            for i in range(n_ens):
+                outputs[:, :, i] = F.log_softmax(model(features), dim=1)
+
+            outputs = logmeanexp(outputs, dim=2)
 
             loss = criterion(outputs, labels)
             total_loss += loss.item()
@@ -58,7 +77,7 @@ def test_classifier(model, device, test_loader, criterion, verbose=False):
     accuracy = 100 * correct / len(test_loader.dataset)
 
     if verbose:
-        print(f' Average loss: {avg_loss:.6f}')
-        print(f' Accuracy: {accuracy:.2f}')
+        print(f'  Average loss: {avg_loss:.6f}')
+        print(f'  Accuracy: {accuracy:.2f}')
 
     return avg_loss, accuracy

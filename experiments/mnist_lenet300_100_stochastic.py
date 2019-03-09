@@ -8,8 +8,9 @@ from core.utils import SGVLB
 from models.LeNet300_100_stochastic import LeNet300_100
 
 
-torch.manual_seed(42)
-torch.cuda.manual_seed(42)
+seed = 42
+torch.manual_seed(seed)
+torch.cuda.manual_seed(seed)
 
 device = torch.device('cuda')
 writer = SummaryWriter('../writers/MNIST_LeNet300_100_stochastic')
@@ -46,6 +47,6 @@ for epoch in range(1, n_epochs + 1):
         writer.add_scalar('testing/testset/loss', avg_loss, epoch)
         writer.add_scalar('testing/testset/accuracy', accuracy, epoch)
 
-torch.save(model.state_dict(), '../tars/MNIST_LeNet300_100_stochastic'
+torch.save(model.state_dict(), '../tars/MNIST_LeNet300_100_stochastic_'
                                f'{accuracy:.02f}.tar')
 writer.close()

@@ -8,11 +8,12 @@ from core.utils import linear_lr, adjust_learning_rate
 from models.LeNet5 import LeNet5
 
 
-torch.manual_seed(42)
-torch.cuda.manual_seed(42)
+seed = 42
+torch.manual_seed(seed)
+torch.cuda.manual_seed(seed)
 
 device = torch.device('cuda')
-writer = SummaryWriter('../writers/CIFAR10_LeNet5_linear_uniform')
+writer = SummaryWriter('../writers/CIFAR10_LeNet5_baseline')
 
 criterion = nn.CrossEntropyLoss()
 train_loader, test_loader = cifar10_loaders()
@@ -46,6 +47,6 @@ for epoch in range(1, n_epochs + 1):
         writer.add_scalar('testing/testset/loss', avg_loss, epoch)
         writer.add_scalar('testing/testset/accuracy', accuracy, epoch)
 
-torch.save(model.state_dict(), '../tars/CIFAR10_LeNet5_linear_uniform'
+torch.save(model.state_dict(), '../tars/CIFAR10_LeNet5_baseline_'
                                f'{accuracy:.02f}.tar')
 writer.close()
