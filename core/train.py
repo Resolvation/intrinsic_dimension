@@ -114,8 +114,3 @@ def eval_stochastic(writer, model, device, train_loader, test_loader,
         'test_mean': avg_loss_testset_mean,
         'testset_ens': avg_loss_testset_ens
     }, epoch)
-
-    for i, child in enumerate(model.children()):
-        writer.add_histogram(f'std/layer_{i + 1}',
-                             (child.log_sigma_sqr.view(-1) / 2).exp(),
-                             epoch)

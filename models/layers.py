@@ -166,7 +166,7 @@ class StochasticConv2dOffset(nn.Module):
         self.groups = 1
         self.bias = bias
         self.register_buffer("P_A", dense_offset(d, [out_channels, in_channels,
-                                                     *self.kernel_size, d]))
+                                                     *self.kernel_size]))
         self.register_buffer("A_0", torch.Tensor(
             out_channels, in_channels, *self.kernel_size))
         self.weight = lambda theta: torch.matmul(self.P_A, theta) + self.A_0

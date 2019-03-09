@@ -26,6 +26,9 @@ optimizer = optim.Adam(model.parameters(), lr=lr)
 
 eval_stochastic(writer, model, device, train_loader, test_loader,
                 trainset_criterion, testset_criterion, 0)
+for i, child in enumerate(model.children()):
+    writer.add_histogram(f'std/layer_{i + 1}',
+                         (child.log_sigma_sqr.view(-1) / 2).exp(), 0)
 
 n_epochs = 400
 for epoch in range(1, n_epochs + 1):
@@ -42,6 +45,10 @@ for epoch in range(1, n_epochs + 1):
     if epoch % 10 == 0:
         eval_stochastic(writer, model, device, train_loader, test_loader,
                         trainset_criterion, testset_criterion, epoch)
+        for i, child in enumerate(model.children()):
+            writer.add_histogram(f'std/layer_{i + 1}',
+                                 (child.log_sigma_sqr.view(-1) / 2).exp(),
+                                 epoch)
 
 torch.save(model.state_dict(), '../tars/CIFAR10_LeNet5_stochastic_'
                                f'{accuracy:.02f}.tar')

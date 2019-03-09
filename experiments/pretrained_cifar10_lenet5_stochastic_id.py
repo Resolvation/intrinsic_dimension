@@ -5,7 +5,7 @@ from tensorboardX import SummaryWriter
 from core.data import cifar10_loaders
 from core.train import train, eval_stochastic
 from core.utils import SGVLB
-from models.LeNet5_stochastic import LeNet5_stochastic
+from models.LeNet5_stochastic_id import LeNet5_stochastic_id
 
 
 seed = 42
@@ -13,10 +13,10 @@ torch.manual_seed(seed)
 torch.cuda.manual_seed(seed)
 
 device = torch.device('cuda')
-writer = SummaryWriter('../writers/pretrained_CIFAR10_LeNet5_stochastic')
+writer = SummaryWriter('../writers/pretrained_CIFAR10_LeNet5_stochastic_id')
 
 train_loader, test_loader = cifar10_loaders()
-model = LeNet5_stochastic()
+model = LeNet5_stochastic_id(50)
 model.load_weights('../tars/CIFAR10_LeNet5_baseline_73.97.tar').cuda()
 
 trainset_criterion = SGVLB(model, len(train_loader.dataset))
@@ -27,9 +27,7 @@ optimizer = optim.Adam(model.parameters(), lr=lr)
 
 eval_stochastic(writer, model, device, train_loader, test_loader,
                 trainset_criterion, testset_criterion, 0)
-for i, child in enumerate(model.children()):
-    writer.add_histogram(f'std/layer_{i + 1}',
-                         (child.log_sigma_sqr.view(-1) / 2).exp(), 0)
+writer.add_histogram(f'std/', (model.log_sigma_sqr.view(-1) / 2).exp(), 0)
 
 n_epochs = 100
 for epoch in range(1, n_epochs + 1):
@@ -44,11 +42,11 @@ for epoch in range(1, n_epochs + 1):
     if epoch % 10 == 0:
         eval_stochastic(writer, model, device, train_loader, test_loader,
                         trainset_criterion, testset_criterion, epoch)
-        for i, child in enumerate(model.children()):
-            writer.add_histogram(f'std/layer_{i + 1}',
-                                 (child.log_sigma_sqr.view(-1) / 2).exp(),
-                                 epoch)
+        writer.add_histogram(f'std/', (model.log_sigma_sqr.view(-1) / 2).exp(),
+                             epoch)
+
+
 
 torch.save(model.state_dict(), '../tars/pretrained_CIFAR10_LeNet5_stochastic_'
-                               f'{accuracy:.02f}.tar')
+                               f'id_{accuracy:.02f}.tar')
 writer.close()

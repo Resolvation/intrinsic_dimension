@@ -13,7 +13,7 @@ class LeNet5_stochastic_id(nn.Module):
         self.n_classes = n_classes
         self.d = d
         self.mu = Parameter(torch.zeros(d))
-        self.log_sigma_sqr = Parameter(torch.full(d, -6))
+        self.log_sigma_sqr = Parameter(torch.full([d], -6))
         self.conv1 = StochasticConv2dOffset(d, 3, 6, 5)
         self.conv2 = StochasticConv2dOffset(d, 6, 16, 5)
         self.fc1 = StochasticLinearOffset(d, 16*5*5, 120)
