@@ -45,8 +45,6 @@ for epoch in range(1, n_epochs + 1):
         writer.add_histogram(f'std/', (model.log_sigma_sqr.view(-1) / 2).exp(),
                              epoch)
 
-
-
 torch.save(model.state_dict(), '../tars/pretrained_CIFAR10_LeNet5_stochastic_'
                                f'id_{accuracy:.02f}.tar')
 writer.close()
