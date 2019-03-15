@@ -3,7 +3,7 @@ from torch import nn, optim
 from tensorboardX import SummaryWriter
 
 from core.data import cifar10_loaders
-from core.train import train, test_classifier
+from core.train import train, eval_determenistic
 from core.utils import linear_lr, adjust_learning_rate
 from models.LeNet5 import LeNet5
 
@@ -35,17 +35,8 @@ for epoch in range(1, n_epochs + 1):
     writer.add_scalar('training/accuracy', accuracy, epoch)
 
     if epoch % 10 == 0:
-        print('Train set:')
-        avg_loss, accuracy = test_classifier(
-            model, device, train_loader, criterion, True)
-        writer.add_scalar('testing/trainset/loss', avg_loss, epoch)
-        writer.add_scalar('testing/trainset/accuracy', accuracy, epoch)
-
-        print('Test set:')
-        avg_loss, accuracy = test_classifier(
-            model, device, test_loader, criterion, True)
-        writer.add_scalar('testing/testset/loss', avg_loss, epoch)
-        writer.add_scalar('testing/testset/accuracy', accuracy, epoch)
+        eval_determenistic(writer, model, device, train_loader,
+                           test_loader, criterion, epoch, True)
 
 torch.save(model.state_dict(), '../tars/CIFAR10_LeNet5_baseline_'
                                f'{accuracy:.02f}.tar')

@@ -83,34 +83,60 @@ def test_classifier(model, device, test_loader,
     return avg_loss, accuracy
 
 
+def eval_determenistic(writer, model, device, train_loader, test_loader,
+                       criterion, epoch, verbose):
+    if verbose:
+        print('Trainset:')
+    avg_loss_trainset, accuracy_trainset = test_classifier(
+        model, device, train_loader, criterion, verbose)
+
+    if verbose:
+        print('Test set:')
+    avg_loss_testset, accuracy_testset = test_classifier(
+        model, device, test_loader, criterion, verbose)
+
+    writer.add_scalars('testing/loss', {
+        'trainset': avg_loss_trainset,
+        'testset': avg_loss_testset
+    }, epoch)
+    writer.add_scalars('testing/accuracy', {
+        'trainset': accuracy_trainset,
+        'testset': accuracy_testset
+    }, epoch)
+
+
 def eval_stochastic(writer, model, device, train_loader, test_loader,
                     trainset_criterion, testset_criterion, epoch,
                     verbose=True, n_ens=10):
-    print('Trainset:')
-    print(' Mean:')
+    if verbose:
+        print('Trainset:')
+        print(' Mean:')
     avg_loss_trainset_mean, accuracy_trainset_mean = test_classifier(
         model, device, train_loader, trainset_criterion, verbose)
-    print(' Ensemble:')
+    if verbose:
+        print(' Ensemble:')
     avg_loss_trainset_ens, accuracy_trainset_ens = test_classifier(
         model, device, train_loader, trainset_criterion, verbose, n_ens)
 
-    print('Testset:')
-    print(' Mean:')
+    if verbose:
+        print('Testset:')
+        print(' Mean:')
     avg_loss_testset_mean, accuracy_testset_mean = test_classifier(
         model, device, test_loader, testset_criterion, verbose)
-    print(' Ensemble:')
+    if verbose:
+        print(' Ensemble:')
     avg_loss_testset_ens, accuracy_testset_ens = test_classifier(
         model, device, test_loader, testset_criterion, verbose, n_ens)
 
-    writer.add_scalars('testing/accuracy', {
-        'trainset_mean': accuracy_trainset_mean,
-        'trainset_ens': accuracy_trainset_ens,
-        'testset_mean': accuracy_testset_mean,
-        'testset_ens': accuracy_testset_ens
-    }, epoch)
     writer.add_scalars('testing/loss', {
         'trainset_mean': avg_loss_trainset_mean,
         'trainset_ens': avg_loss_trainset_ens,
         'test_mean': avg_loss_testset_mean,
         'testset_ens': avg_loss_testset_ens
+    }, epoch)
+    writer.add_scalars('testing/accuracy', {
+        'trainset_mean': accuracy_trainset_mean,
+        'trainset_ens': accuracy_trainset_ens,
+        'testset_mean': accuracy_testset_mean,
+        'testset_ens': accuracy_testset_ens
     }, epoch)
