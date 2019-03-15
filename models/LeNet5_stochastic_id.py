@@ -18,7 +18,7 @@ class LeNet5_stochastic_id(nn.Module):
         self.conv2 = StochasticConv2dOffset(d, 6, 16, 5)
         self.fc1 = StochasticLinearOffset(d, 16*5*5, 120)
         self.fc2 = StochasticLinearOffset(d, 120, 84)
-        self.fc3 = StochasticLinearOffset(d, 84, 10)
+        self.fc3 = StochasticLinearOffset(d, 84, n_classes)
 
     def forward(self, x):
         if self.training:
@@ -51,3 +51,7 @@ class LeNet5_stochastic_id(nn.Module):
         self.fc3.b_0 = donor.fc3.bias
         del donor
         return self
+
+    def log_weights(self, writer, epoch):
+        writer.add_histogram(f'std/', (self.log_sigma_sqr.view(-1) / 2).exp(),
+                             epoch)

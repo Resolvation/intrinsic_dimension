@@ -14,7 +14,7 @@ class LeNet5_stochastic(nn.Module):
         self.conv2 = StochasticConv2d(6, 16, 5)
         self.fc1 = StochasticLinear(16*5*5, 120)
         self.fc2 = StochasticLinear(120, 84)
-        self.fc3 = StochasticLinear(84, 10)
+        self.fc3 = StochasticLinear(84, n_classes)
 
     def forward(self, x):
         x = F.max_pool2d(F.relu(self.conv1(x)), kernel_size=2)
@@ -44,3 +44,9 @@ class LeNet5_stochastic(nn.Module):
         self.fc3.bias = donor.fc3.bias
         del donor
         return self
+
+    def log_weights(self, writer, epoch):
+        for i, child in enumerate(self.children()):
+            writer.add_histogram(f'std/layer_{i + 1}',
+                                 (child.log_sigma_sqr.view(-1) / 2).exp(),
+                                 epoch)

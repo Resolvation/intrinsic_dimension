@@ -19,7 +19,7 @@ class LeNet300_100(nn.Module):
             activation(),
             nn.Linear(300, 100),
             activation(),
-            nn.Linear(100, 10)
+            nn.Linear(100, n_classes)
         )
 
     def forward(self, x):
