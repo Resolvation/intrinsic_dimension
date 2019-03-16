@@ -29,7 +29,7 @@ class StochasticLinear(nn.Module):
 
     def _reset_parameters(self):
         init.kaiming_normal_(self.mu)
-        init.constant_(self.log_sigma_sqr, -6)
+        init.constant_(self.log_sigma_sqr, -10)
         if self.bias is not None:
             init.zeros_(self.bias)
 
@@ -78,7 +78,7 @@ class StochasticConv2d(nn.Module):
 
     def _reset_parameters(self):
         init.kaiming_normal_(self.mu)
-        init.constant_(self.log_sigma_sqr, -6)
+        init.constant_(self.log_sigma_sqr, -10)
         if self.bias is not None:
             init.zeros_(self.bias)
 

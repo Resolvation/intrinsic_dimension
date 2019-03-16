@@ -3,11 +3,16 @@ from datetime import datetime
 import torch
 from torch.nn import functional as F
 
+from .metrics import CELoss
+
 
 def train(model, device, train_loader, criterion, optimizer, epoch,
           verbose=False):
     total_loss = 0.
+    nllloss = 0.
     correct = 0
+    total_logits = []
+    total_labels = []
     model.train()
     start_time = datetime.now()
 
@@ -21,6 +26,10 @@ def train(model, device, train_loader, criterion, optimizer, epoch,
         loss = criterion(outputs, labels)
         total_loss += loss.item()
 
+        nllloss += F.cross_entropy(outputs, labels)
+        total_logits.append(outputs)
+        total_labels.append(labels)
+
         loss.backward()
         optimizer.step()
 
@@ -28,14 +37,21 @@ def train(model, device, train_loader, criterion, optimizer, epoch,
         correct += pred.eq(labels.view_as(pred)).sum().item()
 
     avg_loss = total_loss / len(train_loader)
+    nllloss /= len(train_loader)
     accuracy = 100 * correct / len(train_loader.dataset)
     time = str(datetime.now() - start_time).split('.')[0]
 
-    if verbose:
-        print(f'-->Epoch: {epoch:03d}    Loss: {avg_loss:.8f}    '
-              f'Accuracy: {accuracy:.02f}    Time: {time}')
+    eceloss, mceloss = CELoss(15)(torch.cat(total_logits),
+                                  torch.cat(total_labels))
 
-    return avg_loss, accuracy
+    if verbose:
+        print(f'-->Epoch: {epoch:03d}    Loss: {avg_loss:8.06f}    '
+              f'NLLloss: {nllloss:8.06f}    '
+              f'ECELoss: {eceloss*100:5.02f}%    '
+              f'MCELoss: {mceloss*100:5.02f}%    '
+              f'Accuracy: {accuracy:5.02f}%    Time: {time}')
+
+    return avg_loss, nllloss, eceloss, mceloss, accuracy
 
 
 def logmeanexp(x, dim=None, keepdim=False):
@@ -51,6 +67,9 @@ def test_classifier(model, device, test_loader,
                     criterion, verbose=False, n_ens=1):
     total_loss = 0.
     correct = 0
+    nllloss = 0.
+    total_logits = []
+    total_labels = []
     if n_ens == 1:
         model.eval()
     else:
@@ -70,38 +89,61 @@ def test_classifier(model, device, test_loader,
             loss = criterion(outputs, labels)
             total_loss += loss.item()
 
+            nllloss += F.cross_entropy(outputs, labels)
+            total_logits.append(outputs)
+            total_labels.append(labels)
+
             pred = outputs.argmax(1, keepdim=True)
             correct += pred.eq(labels.view_as(pred)).sum().item()
 
     avg_loss = total_loss / len(test_loader)
+    nllloss /= len(test_loader)
     accuracy = 100 * correct / len(test_loader.dataset)
 
-    if verbose:
-        print(f'  Average loss: {avg_loss:.6f}')
-        print(f'  Accuracy: {accuracy:.2f}')
+    eceloss, mceloss = CELoss(15)(torch.cat(total_logits),
+                                  torch.cat(total_labels))
 
-    return avg_loss, accuracy
+    if verbose:
+        print(f'  Loss: {avg_loss:.06f}')
+        print(f'  NLLloss: {nllloss:.06f}')
+        print(f'  ECELoss: {eceloss*100:.02f}%')
+        print(f'  MCELoss: {mceloss*100:.02f}%')
+        print(f'  Accuracy: {accuracy:.02f}%')
+
+    return avg_loss, nllloss, eceloss, mceloss, accuracy
 
 
 def eval_determenistic(writer, model, device, train_loader, test_loader,
                        criterion, epoch, verbose):
     if verbose:
         print('Trainset:')
-    avg_loss_trainset, accuracy_trainset = test_classifier(
+    res_trainset = test_classifier(
         model, device, train_loader, criterion, verbose)
 
     if verbose:
         print('Test set:')
-    avg_loss_testset, accuracy_testset = test_classifier(
+    res_testset = test_classifier(
         model, device, test_loader, criterion, verbose)
 
     writer.add_scalars('testing/loss', {
-        'trainset': avg_loss_trainset,
-        'testset': avg_loss_testset
+        'trainset': res_trainset[0],
+        'testset': res_testset[0]
+    }, epoch)
+    writer.add_scalars('testing/nllloss', {
+        'trainset': res_trainset[1],
+        'testset': res_testset[1]
+    }, epoch)
+    writer.add_scalars('testing/eceloss', {
+        'trainset': res_trainset[2],
+        'testset': res_testset[2]
+    }, epoch)
+    writer.add_scalars('testing/mceloss', {
+        'trainset': res_trainset[3],
+        'testset': res_testset[3]
     }, epoch)
     writer.add_scalars('testing/accuracy', {
-        'trainset': accuracy_trainset,
-        'testset': accuracy_testset
+        'trainset': res_trainset[4],
+        'testset': res_testset[4]
     }, epoch)
 
 
@@ -111,32 +153,50 @@ def eval_stochastic(writer, model, device, train_loader, test_loader,
     if verbose:
         print('Trainset:')
         print(' Mean:')
-    avg_loss_trainset_mean, accuracy_trainset_mean = test_classifier(
+    res_trainset_mean = test_classifier(
         model, device, train_loader, trainset_criterion, verbose)
     if verbose:
         print(' Ensemble:')
-    avg_loss_trainset_ens, accuracy_trainset_ens = test_classifier(
+    res_trainset_ens = test_classifier(
         model, device, train_loader, trainset_criterion, verbose, n_ens)
 
     if verbose:
         print('Testset:')
         print(' Mean:')
-    avg_loss_testset_mean, accuracy_testset_mean = test_classifier(
+    res_testset_mean = test_classifier(
         model, device, test_loader, testset_criterion, verbose)
     if verbose:
         print(' Ensemble:')
-    avg_loss_testset_ens, accuracy_testset_ens = test_classifier(
+    res_testset_ens = test_classifier(
         model, device, test_loader, testset_criterion, verbose, n_ens)
 
     writer.add_scalars('testing/loss', {
-        'trainset_mean': avg_loss_trainset_mean,
-        'trainset_ens': avg_loss_trainset_ens,
-        'test_mean': avg_loss_testset_mean,
-        'testset_ens': avg_loss_testset_ens
+        'trainset_mean': res_trainset_mean[0],
+        'trainset_ens': res_trainset_ens[0],
+        'test_mean': res_testset_mean[0],
+        'testset_ens': res_testset_ens[0]
+    }, epoch)
+    writer.add_scalars('testing/nllloss', {
+        'trainset_mean': res_trainset_mean[1],
+        'trainset_ens': res_trainset_ens[1],
+        'test_mean': res_testset_mean[1],
+        'testset_ens': res_testset_ens[1]
+    }, epoch)
+    writer.add_scalars('testing/eceloss', {
+        'trainset_mean': res_trainset_mean[2],
+        'trainset_ens': res_trainset_ens[2],
+        'test_mean': res_testset_mean[2],
+        'testset_ens': res_testset_ens[2]
+    }, epoch)
+    writer.add_scalars('testing/mceloss', {
+        'trainset_mean': res_trainset_mean[3],
+        'trainset_ens': res_trainset_ens[3],
+        'testset_mean': res_testset_mean[3],
+        'testset_ens': res_testset_ens[3]
     }, epoch)
     writer.add_scalars('testing/accuracy', {
-        'trainset_mean': accuracy_trainset_mean,
-        'trainset_ens': accuracy_trainset_ens,
-        'testset_mean': accuracy_testset_mean,
-        'testset_ens': accuracy_testset_ens
+        'trainset_mean': res_trainset_mean[4],
+        'trainset_ens': res_trainset_ens[4],
+        'testset_mean': res_testset_mean[4],
+        'testset_ens': res_testset_ens[4]
     }, epoch)
