@@ -13,7 +13,7 @@ class LeNet5_stochastic_id(nn.Module):
         self.n_classes = n_classes
         self.d = d
         self.mu = Parameter(torch.zeros(d))
-        self.log_sigma_sqr = Parameter(torch.full([d], -6))
+        self.log_sigma_sqr = Parameter(torch.full([d], -10))
         self.conv1 = StochasticConv2dOffset(d, 3, 6, 5)
         self.conv2 = StochasticConv2dOffset(d, 6, 16, 5)
         self.fc1 = StochasticLinearOffset(d, 16*5*5, 120)
@@ -37,7 +37,7 @@ class LeNet5_stochastic_id(nn.Module):
                  - self.log_sigma_sqr).sum() - d) / 2
 
     def load_weights(self, path):
-        donor = LeNet5()
+        donor = LeNet5().cuda()
         donor.load_state_dict(torch.load(path))
         self.conv1.A_0 = donor.conv1.weight
         self.conv1.b_0 = donor.conv1.bias

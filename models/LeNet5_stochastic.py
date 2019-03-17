@@ -30,7 +30,7 @@ class LeNet5_stochastic(nn.Module):
         return res
 
     def load_weights(self, path):
-        donor = LeNet5()
+        donor = LeNet5().cuda()
         donor.load_state_dict(torch.load(path))
         self.conv1.mu = donor.conv1.weight
         self.conv1.bias = donor.conv1.bias

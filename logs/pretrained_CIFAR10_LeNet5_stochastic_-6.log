@@ -1,0 +1,388 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Trainset:
+ Mean:
+  Loss: 3.801763
+  NLLloss: 0.701521
+  ECELoss: 0.53%
+  MCELoss: 4.77%
+  Accuracy: 75.36%
+ Ensemble:
+  Loss: 4.381506
+  NLLloss: 1.281264
+  ECELoss: 4.35%
+  MCELoss: 7.14%
+  Accuracy: 56.27%
+Testset:
+ Mean:
+  Loss: 16.231457
+  NLLloss: 0.730247
+  ECELoss: 2.20%
+  MCELoss: 19.45%
+  Accuracy: 74.90%
+ Ensemble:
+  Loss: 16.648713
+  NLLloss: 1.147504
+  ECELoss: 5.93%
+  MCELoss: 10.17%
+  Accuracy: 60.99%
+-->Epoch: 001    Loss: 4.504316    NLLloss: 1.420729    ECELoss:  8.41%    MCELoss: 14.03%    Accuracy: 52.02%    Time: 0:00:08
+-->Epoch: 002    Loss: 4.291201    NLLloss: 1.246427    ECELoss:  4.28%    MCELoss:  8.64%    Accuracy: 56.29%    Time: 0:00:08
+-->Epoch: 003    Loss: 4.196018    NLLloss: 1.191586    ECELoss:  3.46%    MCELoss: 13.25%    Accuracy: 58.15%    Time: 0:00:07
+-->Epoch: 004    Loss: 4.124682    NLLloss: 1.161011    ECELoss:  3.15%    MCELoss:  5.35%    Accuracy: 59.28%    Time: 0:00:08
+-->Epoch: 005    Loss: 4.060140    NLLloss: 1.137613    ECELoss:  2.99%    MCELoss:  5.51%    Accuracy: 59.89%    Time: 0:00:09
+-->Epoch: 006    Loss: 4.001727    NLLloss: 1.120275    ECELoss:  2.58%    MCELoss: 12.89%    Accuracy: 60.74%    Time: 0:00:09
+-->Epoch: 007    Loss: 3.945605    NLLloss: 1.105061    ECELoss:  2.56%    MCELoss:  4.27%    Accuracy: 61.10%    Time: 0:00:08
+-->Epoch: 008    Loss: 3.893439    NLLloss: 1.093821    ECELoss:  2.23%    MCELoss: 13.15%    Accuracy: 61.66%    Time: 0:00:06
+-->Epoch: 009    Loss: 3.844859    NLLloss: 1.086172    ECELoss:  2.21%    MCELoss:  3.87%    Accuracy: 61.74%    Time: 0:00:08
+-->Epoch: 010    Loss: 3.805981    NLLloss: 1.087805    ECELoss:  2.27%    MCELoss: 87.02%    Accuracy: 61.87%    Time: 0:00:10
+Trainset:
+ Mean:
+  Loss: 3.590073
+  NLLloss: 0.892275
+  ECELoss: 1.74%
+  MCELoss: 12.88%
+  Accuracy: 68.43%
+ Ensemble:
+  Loss: 3.630772
+  NLLloss: 0.932974
+  ECELoss: 9.67%
+  MCELoss: 13.72%
+  Accuracy: 68.47%
+Testset:
+ Mean:
+  Loss: 14.338422
+  NLLloss: 0.849430
+  ECELoss: 1.50%
+  MCELoss: 4.86%
+  Accuracy: 70.22%
+ Ensemble:
+  Loss: 14.363923
+  NLLloss: 0.874932
+  ECELoss: 8.11%
+  MCELoss: 11.92%
+  Accuracy: 70.14%
+-->Epoch: 011    Loss: 3.749441    NLLloss: 1.071666    ECELoss:  2.28%    MCELoss:  5.33%    Accuracy: 62.07%    Time: 0:00:10
+-->Epoch: 012    Loss: 3.699163    NLLloss: 1.061553    ECELoss:  1.99%    MCELoss:  3.98%    Accuracy: 62.81%    Time: 0:00:09
+-->Epoch: 013    Loss: 3.655321    NLLloss: 1.057655    ECELoss:  2.33%    MCELoss:  4.87%    Accuracy: 62.78%    Time: 0:00:09
+-->Epoch: 014    Loss: 3.625112    NLLloss: 1.067125    ECELoss:  2.04%    MCELoss: 12.87%    Accuracy: 62.65%    Time: 0:00:09
+-->Epoch: 015    Loss: 3.576505    NLLloss: 1.057883    ECELoss:  1.74%    MCELoss:  4.38%    Accuracy: 63.00%    Time: 0:00:09
+-->Epoch: 016    Loss: 3.534304    NLLloss: 1.055052    ECELoss:  1.92%    MCELoss: 12.65%    Accuracy: 62.88%    Time: 0:00:06
+-->Epoch: 017    Loss: 3.495782    NLLloss: 1.055418    ECELoss:  1.97%    MCELoss: 12.84%    Accuracy: 63.00%    Time: 0:00:09
+-->Epoch: 018    Loss: 3.452355    NLLloss: 1.050521    ECELoss:  1.94%    MCELoss: 12.96%    Accuracy: 63.02%    Time: 0:00:10
+-->Epoch: 019    Loss: 3.418914    NLLloss: 1.055398    ECELoss:  1.91%    MCELoss: 13.06%    Accuracy: 62.96%    Time: 0:00:09
+-->Epoch: 020    Loss: 3.381037    NLLloss: 1.055563    ECELoss:  1.76%    MCELoss:  3.73%    Accuracy: 62.90%    Time: 0:00:10
+Trainset:
+ Mean:
+  Loss: 3.199096
+  NLLloss: 0.892813
+  ECELoss: 2.07%
+  MCELoss: 3.66%
+  Accuracy: 68.55%
+ Ensemble:
+  Loss: 3.226773
+  NLLloss: 0.920490
+  ECELoss: 9.40%
+  MCELoss: 14.13%
+  Accuracy: 68.77%
+Testset:
+ Mean:
+  Loss: 12.381735
+  NLLloss: 0.850320
+  ECELoss: 1.54%
+  MCELoss: 10.10%
+  Accuracy: 70.21%
+ Ensemble:
+  Loss: 12.398280
+  NLLloss: 0.866865
+  ECELoss: 8.10%
+  MCELoss: 13.54%
+  Accuracy: 70.62%
+-->Epoch: 021    Loss: 3.340878    NLLloss: 1.053246    ECELoss:  1.75%    MCELoss:  3.66%    Accuracy: 63.04%    Time: 0:00:10
+-->Epoch: 022    Loss: 3.297676    NLLloss: 1.047543    ECELoss:  1.61%    MCELoss:  4.31%    Accuracy: 63.38%    Time: 0:00:10
+-->Epoch: 023    Loss: 3.262123    NLLloss: 1.049265    ECELoss:  1.75%    MCELoss: 13.32%    Accuracy: 63.18%    Time: 0:00:10
+-->Epoch: 024    Loss: 3.224449    NLLloss: 1.048383    ECELoss:  1.55%    MCELoss:  2.71%    Accuracy: 63.48%    Time: 0:00:08
+-->Epoch: 025    Loss: 3.194384    NLLloss: 1.054858    ECELoss:  1.64%    MCELoss:  3.94%    Accuracy: 62.91%    Time: 0:00:06
+-->Epoch: 026    Loss: 3.155346    NLLloss: 1.051884    ECELoss:  1.61%    MCELoss:  3.32%    Accuracy: 63.24%    Time: 0:00:09
+-->Epoch: 027    Loss: 3.119734    NLLloss: 1.052134    ECELoss:  1.71%    MCELoss:  3.24%    Accuracy: 63.17%    Time: 0:00:10
+-->Epoch: 028    Loss: 3.087725    NLLloss: 1.055611    ECELoss:  1.60%    MCELoss: 12.63%    Accuracy: 63.04%    Time: 0:00:10
+-->Epoch: 029    Loss: 3.048407    NLLloss: 1.051386    ECELoss:  1.53%    MCELoss:  2.83%    Accuracy: 63.53%    Time: 0:00:09
+-->Epoch: 030    Loss: 3.020545    NLLloss: 1.058416    ECELoss:  1.48%    MCELoss:  3.75%    Accuracy: 62.80%    Time: 0:00:09
+Trainset:
+ Mean:
+  Loss: 2.836768
+  NLLloss: 0.892112
+  ECELoss: 2.86%
+  MCELoss: 4.42%
+  Accuracy: 68.65%
+ Ensemble:
+  Loss: 2.866134
+  NLLloss: 0.921478
+  ECELoss: 9.57%
+  MCELoss: 15.07%
+  Accuracy: 68.67%
+Testset:
+ Mean:
+  Loss: 10.562616
+  NLLloss: 0.839335
+  ECELoss: 2.15%
+  MCELoss: 5.40%
+  Accuracy: 70.56%
+ Ensemble:
+  Loss: 10.592177
+  NLLloss: 0.868897
+  ECELoss: 8.49%
+  MCELoss: 13.66%
+  Accuracy: 70.41%
+-->Epoch: 031    Loss: 2.985036    NLLloss: 1.057376    ECELoss:  1.49%    MCELoss: 13.23%    Accuracy: 62.95%    Time: 0:00:10
+-->Epoch: 032    Loss: 2.945920    NLLloss: 1.052346    ECELoss:  1.59%    MCELoss:  2.95%    Accuracy: 63.05%    Time: 0:00:09
+-->Epoch: 033    Loss: 2.923223    NLLloss: 1.063323    ECELoss:  1.62%    MCELoss: 36.86%    Accuracy: 62.96%    Time: 0:00:07
+-->Epoch: 034    Loss: 2.886263    NLLloss: 1.059500    ECELoss:  1.65%    MCELoss: 20.74%    Accuracy: 62.95%    Time: 0:00:06
+-->Epoch: 035    Loss: 2.856224    NLLloss: 1.062312    ECELoss:  1.39%    MCELoss: 13.14%    Accuracy: 62.94%    Time: 0:00:10
+-->Epoch: 036    Loss: 2.822636    NLLloss: 1.061169    ECELoss:  1.49%    MCELoss: 11.60%    Accuracy: 62.90%    Time: 0:00:09
+-->Epoch: 037    Loss: 2.793580    NLLloss: 1.064230    ECELoss:  1.75%    MCELoss:  4.00%    Accuracy: 62.62%    Time: 0:00:09
+-->Epoch: 038    Loss: 2.768654    NLLloss: 1.071042    ECELoss:  1.72%    MCELoss: 12.92%    Accuracy: 62.32%    Time: 0:00:10
+-->Epoch: 039    Loss: 2.732439    NLLloss: 1.066079    ECELoss:  1.31%    MCELoss: 12.82%    Accuracy: 62.51%    Time: 0:00:10
+-->Epoch: 040    Loss: 2.705828    NLLloss: 1.070153    ECELoss:  1.50%    MCELoss:  2.97%    Accuracy: 62.54%    Time: 0:00:09
+Trainset:
+ Mean:
+  Loss: 2.519768
+  NLLloss: 0.899419
+  ECELoss: 2.59%
+  MCELoss: 13.10%
+  Accuracy: 68.46%
+ Ensemble:
+  Loss: 2.559349
+  NLLloss: 0.939000
+  ECELoss: 8.48%
+  MCELoss: 13.19%
+  Accuracy: 67.95%
+Testset:
+ Mean:
+  Loss: 8.948963
+  NLLloss: 0.847219
+  ECELoss: 1.84%
+  MCELoss: 5.25%
+  Accuracy: 70.15%
+ Ensemble:
+  Loss: 8.975760
+  NLLloss: 0.874015
+  ECELoss: 7.86%
+  MCELoss: 15.05%
+  Accuracy: 70.09%
+-->Epoch: 041    Loss: 2.673849    NLLloss: 1.068410    ECELoss:  1.45%    MCELoss:  3.25%    Accuracy: 62.77%    Time: 0:00:07
+-->Epoch: 042    Loss: 2.647558    NLLloss: 1.071889    ECELoss:  1.54%    MCELoss:  3.41%    Accuracy: 62.22%    Time: 0:00:06
+-->Epoch: 043    Loss: 2.624587    NLLloss: 1.077964    ECELoss:  1.38%    MCELoss:  3.01%    Accuracy: 62.15%    Time: 0:00:09
+-->Epoch: 044    Loss: 2.595825    NLLloss: 1.077842    ECELoss:  1.46%    MCELoss: 13.31%    Accuracy: 62.04%    Time: 0:00:10
+-->Epoch: 045    Loss: 2.565818    NLLloss: 1.075892    ECELoss:  1.56%    MCELoss:  3.23%    Accuracy: 62.22%    Time: 0:00:09
+-->Epoch: 046    Loss: 2.536513    NLLloss: 1.074213    ECELoss:  1.33%    MCELoss: 12.88%    Accuracy: 62.32%    Time: 0:00:10
+-->Epoch: 047    Loss: 2.509998    NLLloss: 1.074802    ECELoss:  1.58%    MCELoss: 87.01%    Accuracy: 62.28%    Time: 0:00:09
+-->Epoch: 048    Loss: 2.485717    NLLloss: 1.076952    ECELoss:  1.47%    MCELoss:  3.34%    Accuracy: 62.19%    Time: 0:00:09
+-->Epoch: 049    Loss: 2.467831    NLLloss: 1.084975    ECELoss:  1.47%    MCELoss: 37.06%    Accuracy: 62.14%    Time: 0:00:10
+-->Epoch: 050    Loss: 2.439927    NLLloss: 1.082500    ECELoss:  1.31%    MCELoss: 12.73%    Accuracy: 62.08%    Time: 0:00:10
+Trainset:
+ Mean:
+  Loss: 2.259916
+  NLLloss: 0.915298
+  ECELoss: 2.72%
+  MCELoss: 4.58%
+  Accuracy: 68.03%
+ Ensemble:
+  Loss: 2.296968
+  NLLloss: 0.952349
+  ECELoss: 8.36%
+  MCELoss: 12.24%
+  Accuracy: 67.45%
+Testset:
+ Mean:
+  Loss: 7.584916
+  NLLloss: 0.861823
+  ECELoss: 2.17%
+  MCELoss: 17.84%
+  Accuracy: 69.91%
+ Ensemble:
+  Loss: 7.611104
+  NLLloss: 0.888010
+  ECELoss: 7.92%
+  MCELoss: 13.56%
+  Accuracy: 69.62%
+-->Epoch: 051    Loss: 2.414261    NLLloss: 1.081891    ECELoss:  1.33%    MCELoss:  5.06%    Accuracy: 62.18%    Time: 0:00:10
+-->Epoch: 052    Loss: 2.402396    NLLloss: 1.094217    ECELoss:  1.63%    MCELoss: 12.27%    Accuracy: 61.82%    Time: 0:00:10
+-->Epoch: 053    Loss: 2.381780    NLLloss: 1.097109    ECELoss:  1.33%    MCELoss: 12.87%    Accuracy: 61.56%    Time: 0:00:09
+-->Epoch: 054    Loss: 2.347564    NLLloss: 1.085864    ECELoss:  1.64%    MCELoss:  3.24%    Accuracy: 62.14%    Time: 0:00:09
+-->Epoch: 055    Loss: 2.329449    NLLloss: 1.089937    ECELoss:  1.67%    MCELoss: 13.17%    Accuracy: 61.79%    Time: 0:00:09
+-->Epoch: 056    Loss: 2.309982    NLLloss: 1.092136    ECELoss:  1.59%    MCELoss: 12.07%    Accuracy: 61.63%    Time: 0:00:10
+-->Epoch: 057    Loss: 2.289788    NLLloss: 1.092859    ECELoss:  1.64%    MCELoss:  3.91%    Accuracy: 61.67%    Time: 0:00:09
+-->Epoch: 058    Loss: 2.260610    NLLloss: 1.084328    ECELoss:  1.42%    MCELoss: 12.96%    Accuracy: 62.02%    Time: 0:00:10
+-->Epoch: 059    Loss: 2.250460    NLLloss: 1.094115    ECELoss:  1.17%    MCELoss: 12.25%    Accuracy: 61.59%    Time: 0:00:06
+-->Epoch: 060    Loss: 2.233663    NLLloss: 1.096922    ECELoss:  1.44%    MCELoss:  3.24%    Accuracy: 61.28%    Time: 0:00:05
+Trainset:
+ Mean:
+  Loss: 2.075415
+  NLLloss: 0.948371
+  ECELoss: 2.43%
+  MCELoss: 3.85%
+  Accuracy: 66.70%
+ Ensemble:
+  Loss: 2.110679
+  NLLloss: 0.983636
+  ECELoss: 8.50%
+  MCELoss: 12.94%
+  Accuracy: 66.25%
+Testset:
+ Mean:
+  Loss: 6.515401
+  NLLloss: 0.880182
+  ECELoss: 2.63%
+  MCELoss: 6.37%
+  Accuracy: 69.19%
+ Ensemble:
+  Loss: 6.547184
+  NLLloss: 0.911965
+  ECELoss: 8.45%
+  MCELoss: 12.47%
+  Accuracy: 68.96%
+-->Epoch: 061    Loss: 2.208938    NLLloss: 1.091139    ECELoss:  1.22%    MCELoss:  4.20%    Accuracy: 61.61%    Time: 0:00:10
+-->Epoch: 062    Loss: 2.203338    NLLloss: 1.103810    ECELoss:  1.37%    MCELoss: 86.76%    Accuracy: 61.33%    Time: 0:00:10
+-->Epoch: 063    Loss: 2.177222    NLLloss: 1.095603    ECELoss:  1.49%    MCELoss:  3.36%    Accuracy: 61.48%    Time: 0:00:09
+-->Epoch: 064    Loss: 2.169532    NLLloss: 1.105258    ECELoss:  1.70%    MCELoss: 12.65%    Accuracy: 61.45%    Time: 0:00:09
+-->Epoch: 065    Loss: 2.149361    NLLloss: 1.102083    ECELoss:  1.48%    MCELoss:  3.31%    Accuracy: 61.33%    Time: 0:00:09
+-->Epoch: 066    Loss: 2.133152    NLLloss: 1.102427    ECELoss:  1.12%    MCELoss:  5.33%    Accuracy: 61.43%    Time: 0:00:09
+-->Epoch: 067    Loss: 2.111386    NLLloss: 1.096951    ECELoss:  1.72%    MCELoss: 20.42%    Accuracy: 61.76%    Time: 0:00:09
+-->Epoch: 068    Loss: 2.111572    NLLloss: 1.112785    ECELoss:  1.65%    MCELoss:  3.66%    Accuracy: 60.80%    Time: 0:00:09
+-->Epoch: 069    Loss: 2.088707    NLLloss: 1.105029    ECELoss:  1.41%    MCELoss: 12.82%    Accuracy: 61.25%    Time: 0:00:06
+-->Epoch: 070    Loss: 2.080172    NLLloss: 1.111382    ECELoss:  1.24%    MCELoss:  3.21%    Accuracy: 61.24%    Time: 0:00:09
+Trainset:
+ Mean:
+  Loss: 1.906890
+  NLLloss: 0.945538
+  ECELoss: 2.99%
+  MCELoss: 5.06%
+  Accuracy: 66.90%
+ Ensemble:
+  Loss: 1.933381
+  NLLloss: 0.972029
+  ECELoss: 8.36%
+  MCELoss: 36.83%
+  Accuracy: 66.65%
+Testset:
+ Mean:
+  Loss: 5.695003
+  NLLloss: 0.888242
+  ECELoss: 2.81%
+  MCELoss: 6.93%
+  Accuracy: 69.03%
+ Ensemble:
+  Loss: 5.716442
+  NLLloss: 0.909682
+  ECELoss: 7.97%
+  MCELoss: 11.83%
+  Accuracy: 68.94%
+-->Epoch: 071    Loss: 2.059382    NLLloss: 1.105165    ECELoss:  1.34%    MCELoss: 13.31%    Accuracy: 61.22%    Time: 0:00:09
+-->Epoch: 072    Loss: 2.041828    NLLloss: 1.101813    ECELoss:  1.64%    MCELoss:  2.50%    Accuracy: 61.33%    Time: 0:00:09
+-->Epoch: 073    Loss: 2.037292    NLLloss: 1.111105    ECELoss:  1.38%    MCELoss: 12.94%    Accuracy: 60.92%    Time: 0:00:10
+-->Epoch: 074    Loss: 2.015622    NLLloss: 1.102902    ECELoss:  1.41%    MCELoss: 12.72%    Accuracy: 61.35%    Time: 0:00:09
+-->Epoch: 075    Loss: 2.004375    NLLloss: 1.104851    ECELoss:  1.17%    MCELoss: 12.82%    Accuracy: 61.25%    Time: 0:00:10
+-->Epoch: 076    Loss: 1.998599    NLLloss: 1.111863    ECELoss:  1.36%    MCELoss: 13.06%    Accuracy: 61.16%    Time: 0:00:10
+-->Epoch: 077    Loss: 1.987528    NLLloss: 1.113228    ECELoss:  1.25%    MCELoss:  5.04%    Accuracy: 61.04%    Time: 0:00:08
+-->Epoch: 078    Loss: 1.970556    NLLloss: 1.108401    ECELoss:  1.17%    MCELoss: 13.31%    Accuracy: 61.09%    Time: 0:00:06
+-->Epoch: 079    Loss: 1.958925    NLLloss: 1.108527    ECELoss:  1.26%    MCELoss: 12.87%    Accuracy: 61.18%    Time: 0:00:09
+-->Epoch: 080    Loss: 1.953719    NLLloss: 1.114828    ECELoss:  1.27%    MCELoss: 12.43%    Accuracy: 60.73%    Time: 0:00:08
+Trainset:
+ Mean:
+  Loss: 1.801594
+  NLLloss: 0.968494
+  ECELoss: 4.48%
+  MCELoss: 12.78%
+  Accuracy: 66.20%
+ Ensemble:
+  Loss: 1.830745
+  NLLloss: 0.997644
+  ECELoss: 9.44%
+  MCELoss: 14.04%
+  Accuracy: 66.12%
+Testset:
+ Mean:
+  Loss: 5.072720
+  NLLloss: 0.907216
+  ECELoss: 4.31%
+  MCELoss: 6.58%
+  Accuracy: 68.59%
+ Ensemble:
+  Loss: 5.098234
+  NLLloss: 0.932730
+  ECELoss: 9.16%
+  MCELoss: 13.63%
+  Accuracy: 68.47%
+-->Epoch: 081    Loss: 1.937958    NLLloss: 1.110310    ECELoss:  1.52%    MCELoss: 13.08%    Accuracy: 61.10%    Time: 0:00:10
+-->Epoch: 082    Loss: 1.929596    NLLloss: 1.112783    ECELoss:  1.29%    MCELoss: 13.25%    Accuracy: 60.86%    Time: 0:00:09
+-->Epoch: 083    Loss: 1.922235    NLLloss: 1.116026    ECELoss:  1.28%    MCELoss: 12.87%    Accuracy: 60.88%    Time: 0:00:09
+-->Epoch: 084    Loss: 1.907846    NLLloss: 1.111940    ECELoss:  1.03%    MCELoss: 13.30%    Accuracy: 60.75%    Time: 0:00:10
+-->Epoch: 085    Loss: 1.901241    NLLloss: 1.115342    ECELoss:  1.27%    MCELoss: 13.20%    Accuracy: 61.13%    Time: 0:00:08
+-->Epoch: 086    Loss: 1.891507    NLLloss: 1.115172    ECELoss:  1.50%    MCELoss: 13.12%    Accuracy: 60.84%    Time: 0:00:07
+-->Epoch: 087    Loss: 1.870463    NLLloss: 1.103537    ECELoss:  1.28%    MCELoss:  2.89%    Accuracy: 61.31%    Time: 0:00:07
+-->Epoch: 088    Loss: 1.868263    NLLloss: 1.110496    ECELoss:  1.17%    MCELoss: 13.12%    Accuracy: 61.02%    Time: 0:00:09
+-->Epoch: 089    Loss: 1.864713    NLLloss: 1.115794    ECELoss:  1.35%    MCELoss: 12.83%    Accuracy: 60.52%    Time: 0:00:09
+-->Epoch: 090    Loss: 1.853156    NLLloss: 1.112951    ECELoss:  1.35%    MCELoss: 13.33%    Accuracy: 61.05%    Time: 0:00:10
+Trainset:
+ Mean:
+  Loss: 1.714029
+  NLLloss: 0.978162
+  ECELoss: 2.44%
+  MCELoss: 4.82%
+  Accuracy: 65.62%
+ Ensemble:
+  Loss: 1.736177
+  NLLloss: 1.000309
+  ECELoss: 7.10%
+  MCELoss: 11.03%
+  Accuracy: 65.28%
+Testset:
+ Mean:
+  Loss: 4.599034
+  NLLloss: 0.919697
+  ECELoss: 2.21%
+  MCELoss: 5.76%
+  Accuracy: 67.75%
+ Ensemble:
+  Loss: 4.612617
+  NLLloss: 0.933280
+  ECELoss: 7.13%
+  MCELoss: 15.96%
+  Accuracy: 67.94%
+-->Epoch: 091    Loss: 1.845046    NLLloss: 1.113412    ECELoss:  1.18%    MCELoss: 13.23%    Accuracy: 60.65%    Time: 0:00:09
+-->Epoch: 092    Loss: 1.836201    NLLloss: 1.112840    ECELoss:  1.19%    MCELoss:  2.76%    Accuracy: 60.90%    Time: 0:00:10
+-->Epoch: 093    Loss: 1.823676    NLLloss: 1.108250    ECELoss:  1.24%    MCELoss: 12.84%    Accuracy: 61.22%    Time: 0:00:09
+-->Epoch: 094    Loss: 1.824480    NLLloss: 1.116663    ECELoss:  1.29%    MCELoss:  2.90%    Accuracy: 60.83%    Time: 0:00:06
+-->Epoch: 095    Loss: 1.811865    NLLloss: 1.111547    ECELoss:  1.18%    MCELoss: 12.92%    Accuracy: 60.86%    Time: 0:00:09
+-->Epoch: 096    Loss: 1.813844    NLLloss: 1.120705    ECELoss:  1.24%    MCELoss: 13.12%    Accuracy: 60.72%    Time: 0:00:10
+-->Epoch: 097    Loss: 1.797657    NLLloss: 1.111270    ECELoss:  0.88%    MCELoss:  2.07%    Accuracy: 61.04%    Time: 0:00:10
+-->Epoch: 098    Loss: 1.790628    NLLloss: 1.110969    ECELoss:  1.41%    MCELoss: 37.08%    Accuracy: 61.13%    Time: 0:00:09
+-->Epoch: 099    Loss: 1.787749    NLLloss: 1.114499    ECELoss:  1.34%    MCELoss: 13.11%    Accuracy: 61.03%    Time: 0:00:10
+-->Epoch: 100    Loss: 1.787237    NLLloss: 1.120217    ECELoss:  0.99%    MCELoss: 12.82%    Accuracy: 60.55%    Time: 0:00:10
+Trainset:
+ Mean:
+  Loss: 1.646453
+  NLLloss: 0.982536
+  ECELoss: 2.55%
+  MCELoss: 4.40%
+  Accuracy: 65.43%
+ Ensemble:
+  Loss: 1.667266
+  NLLloss: 1.003350
+  ECELoss: 6.78%
+  MCELoss: 10.24%
+  Accuracy: 65.02%
+Testset:
+ Mean:
+  Loss: 4.228307
+  NLLloss: 0.908721
+  ECELoss: 3.01%
+  MCELoss: 10.39%
+  Accuracy: 68.43%
+ Ensemble:
+  Loss: 4.248935
+  NLLloss: 0.929350
+  ECELoss: 7.16%
+  MCELoss: 12.70%
+  Accuracy: 68.07%
