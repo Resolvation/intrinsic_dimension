@@ -1,6 +1,3 @@
-import os
-
-import torch
 from torch import nn
 from torch.nn import functional as F
 
@@ -20,10 +17,6 @@ class SGVLB(nn.Module):
         self.dataset_size = dataset_size
         self.network = network
 
-    def forward(self, input, target, kl_weight=1.):
-        kl = 0.
-        for child in self.network.children():
-            if hasattr(child, 'kl'):
-                kl += child.kl()
+    def forward(self, input, target, kl_weight=0.0001):
         return (F.cross_entropy(input, target, reduction='mean')
-                + kl_weight * kl / self.dataset_size)
+                + kl_weight * self.network.kl() / self.dataset_size)

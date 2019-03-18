@@ -34,7 +34,7 @@ class LeNet5_stochastic_id(nn.Module):
 
     def kl(self):
         return ((self.log_sigma_sqr.exp() + self.mu * self.mu
-                 - self.log_sigma_sqr).sum() - d) / 2
+                 - self.log_sigma_sqr).sum() - self.d) / 2
 
     def load_weights(self, path):
         donor = LeNet5().cuda()
