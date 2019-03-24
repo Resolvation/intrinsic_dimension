@@ -102,5 +102,5 @@ for epoch in range(1, n_epochs + 1):
             model.log_weights(writer, epoch)
 
 
-torch.save(model.state_dict(), f'tars/{name}_{res[4]:.02f}.tar')
+torch.save(model.state_dict(), f'tars/{name}.tar')
 writer.close()
