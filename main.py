@@ -60,7 +60,7 @@ name = 'pretrained_' if args.pretrained else ''
 name += args.dataset + '_' + args.model
 writer = SummaryWriter(f'writers/{name}')
 
-lr = init_lr = 0.0001
+lr = init_lr = 0.001
 optimizer = optim.Adam(model.parameters(), lr=lr)
 
 if args.pretrained:
