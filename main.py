@@ -5,8 +5,9 @@ from torch import nn, optim
 from tensorboardX import SummaryWriter
 
 from core.data import cifar10_loaders, mnist_loaders
+from core.metrics import SGVLB
 from core.train import eval_determenistic, eval_stochastic, train
-from core.utils import adjust_learning_rate, linear_lr, SGVLB
+from core.utils import adjust_learning_rate, linear_lr
 from models import LeNet300_100, LeNet300_100_stochastic
 from models import LeNet5, LeNet5_stochastic, LeNet5_stochastic_id
 
@@ -54,13 +55,12 @@ if 'stochastic' not in args.model:
     criterion = nn.CrossEntropyLoss()
 else:
     criterion = SGVLB(model, len(train_loader.dataset))
-    testset_criterion = SGVLB(model, len(test_loader.dataset))
 
 name = 'pretrained_' if args.pretrained else ''
 name += args.dataset + '_' + args.model
 writer = SummaryWriter(f'writers/{name}')
 
-lr = init_lr = 0.001
+lr = init_lr = 0.0001
 optimizer = optim.Adam(model.parameters(), lr=lr)
 
 if args.pretrained:
@@ -75,10 +75,11 @@ if 'stochastic' not in args.model:
                        test_loader, criterion, 0, args.verbose)
 else:
     eval_stochastic(writer, model, device, train_loader, test_loader,
-                    criterion, testset_criterion, 0, args.verbose)
+                    criterion, 0, args.verbose)
     model.log_weights(writer, 0)
 
 for epoch in range(1, n_epochs + 1):
+
     lr = linear_lr(epoch, n_epochs, alpha) * init_lr
     adjust_learning_rate(optimizer, lr)
     writer.add_scalar('training/learning_rate', lr, epoch)
@@ -97,7 +98,7 @@ for epoch in range(1, n_epochs + 1):
                                test_loader, criterion, epoch, args.verbose)
         else:
             eval_stochastic(writer, model, device, train_loader, test_loader,
-                            criterion, testset_criterion, epoch, args.verbose)
+                            criterion, epoch, args.verbose)
             model.log_weights(writer, epoch)
 
 

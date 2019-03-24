@@ -148,27 +148,26 @@ def eval_determenistic(writer, model, device, train_loader, test_loader,
 
 
 def eval_stochastic(writer, model, device, train_loader, test_loader,
-                    trainset_criterion, testset_criterion, epoch,
-                    verbose=True, n_ens=10):
+                    criterion, epoch, verbose=True, n_ens=10):
     if verbose:
         print('Trainset:')
         print(' Mean:')
     res_trainset_mean = test_classifier(
-        model, device, train_loader, trainset_criterion, verbose)
+        model, device, train_loader, criterion, verbose)
     if verbose:
         print(' Ensemble:')
     res_trainset_ens = test_classifier(
-        model, device, train_loader, trainset_criterion, verbose, n_ens)
+        model, device, train_loader, criterion, verbose, n_ens)
 
     if verbose:
         print('Testset:')
         print(' Mean:')
     res_testset_mean = test_classifier(
-        model, device, test_loader, testset_criterion, verbose)
+        model, device, test_loader, criterion, verbose)
     if verbose:
         print(' Ensemble:')
     res_testset_ens = test_classifier(
-        model, device, test_loader, testset_criterion, verbose, n_ens)
+        model, device, test_loader, criterion, verbose, n_ens)
 
     writer.add_scalars('testing/loss', {
         'trainset_mean': res_trainset_mean[0],

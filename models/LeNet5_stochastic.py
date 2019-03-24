@@ -1,5 +1,6 @@
 import torch
 from torch import nn
+from torch.nn import init
 from torch.nn import functional as F
 
 from models.layers import StochasticLinear, StochasticConv2d
@@ -32,16 +33,16 @@ class LeNet5_stochastic(nn.Module):
     def load_weights(self, path):
         donor = LeNet5().cuda()
         donor.load_state_dict(torch.load(path))
-        self.conv1.mu = donor.conv1.weight
-        self.conv1.bias = donor.conv1.bias
-        self.conv2.mu = donor.conv2.weight
-        self.conv2.bias = donor.conv2.bias
-        self.fc1.mu = donor.fc1.weight
-        self.fc1.bias = donor.fc1.bias
-        self.fc2.mu = donor.fc2.weight
-        self.fc2.bias = donor.fc2.bias
-        self.fc3.mu = donor.fc3.weight
-        self.fc3.bias = donor.fc3.bias
+        self.conv1.register_buffer('ext_weight', donor.conv1.weight)
+        self.conv1.register_buffer('ext_bias', donor.conv1.bias)
+        self.conv2.register_buffer('ext_weight', donor.conv2.weight)
+        self.conv2.register_buffer('ext_bias', donor.conv2.bias)
+        self.fc1.register_buffer('ext_weight', donor.fc1.weight)
+        self.fc1.register_buffer('ext_bias', donor.fc1.bias)
+        self.fc2.register_buffer('ext_weight', donor.fc2.weight)
+        self.fc2.register_buffer('ext_bias', donor.fc2.bias)
+        self.fc3.register_buffer('ext_weight', donor.fc3.weight)
+        self.fc3.register_buffer('ext_bias', donor.fc3.bias)
         del donor
         return self
 

@@ -3,6 +3,17 @@ from torch import nn
 from torch.nn import functional as F
 
 
+class SGVLB(nn.Module):
+    def __init__(self, network, dataset_size):
+        super().__init__()
+        self.dataset_size = dataset_size
+        self.network = network
+
+    def forward(self, input, target, kl_weight=1.):
+        return (F.cross_entropy(input, target, reduction='mean')
+                + kl_weight * self.network.kl() / self.dataset_size)
+
+
 class CELoss(nn.Module):
     """
     Got it from https://github.com/gpleiss/temperature_scaling/blob/master/temperature_scaling.py

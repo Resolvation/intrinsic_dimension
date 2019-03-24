@@ -25,16 +25,19 @@ class StochasticLinear(nn.Module):
             self.bias = Parameter(torch.Tensor(1, out_features))
         else:
             self.register_parameter('bias', None)
+        self.register_buffer('ext_weight', torch.zeros_like(self.mu))
+        self.register_buffer('ext_bias', torch.zeros_like(self.bias))
         self._reset_parameters()
 
     def _reset_parameters(self):
-        init.kaiming_normal_(self.mu)
-        init.constant_(self.log_sigma_sqr, -10)
+        init.zeros_(self.mu)
+        init.constant_(self.log_sigma_sqr, -12)
         if self.bias is not None:
             init.zeros_(self.bias)
 
     def forward(self, input):
-        h_mean = F.linear(input, self.mu, self.bias)
+        h_mean = F.linear(input, self.mu + self.ext_weight,
+                          self.bias + self.ext_bias)
         h_std = (1e-16 + F.linear(input * input,
                                   self.log_sigma_sqr.exp())).sqrt()
         if self.training:
@@ -74,17 +77,19 @@ class StochasticConv2d(nn.Module):
             self.bias = Parameter(torch.Tensor(out_channels))
         else:
             self.register_parameter('bias', None)
+        self.register_buffer('ext_weight', torch.zeros_like(self.mu))
+        self.register_buffer('ext_bias', torch.zeros_like(self.bias))
         self._reset_parameters()
 
     def _reset_parameters(self):
-        init.kaiming_normal_(self.mu)
-        init.constant_(self.log_sigma_sqr, -10)
+        init.zeros_(self.mu)
+        init.constant_(self.log_sigma_sqr, -12)
         if self.bias is not None:
             init.zeros_(self.bias)
 
     def forward(self, input):
-        h_mean = F.conv2d(input, self.mu,
-                          self.bias, self.stride,
+        h_mean = F.conv2d(input, self.mu + self.ext_weight,
+                          self.bias + self.ext_bias, self.stride,
                           self.padding, self.dilation)
         h_std = (1e-16 + F.conv2d(input * input, self.log_sigma_sqr.exp(),
                                   None, self.stride,
