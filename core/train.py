@@ -41,7 +41,7 @@ def train(model, device, train_loader, criterion, optimizer, epoch,
     accuracy = 100 * correct / len(train_loader.dataset)
     time = str(datetime.now() - start_time).split('.')[0]
 
-    eceloss, mceloss = CELoss(15)(torch.cat(total_logits),
+    eceloss, mceloss = CELoss(20)(torch.cat(total_logits),
                                   torch.cat(total_labels))
 
     if verbose:
@@ -100,7 +100,7 @@ def test_classifier(model, device, test_loader,
     nllloss /= len(test_loader)
     accuracy = 100 * correct / len(test_loader.dataset)
 
-    eceloss, mceloss = CELoss(15)(torch.cat(total_logits),
+    eceloss, mceloss = CELoss(20)(torch.cat(total_logits),
                                   torch.cat(total_labels))
 
     if verbose:

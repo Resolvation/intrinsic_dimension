@@ -30,30 +30,36 @@ class CELoss(nn.Module):
     "Obtaining Well Calibrated Probabilities Using Bayesian Binning." AAAI.
     2015.
     """
-    def __init__(self, n_bins=15):
+    def __init__(self, n_bins=20):
         """
         n_bins (int): number of confidence interval bins
         """
         super().__init__()
-        bin_boundaries = torch.linspace(0, 1, n_bins + 1)
-        self.bin_lowers = bin_boundaries[:-1]
-        self.bin_uppers = bin_boundaries[1:]
+        self.n_bins = n_bins
 
     def forward(self, logits, labels):
+        size = len(labels)
+        bin_size = size // self.n_bins
+        bin_lower = torch.linspace(0, size - 1, self.n_bins).int()
+        bin_upper = bin_lower + bin_size
+
         softmaxes = F.softmax(logits, dim=1)
         confidences, predictions = torch.max(softmaxes, 1)
         accuracies = predictions.eq(labels)
 
-        ece = torch.zeros(1, device=logits.device)
-        mce = torch.zeros(1, device=logits.device)
-        for bin_lower, bin_upper in zip(self.bin_lowers, self.bin_uppers):
-            # Calculated |confidence - accuracy| in each bin
-            in_bin = confidences.gt(bin_lower.item()) * confidences.le(bin_upper.item())
-            prop_in_bin = in_bin.float().mean()
-            if prop_in_bin.item() > 0:
-                accuracy_in_bin = accuracies[in_bin].float().mean()
-                avg_confidence_in_bin = confidences[in_bin].mean()
-                ece += torch.abs(avg_confidence_in_bin - accuracy_in_bin) * prop_in_bin
-                mce = max(mce, torch.abs(avg_confidence_in_bin - accuracy_in_bin))
+        s_confidences, s_indexes = torch.sort(confidences)
+        s_accuracies = accuracies[s_indexes]
 
-        return ece.item(), mce.item()
+        ece, mce = 0, 0
+
+        for low, up in zip(bin_lower, bin_upper):
+            c = torch.sum(s_confidences[low: up]).item()
+            a = torch.sum(s_accuracies[low: up]).item()
+            ce = abs(c - a)
+            ece += ce
+            mce = max(mce, ce)
+
+        ece /= size
+        mce /= bin_size
+
+        return ece, mce
