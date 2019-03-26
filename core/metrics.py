@@ -40,7 +40,7 @@ class CELoss(nn.Module):
     def forward(self, logits, labels):
         size = len(labels)
         bin_size = size // self.n_bins
-        bin_lower = torch.linspace(0, size - 1, self.n_bins).int()
+        bin_lower = torch.linspace(0, size - bin_size, self.n_bins).int()
         bin_upper = bin_lower + bin_size
 
         softmaxes = F.softmax(logits, dim=1)
@@ -55,11 +55,10 @@ class CELoss(nn.Module):
         for low, up in zip(bin_lower, bin_upper):
             c = torch.sum(s_confidences[low: up]).item()
             a = torch.sum(s_accuracies[low: up]).item()
-            ce = abs(c - a)
+            ce = abs(c - a) / bin_size
             ece += ce
             mce = max(mce, ce)
 
-        ece /= size
-        mce /= bin_size
+        ece /= self.n_bins
 
         return ece, mce
