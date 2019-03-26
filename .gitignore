@@ -1,5 +1,4 @@
 .idea/
-tars/
 core/__pycache__
 models/__pycache__
-experiments/__pycache__
+__pycache__
